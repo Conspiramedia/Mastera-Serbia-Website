@@ -1,6 +1,6 @@
 // ============================================
 // ОПТИМИЗИРОВАННЫЙ SCRIPT.JS — MULTILINGUAL
-// Языки: RU / KA / GE
+// Языки: RU / SR / EN
 // ============================================
 
 // ============================================
@@ -9,8 +9,7 @@
 
 const i18n = {
     ru: {
-        phoneInvalid:        'Пожалуйста, введите корректный грузинский номер телефона в формате: +995XXXXXXXXX (9 цифр после +995)',
-        phoneOperator:       'Пожалуйста, введите корректный код оператора. Номер должен начинаться с +995 и далее 55, 56, 57, 58, 59, 51-54, 68, 70-79, 90-99',
+        phoneInvalid:        'Пожалуйста, введите корректный сербский номер телефона в формате: +381XXXXXXXX (8–10 цифр после +381)',
         telegramInvalid:     'Пожалуйста, введите корректный Telegram username (например: @username) или номер телефона',
         contactRequired:     'Пожалуйста, заполните хотя бы один из контактов: Telegram или WhatsApp',
         submitError:         'Ошибка при отправке. Попробуйте ещё раз.',
@@ -23,24 +22,22 @@ const i18n = {
         masterFinishTelegram:'✅ Завершить регистрацию в Telegram',
         urgentLabel:         '🚨 Срочный заказ',
     },
-    ka: {
-        phoneInvalid:        'გთხოვთ, შეიყვანოთ სწორი ქართული ტელეფონის ნომერი ფორმატში: +995XXXXXXXXX (9 ციფრი +995-ის შემდეგ)',
-        phoneOperator:       'გთხოვთ, შეიყვანოთ სწორი ოპერატორის კოდი. ნომერი უნდა იწყებოდეს +995-ით და შემდეგ 55, 56, 57, 58, 59, 51-54, 68, 70-79, 90-99',
-        telegramInvalid:     'გთხოვთ, შეიყვანოთ სწორი Telegram მომხმარებლის სახელი (მაგ: @username) ან ტელეფონის ნომერი',
-        contactRequired:     'გთხოვთ, შეავსოთ ერთ-ერთი საკონტაქტო ველი: Telegram ან WhatsApp',
-        submitError:         'გაგზავნისას მოხდა შეცდომა. სცადეთ კიდევ ერთხელ.',
-        photoLabel:          '📷 პრობლემის ფოტო (სურვილისამებრ, 3-მდე)',
-        photoAdd:            'ფოტოს მიმაგრება',
-        photoTooMany:        'შეგიძლიათ მიამაგროთ მაქსიმუმ 3 ფოტო',
-        photoBadType:        'შესაძლებელია მხოლოდ სურათების მიმაგრება',
-        photoTooBig:         'ფაილი ძალიან დიდია (10 მბ-მდე)',
-        photoRemove:         'წაშლა',
-        masterFinishTelegram:'✅ რეგისტრაციის დასრულება Telegram-ში',
-        urgentLabel:         '🚨 სასწრაფო შეკვეთა',
+    sr: {
+        phoneInvalid:        'Molimo unesite ispravan srpski broj telefona u formatu: +381XXXXXXXX (8–10 cifara posle +381)',
+        telegramInvalid:     'Molimo unesite ispravno Telegram korisničko ime (npr: @username) ili broj telefona',
+        contactRequired:     'Molimo popunite bar jedno polje za kontakt: Telegram ili WhatsApp',
+        submitError:         'Došlo je do greške pri slanju. Pokušajte ponovo.',
+        photoLabel:          '📷 Fotografija problema (opciono, do 3)',
+        photoAdd:            'Priloži fotografiju',
+        photoTooMany:        'Možete priložiti najviše 3 fotografije',
+        photoBadType:        'Mogu se priložiti samo slike',
+        photoTooBig:         'Fajl je prevelik (do 10 MB)',
+        photoRemove:         'Ukloni',
+        masterFinishTelegram:'✅ Završi registraciju u Telegramu',
+        urgentLabel:         '🚨 Hitna porudžbina',
     },
     en: {
-        phoneInvalid:        'Please enter a valid Georgian phone number in the format: +995XXXXXXXXX (9 digits after +995)',
-        phoneOperator:       'Please enter a valid operator code. The number must start with +995 followed by 55, 56, 57, 58, 59, 51-54, 68, 70-79, 90-99',
+        phoneInvalid:        'Please enter a valid Serbian phone number in the format: +381XXXXXXXX (8–10 digits after +381)',
         telegramInvalid:     'Please enter a valid Telegram username (e.g. @username) or phone number',
         contactRequired:     'Please fill in at least one contact field: Telegram or WhatsApp',
         submitError:         'An error occurred while submitting. Please try again.',
@@ -56,10 +53,10 @@ const i18n = {
 };
 
 // Публичный username бота мастеров — для диплинка «завершить регистрацию».
-const MASTER_BOT_DEEPLINK = 'https://t.me/mastera_tbilisi_bot?start=master';
+const MASTER_BOT_DEEPLINK = 'https://t.me/mastera_beograd_bot?start=master';
 
 // Глобальная переменная текущего языка
-// window.__FORCE_LANG__ устанавливается в языковых подстраницах (/ru/, /ge/, /en/)
+// window.__FORCE_LANG__ устанавливается в языковых подстраницах (/ru/, /sr/, /en/)
 let currentLang = window.__FORCE_LANG__ || 'ru';
 
 // Вспомогательная функция — получить перевод
@@ -296,7 +293,7 @@ function initLanguageSwitcher() {
     const browserLang = navigator.language || navigator.userLanguage;
 
     let defaultLang = 'ru';
-    if (browserLang.startsWith('ka')) defaultLang = 'ka';
+    if (browserLang.startsWith('sr')) defaultLang = 'sr';
     else if (browserLang.startsWith('en')) defaultLang = 'en';
 
     const savedLang = localStorage.getItem('language') || defaultLang;
@@ -324,7 +321,7 @@ function setLanguage(lang) {
     document.documentElement.lang = lang;
 
     // Переводим все элементы с data-атрибутами
-    document.querySelectorAll('[data-ru], [data-ka], [data-en]').forEach(element => {
+    document.querySelectorAll('[data-ru], [data-sr], [data-en]').forEach(element => {
         if (element.classList.contains('hero-title')) {
             const cursor = element.querySelector('.typing-cursor');
             if (cursor) cursor.remove();
@@ -348,7 +345,7 @@ function setLanguage(lang) {
     });
 
     // Placeholders через отдельные атрибуты
-    document.querySelectorAll('[data-ru-placeholder], [data-ka-placeholder], [data-en-placeholder]').forEach(element => {
+    document.querySelectorAll('[data-ru-placeholder], [data-sr-placeholder], [data-en-placeholder]').forEach(element => {
         const placeholder = element.dataset[lang + 'Placeholder'];
         if (placeholder) element.placeholder = placeholder;
     });
@@ -360,8 +357,8 @@ function setLanguage(lang) {
     }
 
     // Суффиксы счётчиков статистики
-    document.querySelectorAll('.stat-number[data-suffix-ru], .stat-number[data-suffix-ka], .stat-number[data-suffix-en]').forEach(element => {
-        const suffixKey = lang === 'en' ? 'suffixEn' : lang === 'ka' ? 'suffixKa' : 'suffixRu';
+    document.querySelectorAll('.stat-number[data-suffix-ru], .stat-number[data-suffix-sr], .stat-number[data-suffix-en]').forEach(element => {
+        const suffixKey = lang === 'en' ? 'suffixEn' : lang === 'sr' ? 'suffixSr' : 'suffixRu';
         const newSuffix = element.dataset[suffixKey];
         if (newSuffix) {
             element.dataset.suffix = newSuffix;
@@ -421,19 +418,19 @@ function initPhoneFormatting() {
     phoneInputs.forEach(input => {
         input.addEventListener('input', (e) => {
             let value = e.target.value.replace(/\D/g, '');
-            if (!value.startsWith('995') && value.length > 0) {
-                value = '995' + value;
+            if (!value.startsWith('381') && value.length > 0) {
+                value = '381' + value;
             }
-            if (value.length > 12) value = value.substring(0, 12);
+            if (value.length > 13) value = value.substring(0, 13);
             e.target.value = value.length > 0 ? '+' + value : '';
         });
 
         input.addEventListener('focus', (e) => {
-            if (e.target.value === '') e.target.value = '+995';
+            if (e.target.value === '') e.target.value = '+381';
         });
 
         input.addEventListener('blur', (e) => {
-            if (e.target.value === '+995') e.target.value = '';
+            if (e.target.value === '+381') e.target.value = '';
         });
     });
 }
@@ -442,8 +439,8 @@ function initPhoneFormatting() {
 // 9. ВАЛИДАЦИЯ — ОБЩИЕ ФУНКЦИИ
 // ============================================
 
-const VALID_OPERATOR_CODES = ['55','56','57','58','59','51','52','53','54','68','70','71','72','74','75','77','79','90','91','92','93','94','95','96','97','98','99'];
-const PHONE_PATTERN    = /^\+995[0-9]{9}$/;
+// Сербские номера: +381 и 8–10 цифр (моб. и городские). Без белого списка кодов оператора.
+const PHONE_PATTERN    = /^\+381[0-9]{8,10}$/;
 const TELEGRAM_PATTERN = /^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})$/;
 
 function validatePhone(phoneInput) {
@@ -452,13 +449,6 @@ function validatePhone(phoneInput) {
 
     if (!PHONE_PATTERN.test(val)) {
         alert(t('phoneInvalid'));
-        phoneInput.focus();
-        return false;
-    }
-
-    const code = val.substring(4, 6);
-    if (!VALID_OPERATOR_CODES.includes(code)) {
-        alert(t('phoneOperator'));
         phoneInput.focus();
         return false;
     }
@@ -503,9 +493,9 @@ const BOT_MASTER_URL  = 'https://mastera-tbilisi-mastera-tbilisi.up.railway.app/
 
 // Район на сайте выбирается слугами (Vake, Saburtalo...), а бот ждёт названия по-русски.
 const BOT_DISTRICT_MAP = {
-    Vake: 'Ваке', Saburtalo: 'Сабуртало', Mtatsminda: 'Мтацминда', Didube: 'Дидубе',
-    Isani: 'Исани', Gldani: 'Глдани', Nadzaladevi: 'Надзаладеви', Chugureti: 'Чугурети',
-    Krtsanisi: 'Крцаниси', Samgori: 'Самгори', Other: 'Другой'
+    Vracar: 'Врачар', NoviBeograd: 'Нови-Београд', Zvezdara: 'Звездара', Vozdovac: 'Вождовац',
+    Zemun: 'Земун', StariGrad: 'Стари-Град', SavskiVenac: 'Савски-Венац', Palilula: 'Палилула',
+    Cukarica: 'Чукарица', Rakovica: 'Раковица', Other: 'Другой'
 };
 
 // Категория работ в EN/GE формах выбирается на своём языке, а бот принимает только
@@ -551,7 +541,7 @@ function sendLeadToBot(formData) {
             address:     'Не указан',                       // адрес у клиента не спрашиваем — только район
             contact:     contactParts.join('\n') || 'Нет контакта', // скрыто до оплаты
             honeypot:    get('_gotcha'),                    // антиспам: люди это поле не заполняют
-            lang:        ['ru', 'en', 'ka'].includes(currentLang) ? currentLang : 'ru',
+            lang:        ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru',
             // Срочность: галочка без name (в Formspree не уходит) — читаем состояние из DOM.
             // false по умолчанию; бот помечает «🚨 СРОЧНО» только срочные заявки.
             urgent:      !!(document.getElementById('leadUrgent') && document.getElementById('leadUrgent').checked),
@@ -707,7 +697,7 @@ function sendMasterLeadToBot(formData) {
             specialty: experience ? `${specialty} (опыт: ${experience} лет)` : specialty,
             message:   get('message'),
             honeypot:  get('_gotcha'),
-            lang:      ['ru', 'en', 'ka'].includes(currentLang) ? currentLang : 'ru'
+            lang:      ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru'
         };
         fetch(BOT_MASTER_URL, {
             method: 'POST',
@@ -744,8 +734,16 @@ function ensureMasterTelegramButton() {
 
 // Недостающие на сайте районы бота (slug -> подпись по языкам). Добавляются в <select> скриптом.
 const DISTRICT_LABELS = {
-    Mtatsminda: { ru: 'Мтацминда', en: 'Mtatsminda', ka: 'მთაწმინდა' },
-    Krtsanisi:  { ru: 'Крцаниси',  en: 'Krtsanisi',  ka: 'კრწანისი' }
+    Vracar:      { ru: 'Врачар',       en: 'Vračar',       sr: 'Vračar' },
+    NoviBeograd: { ru: 'Нови-Београд', en: 'New Belgrade', sr: 'Novi Beograd' },
+    Zvezdara:    { ru: 'Звездара',     en: 'Zvezdara',     sr: 'Zvezdara' },
+    Vozdovac:    { ru: 'Вождовац',     en: 'Voždovac',     sr: 'Voždovac' },
+    Zemun:       { ru: 'Земун',        en: 'Zemun',        sr: 'Zemun' },
+    StariGrad:   { ru: 'Стари-Град',   en: 'Stari Grad',   sr: 'Stari Grad' },
+    SavskiVenac: { ru: 'Савски-Венац', en: 'Savski Venac', sr: 'Savski Venac' },
+    Palilula:    { ru: 'Палилула',     en: 'Palilula',     sr: 'Palilula' },
+    Cukarica:    { ru: 'Чукарица',     en: 'Čukarica',     sr: 'Čukarica' },
+    Rakovica:    { ru: 'Раковица',     en: 'Rakovica',     sr: 'Rakovica' }
 };
 
 // Дозаполняет недостающие районы бота в клиентской форме на всех страницах —
@@ -756,7 +754,7 @@ function initClientDistrictOptions() {
     const districtSel = form.querySelector('select[name="district"]');
     if (!districtSel) return;
 
-    const lang = ['ru', 'en', 'ka'].includes(currentLang) ? currentLang : 'ru';
+    const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
 
     // Дозаполняем недостающие районы бота (Мтацминда, Крцаниси) — перед «Other», если он есть
     Object.keys(DISTRICT_LABELS).forEach(function (slug) {
@@ -795,7 +793,7 @@ function initClientUrgentOption() {
     const span = document.createElement('span');
     // data-атрибуты → строка переводится автоматически при смене языка (см. setLanguage)
     span.setAttribute('data-ru', i18n.ru.urgentLabel);
-    span.setAttribute('data-ka', i18n.ka.urgentLabel);
+    span.setAttribute('data-sr', i18n.sr.urgentLabel);
     span.setAttribute('data-en', i18n.en.urgentLabel);
     span.textContent = t('urgentLabel');
 
@@ -1048,27 +1046,28 @@ function initWhatsAppButtonTracking() {
     const waTexts = {
         ru: encodeURIComponent(isMastersPage
             ? 'Здравствуйте! Хочу стать партнёром сервиса.'
-            : 'Здравствуйте! Нужен мастер в Тбилиси.'),
-        ka: encodeURIComponent(isMastersPage
-            ? 'გამარჯობა! მინდა გავხდე პარტნიორი.'
-            : 'გამარჯობა! მჭირდება ოსტატი თბილისში.'),
+            : 'Здравствуйте! Нужен мастер в Белграде.'),
+        sr: encodeURIComponent(isMastersPage
+            ? 'Zdravo! Želim da postanem partner servisa.'
+            : 'Zdravo! Potreban mi je majstor u Beogradu.'),
         en: encodeURIComponent(isMastersPage
             ? 'Hello! I want to become a partner.'
-            : 'Hello! I need a handyman in Tbilisi.')
+            : 'Hello! I need a handyman in Belgrade.')
     };
+    // TODO(Сербия): заменить номер 995557645196 на сербский +381, когда будет сим-карта.
     const waHref = 'https://wa.me/995557645196?text=' + (waTexts[lang] || waTexts.ru);
 
     // Telegram-бот: на странице мастеров — бот мастеров, иначе клиентский бот по языку
     // страницы (RU/EN/GE). start=site_<lang> — для атрибуции.
-    const tgBots = { ru: 'mastera_ru_bot', en: 'mastera_en_bot', ka: 'mastera_ka_bot' };
-    const tgBot = isMastersPage ? 'mastera_tbilisi_bot' : (tgBots[lang] || tgBots.ru);
+    const tgBots = { ru: 'mastera_ru_bot', en: 'mastera_en_bot', sr: 'mastera_sr_bot' };
+    const tgBot = isMastersPage ? 'mastera_beograd_bot' : (tgBots[lang] || tgBots.ru);
     const tgHref = 'https://t.me/' + tgBot + '?start=site_' + lang;
 
     // Подписи (доступность/тултипы) по языку.
     const labels = ({
         ru: { open: 'Связаться с нами', wa: 'Написать в WhatsApp', tg: 'Написать в Telegram' },
         en: { open: 'Contact us',       wa: 'Message on WhatsApp', tg: 'Message on Telegram' },
-        ka: { open: 'დაგვიკავშირდით',   wa: 'მოგვწერეთ WhatsApp-ში', tg: 'მოგვწერეთ Telegram-ში' }
+        sr: { open: 'Kontaktirajte nas', wa: 'Pišite na WhatsApp',  tg: 'Pišite na Telegram' }
     })[lang] || { open: 'Связаться с нами', wa: 'WhatsApp', tg: 'Telegram' };
 
     // FAB больше не прямая ссылка, а переключатель меню с нейтральной «чат»-иконкой.
@@ -1185,33 +1184,33 @@ function initTypingEffect() {
     const textParts = {
         ru: {
             start:   'Сервис ',
-            option1: 'поиска мастеров Тбилиси',
-            option2: 'подбора мастеров Тбилиси'
+            option1: 'поиска мастеров Белград',
+            option2: 'подбора мастеров Белград'
         },
         en: {
             start:   'Master ',
-            option1: 'search service Tbilisi',
-            option2: 'matching service Tbilisi'
+            option1: 'search service Belgrade',
+            option2: 'matching service Belgrade'
         },
-        ka: {
-            start:   'სერვისი ',
-            option1: 'ძიების თბილისში',
-            option2: 'შერჩევის თბილისში'
+        sr: {
+            start:   'Servis ',
+            option1: 'pretrage majstora Beograd',
+            option2: 'izbora majstora Beograd'
         },
         ru_masters: {
             start:   'Сервис ',
-            option1: 'поиска заказов Тбилиси',
-            option2: 'подбора заказов Тбилиси'
+            option1: 'поиска заказов Белград',
+            option2: 'подбора заказов Белград'
         },
         en_masters: {
             start:   'Order ',
-            option1: 'search service Tbilisi',
-            option2: 'matching service Tbilisi'
+            option1: 'search service Belgrade',
+            option2: 'matching service Belgrade'
         },
-        ka_masters: {
-            start:   'შეკვეთების ',
-            option1: 'ძიების სერვისი თბილისში',
-            option2: 'შერჩევის სერვისი თბილისში'
+        sr_masters: {
+            start:   'Servis ',
+            option1: 'pretrage porudžbina Beograd',
+            option2: 'izbora porudžbina Beograd'
         }
     };
 
