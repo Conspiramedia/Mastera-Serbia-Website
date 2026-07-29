@@ -513,39 +513,6 @@
     <img src="../image/whatsapp-icon.png" alt="WhatsApp" loading="lazy">
   </a>
 
-  <!-- ═══════════════════════════════════════════════════════════════════
-       Плашка перехода в приложение клиентов. Уводим на сайт приложения
-       клиентов, где сработает родная установка. Скрывается после закрытия.
-  ═══════════════════════════════════════════════════════════════════ -->
-  <div id="app-banner" style="
-    display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999;
-    background:#1a1a1a; border-top:2px solid #FDB913; padding:14px 16px;
-    font-family:sans-serif; color:#fff; box-shadow:0 -4px 20px rgba(0,0,0,0.5);">
-    <style>
-      #app-banner-close { position:absolute; top:10px; right:14px; background:none; border:none; color:#aaa; font-size:22px; cursor:pointer; line-height:1; padding:0; }
-      #app-banner-close:hover { color:#fff; }
-      #app-open-btn { display:inline-block; margin-top:10px; padding:9px 20px; background:#FDB913; color:#1a1a1a; border-radius:8px; font-size:14px; font-weight:700; text-decoration:none; }
-      #app-banner-text { font-size:13px; line-height:1.5; color:#ccc; margin-top:4px; }
-    </style>
-    <button id="app-banner-close" aria-label="Закрыть">&times;</button>
-    <span style="font-size:28px; margin-right:10px; vertical-align:middle;">📱</span>
-    <strong style="font-size:15px;">Наше приложение</strong>
-    <div id="app-banner-text">Найдите мастера за 60 минут: оставьте заявку в приложении — мастера откликнутся сами. База проверенных мастеров.</div>
-    <a id="app-open-btn" href="https://client-georgia.netlify.app" target="_blank" rel="noopener">Открыть приложение</a>
-  </div>
-
-  <script>
-  (function () {
-    var banner = document.getElementById('app-banner');
-    var closeBtn = document.getElementById('app-banner-close');
-    // Плашка показывается при КАЖДОЙ загрузке. Крестик скрывает её только до
-    // перезагрузки страницы (без запоминания в localStorage).
-    closeBtn.addEventListener('click', function () {
-      banner.style.display = 'none';
-    });
-    setTimeout(function () { banner.style.display = 'block'; }, 1500);
-  })();
-  </script>
 
 </body>
 </html>
