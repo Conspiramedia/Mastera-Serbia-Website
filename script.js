@@ -1184,33 +1184,33 @@ function initTypingEffect() {
     const textParts = {
         ru: {
             start:   'Сервис ',
-            option1: 'поиска мастеров Белград',
-            option2: 'подбора мастеров Белград'
+            option1: 'поиска мастеров Сербия',
+            option2: 'подбора мастеров Сербия'
         },
         en: {
             start:   'Master ',
-            option1: 'search service Belgrade',
-            option2: 'matching service Belgrade'
+            option1: 'search service Serbia',
+            option2: 'matching service Serbia'
         },
         sr: {
             start:   'Servis ',
-            option1: 'pretrage majstora Beograd',
-            option2: 'izbora majstora Beograd'
+            option1: 'pretrage majstora Srbija',
+            option2: 'izbora majstora Srbija'
         },
         ru_masters: {
             start:   'Сервис ',
-            option1: 'поиска заказов Белград',
-            option2: 'подбора заказов Белград'
+            option1: 'поиска заказов Сербия',
+            option2: 'подбора заказов Сербия'
         },
         en_masters: {
             start:   'Order ',
-            option1: 'search service Belgrade',
-            option2: 'matching service Belgrade'
+            option1: 'search service Serbia',
+            option2: 'matching service Serbia'
         },
         sr_masters: {
             start:   'Servis ',
-            option1: 'pretrage porudžbina Beograd',
-            option2: 'izbora porudžbina Beograd'
+            option1: 'pretrage porudžbina Srbija',
+            option2: 'izbora porudžbina Srbija'
         }
     };
 
