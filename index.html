@@ -14,8 +14,8 @@
         return;
       }
       var lang = navigator.language || navigator.userLanguage || 'ru';
-      if (lang.startsWith('ka')) {
-        window.location.replace('/ge/');
+      if (lang.startsWith('sr')) {
+        window.location.replace('/sr/');
       } else if (lang.startsWith('en')) {
         window.location.replace('/en/');
       } else {
@@ -28,27 +28,27 @@
   <meta http-equiv="refresh" content="0;url=/ru/">
 
   <!-- SEO — канонический URL и hreflang -->
-  <title>Мастера Тбилиси — Сантехник, Электрик, Ремонт любой сложности</title>
-  <meta name="description" content="Сервис подбора мастеров в Тбилиси. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
+  <title>Мастера в Белграде — Сантехник, Электрик, Ремонт любой сложности</title>
+  <meta name="description" content="Сервис подбора мастеров в Белграде. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Мастера Тбилиси — Сантехник, Электрик, Ремонт любой сложности">
-  <meta property="og:description" content="Сервис подбора мастеров в Тбилиси. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
+  <meta property="og:title" content="Мастера в Белграде — Сантехник, Электрик, Ремонт любой сложности">
+  <meta property="og:description" content="Сервис подбора мастеров в Белграде. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
   <meta property="og:image" content="https://mastera-tbilisi.ge/image/og-preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_GE">
+  <meta property="og:locale" content="ru_RS">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Мастера Тбилиси — Сантехник, Электрик, Ремонт любой сложности">
-  <meta name="twitter:description" content="Сервис подбора мастеров в Тбилиси. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
+  <meta name="twitter:title" content="Мастера в Белграде — Сантехник, Электрик, Ремонт любой сложности">
+  <meta name="twitter:description" content="Сервис подбора мастеров в Белграде. Сантехника, электрика, мастер на все руки, мелкий ремонт. Отклик за 60 минут.">
   <meta name="twitter:image" content="https://mastera-tbilisi.ge/image/og-preview.png">
   <link rel="canonical" href="https://mastera-tbilisi.ge/">
   <meta name="robots" content="noindex, follow">
   <link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/">
-  <link rel="alternate" hreflang="ka" href="https://mastera-tbilisi.ge/ge/">
+  <link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/">
   <link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/">
   <link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/">
 
@@ -61,7 +61,7 @@
   <!-- Apple PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Мастера Тбилиси">
+  <meta name="apple-mobile-web-app-title" content="Мастера в Белграде">
   <link rel="apple-touch-icon" href="image/web-app-manifest-192x192.png">
 
   <!-- Google Analytics -->
@@ -90,16 +90,16 @@
 <body>
   <div class="loader">
     <div class="spinner"></div>
-    <p>Мастера Тбилиси / Masters Tbilisi / ოსტატები თბილისში</p>
+    <p>Мастера в Белграде / Majstori u Beogradu / Masters in Belgrade</p>
     <div class="links">
       <a href="/ru/">RUS</a>
-      <a href="/ge/">GEO</a>
+      <a href="/sr/">SRB</a>
       <a href="/en/">ENG</a>
     </div>
   </div>
 
   <!-- PWA (баннер установки + регистрация Service Worker) подключены на самих
-       языковых страницах /ru/, /ge/, /en/ — этот корневой index.html мгновенно
+       языковых страницах /ru/, /sr/, /en/ — этот корневой index.html мгновенно
        редиректит на язык и не успел бы ничего показать. -->
 </body>
 </html>

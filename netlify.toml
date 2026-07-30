@@ -16,8 +16,8 @@
   status = 301
 
 [[redirects]]
-  from = "/ge"
-  to   = "/ge/"
+  from = "/sr"
+  to   = "/sr/"
   status = 301
 
 [[redirects]]

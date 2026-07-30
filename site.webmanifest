@@ -1,7 +1,7 @@
 {
-    "name": "Мастера Тбилиси",
-    "short_name": "Мастера Тбилиси",
-    "description": "Сервис для поиска мастеров и заказов в Тбилиси. Find masters in Tbilisi.",
+    "name": "Мастера в Белграде",
+    "short_name": "Мастера Белград",
+    "description": "Сервис для поиска мастеров и заказов в Белграде. Find masters in Belgrade.",
     "icons": [
         {
             "src": "image/web-app-manifest-192x192.png",
