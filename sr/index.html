@@ -606,8 +606,18 @@
   <!-- Регистрация Service Worker (app-баннер временно убран — вернём при запуске приложения) -->
   <script>
   if ('serviceWorker' in navigator) {
+    // Перезагружаем страницу один раз, когда новый Service Worker берёт управление —
+    // иначе старый закэшированный script.js держится до закрытия всех вкладок.
+    var swRefreshed = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (swRefreshed) return;
+      swRefreshed = true;
+      window.location.reload();
+    });
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/sw.js').catch(function (err) { console.warn('SW registration failed:', err); });
+      navigator.serviceWorker.register('/sw.js').then(function (reg) {
+        reg.update(); // сразу проверяем, нет ли новой версии sw.js
+      }).catch(function (err) { console.warn('SW registration failed:', err); });
     });
   }
   </script>
