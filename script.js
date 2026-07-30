@@ -284,7 +284,7 @@ function initFAQ() {
 function initLanguageSwitcher() {
     const langButtons = document.querySelectorAll('.lang-btn');
 
-    // На языковых подстраницах (/ru/, /ge/, /en/) язык задан принудительно
+    // На языковых подстраницах (/ru/, /sr/, /en/) язык задан принудительно
     if (window.__FORCE_LANG__) {
         setLanguage(window.__FORCE_LANG__);
         return;
