@@ -1,7 +1,7 @@
 // Service Worker для лендинга Мастера в Белграде
 // Базовое кэширование: оболочка страниц, манифест, стили, шрифты
 
-const CACHE_NAME = 'mastera-landing-v3';
+const CACHE_NAME = 'mastera-landing-v4';
 
 const PRECACHE_URLS = [
   '/',
@@ -49,8 +49,12 @@ self.addEventListener('fetch', (event) => {
   // Только собственные запросы
   if (url.origin !== self.location.origin) return;
 
-  // HTML-страницы — Network First (свежий контент важнее)
-  if (request.headers.get('accept') && request.headers.get('accept').includes('text/html')) {
+  // HTML-страницы, script.js и CSS — Network First (свежая логика/контент важнее).
+  // Иначе Cache First «замораживает» старый script.js (с прежними текстами typing-эффекта)
+  // до следующей смены CACHE_NAME — именно это показывало на h1 старый язык/город.
+  const isHtml = request.headers.get('accept') && request.headers.get('accept').includes('text/html');
+  const isCriticalAsset = /\.(?:js|css)(?:\?.*)?$/.test(url.pathname);
+  if (isHtml || isCriticalAsset) {
     event.respondWith(
       fetch(request)
         .then((response) => {
@@ -58,12 +62,12 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match(request).then((r) => r || caches.match('/')))
+        .catch(() => caches.match(request).then((r) => r || (isHtml ? caches.match('/') : undefined)))
     );
     return;
   }
 
-  // Статика (CSS, JS, изображения, шрифты) — Cache First
+  // Остальная статика (изображения, шрифты, манифест) — Cache First
   event.respondWith(
     caches.match(request).then((cached) => {
       if (cached) return cached;
