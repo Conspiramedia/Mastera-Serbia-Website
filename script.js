@@ -142,16 +142,21 @@ function animateCounter(element, target, duration, suffix, start) {
         return isReverse ? t : (1 - Math.pow(1 - t, 5));
     }
 
+    // Разделитель тысяч (неразрывный пробел) — для крупных сумм вроде «45 000 RSD»
+    function fmt(n) {
+        return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    }
+
     function animate(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
         const easedProgress = ease(progress);
         const current = Math.floor(start + easedProgress * range);
-        element.textContent = current + suffix;
+        element.textContent = fmt(current) + suffix;
         if (progress < 1) {
             requestAnimationFrame(animate);
         } else {
-            element.textContent = target + suffix;
+            element.textContent = fmt(target) + suffix;
         }
     }
 
