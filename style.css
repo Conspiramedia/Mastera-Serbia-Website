@@ -165,17 +165,18 @@ header {
     gap: 0.9rem;
 }
 
-/* Все плашки шапки — единая высота, ровный ряд */
-.header-controls .city-switcher,
-.header-controls .language-switcher,
-.header-controls .audience-link,
-.header-controls .online-counter {
+/* Все плашки шапки — единая высота (одинаковая «толщина») на всех страницах:
+   хабах, услугах, районах. Задаём глобально классам, а не только внутри обёртки. */
+header .city-switcher,
+header .language-switcher,
+header .audience-link,
+header .online-counter {
     height: 52px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    margin: 0;
 }
-.header-controls .online-counter { margin: 0; }
 
 .logo {
     display: flex;
@@ -1753,6 +1754,17 @@ footer {
     .language-switcher {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Единая высота всех плашек и на мобильном (одинаковая «толщина»).
+       В вертикальной колонке flex:1 1 100% ломал высоту — сбрасываем. */
+    header .city-switcher,
+    header .language-switcher,
+    header .audience-link,
+    header .online-counter {
+        height: 52px;
+        flex: 0 0 auto;
+        box-sizing: border-box;
     }
 
     .online-indicator::before,
