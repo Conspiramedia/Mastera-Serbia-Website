@@ -247,7 +247,9 @@
   background: var(--dark-concrete);
   padding: 0.4rem 0.5rem;
   border-radius: 25px;
-  border: 2px solid rgba(253, 185, 19, 0.35);
+  /* Обводка как у счётчика мастеров: зелёная 2px со свечением */
+  border: 2px solid var(--safety-green);
+  box-shadow: 0 4px 15px rgba(6, 255, 165, 0.3);
 }
 
 /* Иконка «локация» слева от кнопок */
