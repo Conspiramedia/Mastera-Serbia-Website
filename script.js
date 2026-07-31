@@ -1184,23 +1184,34 @@ function initTypingEffect() {
     const titleElement = document.querySelector('.hero-title');
     if (!titleElement) return;
 
-    const isMastersPage = window.location.pathname.includes('/masters/');
+    const path = window.location.pathname;
+    const isMastersPage = path.includes('/masters/');
+
+    // Город определяем по URL: /novi-sad/ → Нови-Сад, иначе Белград (город по умолчанию).
+    // На masters-хабах город не показываем — там общесербский партнёрский текст (Сербия).
+    const cityKey = path.includes('novi-sad') ? 'noviSad' : 'beograd';
+    const cityName = {
+        ru: { beograd: 'Белград', noviSad: 'Нови-Сад' },
+        en: { beograd: 'Belgrade', noviSad: 'Novi Sad' },
+        sr: { beograd: 'Beograd', noviSad: 'Novi Sad' }
+    };
+    const city = (cityName[currentLang] || cityName.ru)[cityKey];
 
     const textParts = {
         ru: {
             start:   'Сервис ',
-            option1: 'поиска мастеров Сербия',
-            option2: 'подбора мастеров Сербия'
+            option1: 'поиска мастеров ' + city,
+            option2: 'подбора мастеров ' + city
         },
         en: {
             start:   'Master ',
-            option1: 'search service Serbia',
-            option2: 'matching service Serbia'
+            option1: 'search service ' + city,
+            option2: 'matching service ' + city
         },
         sr: {
             start:   'Servis ',
-            option1: 'pretrage majstora Srbija',
-            option2: 'izbora majstora Srbija'
+            option1: 'pretrage majstora ' + city,
+            option2: 'izbora majstora ' + city
         },
         ru_masters: {
             start:   'Сервис ',

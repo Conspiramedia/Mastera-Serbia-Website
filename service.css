@@ -173,7 +173,7 @@
 .districts-grid {
   display: grid;
   /* 5 колонок = ровно 2 ряда для 10 районов */
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
   margin-top: 2rem;
   max-width: 900px;
@@ -181,6 +181,12 @@
   margin-right: auto;
   justify-items: center;
   align-items: center;
+}
+
+/* Модификатор: 4 колонки = ровно 2 ряда по 4 (для 8 районов Нови-Сада) */
+.districts-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 760px;
 }
 
 .district-tag {
@@ -232,59 +238,59 @@
   box-shadow: none;
 }
 
-/* ==== Блок выбора города (хабы /ru //sr //en /) ==== */
-/* Сетка городов: крупные карточки-плашки, адаптивно */
-.cities-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-  max-width: 720px;
-  margin: 1.5rem auto 0;
-}
-
-/* Карточка города — кликабельная плашка с названием и подписью услуг */
-.city-card {
+/* ==== Переключатель города в шапке (хабы) ==== */
+/* Стилистически близок к .language-switcher, но с золотой рамкой и иконкой города */
+.city-switcher {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 22px 26px;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(253, 185, 19, 0.3);
-  border-radius: 18px;
-  color: #eee;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-align: center;
+  gap: 0.4rem;
+  background: var(--dark-concrete);
+  padding: 0.4rem 0.5rem;
+  border-radius: 25px;
+  border: 2px solid rgba(253, 185, 19, 0.35);
 }
 
-.city-card:hover {
-  background: rgba(0, 0, 0, 0.5);
-  border-color: var(--construction-yellow);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(253, 185, 19, 0.2);
-}
-
-/* Название города */
-.city-card-name {
-  font-size: 1.35rem;
-  font-weight: 700;
+/* Иконка «локация» слева от кнопок */
+.city-switcher-icon {
+  display: flex;
+  align-items: center;
   color: var(--construction-yellow);
+  margin: 0 0.15rem 0 0.25rem;
+}
+.city-switcher-icon svg { width: 18px; height: 18px; }
+
+/* Кнопка города */
+.city-btn {
+  background: transparent;
+  border: 1px solid rgba(253, 185, 19, 0.3);
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-/* Подпись: перечень услуг города */
-.city-card-sub {
-  font-size: 0.9rem;
-  color: #cfcfcf;
-  line-height: 1.4;
+.city-btn:hover {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Активный город */
+.city-btn.active {
+  background: linear-gradient(135deg, var(--construction-yellow), var(--construction-orange));
+  color: var(--dark-concrete);
+  border: none;
+  box-shadow: 0 4px 15px rgba(253, 185, 19, 0.4);
 }
 
 @media (max-width: 600px) {
-  .cities-grid { grid-template-columns: 1fr; max-width: 360px; }
-  .city-card-name { font-size: 1.2rem; }
+  .city-btn { padding: 0.4rem 0.7rem; font-size: 0.8rem; }
+  .city-switcher-icon { display: none; }
 }
 
 /* ============================================
