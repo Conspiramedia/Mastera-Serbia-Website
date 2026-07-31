@@ -178,6 +178,34 @@ header .online-counter {
     margin: 0;
 }
 
+/* ── Десктоп: столбики. Логотип слева, по центру столбик город/язык,
+   справа столбик счётчик/«Для мастеров». Только для хабов (.header-controls). ── */
+@media (min-width: 769px) {
+    header:has(.header-controls) {
+        justify-content: flex-start;
+    }
+    .header-controls {
+        flex: 1;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    /* Группа навигации (город/язык) — по центру оставшегося пространства, в столбик */
+    .header-controls .header-group:first-child {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+        margin: 0 auto;            /* центрирование между логотипом и правой группой */
+    }
+    /* Группа статуса (мастера/счётчик) — у правого края, в столбик,
+       счётчик сверху (column-reverse меняет визуальный порядок) */
+    .header-controls .header-group:last-child {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 0.6rem;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
