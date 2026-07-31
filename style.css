@@ -147,6 +147,36 @@ header {
     gap: 1.5rem;
 }
 
+/* Группа плашек справа (город, язык, «Для мастеров», онлайн). Обёртка
+   .header-controls есть на хабах; на страницах услуг плашки идут напрямую.
+   Группы выравниваются по одной базовой линии и переносятся аккуратно. */
+.header-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.9rem 1.1rem;
+}
+
+/* Две смысловые группы внутри: навигация (город+язык) и статус (мастера+онлайн) */
+.header-group {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+/* Все плашки шапки — единая высота, ровный ряд */
+.header-controls .city-switcher,
+.header-controls .language-switcher,
+.header-controls .audience-link,
+.header-controls .online-counter {
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.header-controls .online-counter { margin: 0; }
+
 .logo {
     display: flex;
     align-items: center;
@@ -1694,7 +1724,37 @@ footer {
         padding: 0.5rem 1.2rem;
         font-size: 0.85rem;
     }
-    
+
+    /* Обёртки плашек: на мобильном — вертикальная колонка на всю ширину */
+    .header-controls {
+        flex: 1 1 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+    }
+    .header-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    /* Переключатель города — на всю ширину, кнопки растянуты поровну */
+    .city-switcher {
+        width: 100%;
+        justify-content: center;
+    }
+    .city-switcher .city-btn {
+        flex: 1 1 0;
+        text-align: center;
+    }
+
+    /* Языковой переключатель — тоже на всю ширину для единообразия */
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+    }
+
     .online-indicator::before,
     .online-indicator::after {
         border-width: 1px;
