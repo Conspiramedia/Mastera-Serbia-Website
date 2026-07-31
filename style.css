@@ -1740,7 +1740,8 @@ footer {
         width: 100%;
     }
 
-    /* Переключатель города — на всю ширину, кнопки растянуты поровну */
+    /* Переключатель города — на всю ширину, кнопки растянуты поровну.
+       Порядок плашек (order) задан ниже в блоке «АДАПТИВ ДЛЯ НОВЫХ ЭЛЕМЕНТОВ». */
     .city-switcher {
         width: 100%;
         justify-content: center;
@@ -2766,12 +2767,12 @@ footer {
    АДАПТИВ ДЛЯ НОВЫХ ЭЛЕМЕНТОВ
    ============================================ */
 @media (max-width: 768px) {
-    .language-switcher {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-    }
-    
+    /* Порядок плашек на мобильном: язык → город → «Для мастеров» → счётчик */
+    .language-switcher { order: 1; width: 100%; justify-content: center; }
+    .city-switcher { order: 2; }
+    .audience-link { order: 3; }
+    .online-counter { order: 4; }
+
     .modal-content {
         padding: 2rem 1.5rem;
         width: 95%;
