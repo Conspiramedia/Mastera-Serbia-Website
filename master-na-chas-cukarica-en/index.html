@@ -128,14 +128,33 @@
         </div>
       </div>
     </div>
-    <div class="language-switcher">
-      <a href="/master-na-chas-cukarica/" class="lang-btn" data-lang="ru">RUS</a>
-      <a href="/master-na-chas-cukarica-sr/" class="lang-btn" data-lang="sr">SRB</a>
-      <a href="/master-na-chas-cukarica-en/" class="lang-btn active" data-lang="en">ENG</a>
-    </div>
-    <div class="online-counter">
-      <span class="online-indicator"></span>
-      <span class="online-text">Online now: <strong class="online-count" data-base="3">3</strong> masters</span>
+<div class="header-controls">
+      <!-- Navigation group: city + language -->
+      <div class="header-group">
+        <!-- City switcher — URL navigation -->
+        <div class="city-switcher">
+          <span class="city-switcher-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <a href="/en/" class="city-btn active" data-city="beograd">Belgrade</a>
+          <a href="/en/novi-sad/" class="city-btn" data-city="novi-sad">Novi Sad</a>
+        </div>
+
+        <!-- Language switcher — URL navigation -->
+        <div class="language-switcher">
+          <a href="/master-na-chas-cukarica/" class="lang-btn" data-lang="ru">RUS</a>
+          <a href="/master-na-chas-cukarica-sr/" class="lang-btn" data-lang="sr">SRB</a>
+          <a href="/master-na-chas-cukarica-en/" class="lang-btn active" data-lang="en">ENG</a>
+        </div>
+      </div>
+
+      <!-- Status group: «For masters» + online -->
+      <div class="header-group">
+        <a href="/en/masters/" class="audience-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg> <span class="audience-link-text">For masters</span></a>
+
+        <div class="online-counter">
+          <span class="online-indicator"></span>
+          <span class="online-text">Online now: <strong class="online-count" data-base="3">3</strong> masters</span>
+        </div>
+      </div>
     </div>
   </header>
 
