@@ -8,7 +8,7 @@ User-agent: Googlebot
 Allow: /
 
 # Указываем путь к карте сайта
-Sitemap: https://mastera-tbilisi.ge/sitemap.xml
+Sitemap: https://majstori-srbija.rs/sitemap.xml
 
 # Время ожидания между запросами (в секундах)
 Crawl-delay: 1

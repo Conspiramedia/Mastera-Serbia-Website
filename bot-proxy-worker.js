@@ -10,9 +10,8 @@
 // Значение должно совпадать с WEBHOOK_SECRET в .env бота.
 // ============================================================================
 
-// TODO: заменить на реальные адреса сербского бота и домена сайта.
-const BOT_WEBHOOK_URL = 'https://TODO-mastera-serbia.up.railway.app/webhook/new-request'; // адрес бота
-const ALLOWED_ORIGIN  = 'https://TODO-mastera-serbia.example';        // домен сайта
+const BOT_WEBHOOK_URL = 'https://mastera-serbia-bot-mastera-serbii.up.railway.app/webhook/new-request'; // адрес бота
+const ALLOWED_ORIGIN  = 'https://majstori-srbija.rs';                 // домен сайта
 
 export default {
   async fetch(request, env) {

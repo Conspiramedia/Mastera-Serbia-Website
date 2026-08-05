@@ -4,11 +4,11 @@
 
   <!-- Главная страница (редирект по языку браузера) -->
   <url>
-    <loc>https://mastera-tbilisi.ge/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/"/>
+    <loc>https://majstori-srbija.rs/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -16,31 +16,31 @@
 
   <!-- Языковые версии главной страницы -->
   <url>
-    <loc>https://mastera-tbilisi.ge/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/"/>
+    <loc>https://majstori-srbija.rs/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/"/>
+    <loc>https://majstori-srbija.rs/sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/"/>
+    <loc>https://majstori-srbija.rs/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -48,31 +48,31 @@
 
   <!-- Сантехник в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -80,31 +80,31 @@
 
   <!-- Электрик в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -112,31 +112,31 @@
 
   <!-- Мастер на час в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -144,31 +144,31 @@
 
   <!-- Сборка мебели в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -176,31 +176,31 @@
 
   <!-- Бытовой ремонт в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -208,31 +208,31 @@
 
   <!-- Навеска и монтаж в Белграде — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -240,301 +240,301 @@
 
   <!-- Районные страницы (Мастер на час по општинама Белграда) — RU + SR + EN -->
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vracar/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vracar-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vracar/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vracar-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vracar-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vracar-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vracar-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vracar-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vracar-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vracar-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vracar-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vracar-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vracar-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-beograd-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-savski-venac/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-savski-venac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-savski-venac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-savski-venac-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-savski-venac-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-savski-venac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-savski-venac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-savski-venac-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-savski-venac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vozdovac/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vozdovac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vozdovac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vozdovac-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vozdovac-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vozdovac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-vozdovac-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-vozdovac-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-vozdovac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zemun/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zemun-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zemun/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zemun-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zemun-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zemun-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zemun-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zemun-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zemun-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zemun-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zemun-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zemun-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zemun-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zvezdara/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zvezdara/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zvezdara-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zvezdara-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zvezdara-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zvezdara-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-zvezdara-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-zvezdara-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-zvezdara-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-palilula/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-palilula-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-palilula/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-palilula-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-palilula-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-palilula-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-palilula-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-palilula-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-palilula-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-palilula-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-palilula-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-palilula-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-palilula-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-cukarica/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-cukarica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-cukarica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-cukarica-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-cukarica-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-cukarica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-cukarica-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-cukarica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-cukarica-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-cukarica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-rakovica/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-rakovica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-rakovica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-rakovica-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-rakovica-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-rakovica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-rakovica-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-rakovica-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-rakovica-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-rakovica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -542,483 +542,483 @@
 
   <!-- Страница для мастеров — все языки -->
   <url>
-    <loc>https://mastera-tbilisi.ge/ru/masters/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/masters/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/masters/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/masters/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/masters/"/>
+    <loc>https://majstori-srbija.rs/ru/masters/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/masters/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/masters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/masters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/masters/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sr/masters/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/masters/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/masters/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/masters/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/masters/"/>
+    <loc>https://majstori-srbija.rs/sr/masters/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/masters/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/masters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/masters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/masters/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/en/masters/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/masters/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/masters/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/masters/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/masters/"/>
+    <loc>https://majstori-srbija.rs/en/masters/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/masters/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/masters/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/masters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/masters/"/>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/santehnik-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/santehnik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/santehnik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/santehnik-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/santehnik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/elektrik-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/elektrik-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/elektrik-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/elektrik-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/elektrik-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/bytovoy-remont-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/naveska-montazh-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/naveska-montazh-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/sborka-mebeli-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://mastera-tbilisi.ge/ru/novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
+    <loc>https://majstori-srbija.rs/ru/novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/novi-sad/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/sr/novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
+    <loc>https://majstori-srbija.rs/sr/novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/novi-sad/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/en/novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/ru/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/sr/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/en/novi-sad/"/>
+    <loc>https://majstori-srbija.rs/en/novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/ru/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/sr/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/en/novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/en/novi-sad/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-stari-grad-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-liman-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-liman-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-liman-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-detelinara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-podbara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-podbara-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-grbavica-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-telep-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-telep-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mastera-tbilisi.ge/master-na-chas-telep-novi-sad-en/"/>
+    <loc>https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://majstori-srbija.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
