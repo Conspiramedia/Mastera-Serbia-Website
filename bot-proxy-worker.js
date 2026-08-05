@@ -1,5 +1,5 @@
 // ============================================================================
-// Cloudflare Worker — прокси заявок с сайта в Telegram-бота "Мастера Тбилиси".
+// Cloudflare Worker — прокси заявок с сайта в Telegram-бота «Мастера Сербии».
 //
 // Зачем: сайт статический (GitHub Pages), и если слать заявку прямо из браузера,
 // то WEBHOOK_SECRET был бы виден всем. Этот воркер хранит секрет у себя и
@@ -10,8 +10,9 @@
 // Значение должно совпадать с WEBHOOK_SECRET в .env бота.
 // ============================================================================
 
-const BOT_WEBHOOK_URL = 'https://mastera-tbilisi-mastera-tbilisi.up.railway.app/webhook/new-request'; // адрес бота
-const ALLOWED_ORIGIN  = 'https://mastera-tbilisi.ge';                 // домен сайта
+// TODO: заменить на реальные адреса сербского бота и домена сайта.
+const BOT_WEBHOOK_URL = 'https://TODO-mastera-serbia.up.railway.app/webhook/new-request'; // адрес бота
+const ALLOWED_ORIGIN  = 'https://TODO-mastera-serbia.example';        // домен сайта
 
 export default {
   async fetch(request, env) {

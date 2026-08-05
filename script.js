@@ -492,15 +492,28 @@ function validateForm(e) {
 
 // Адрес эндпоинта бота для приёма заявок с сайта (напрямую, без секрета).
 // Защита от спама на стороне бота: проверка домена-источника + honeypot.
-const BOT_REQUEST_URL = 'https://mastera-tbilisi-mastera-tbilisi.up.railway.app/site/new-request';
+const BOT_REQUEST_URL = 'https://mastera-serbia-bot-mastera-serbii.up.railway.app/site/new-request';
 // Эндпоинт бота для анкет мастеров с сайта (уведомление админу-лид).
-const BOT_MASTER_URL  = 'https://mastera-tbilisi-mastera-tbilisi.up.railway.app/site/new-master';
+const BOT_MASTER_URL  = 'https://mastera-serbia-bot-mastera-serbii.up.railway.app/site/new-master';
+
+// Канонический (русский) город по URL страницы — бот хранит города по-русски
+// (config.yaml → cities). /novi-sad/ → «Нови-Сад», иначе «Белград» (по умолчанию).
+function botCityFromUrl() {
+    return window.location.pathname.includes('novi-sad') ? 'Нови-Сад' : 'Белград';
+}
 
 // Район на сайте выбирается слугами (Vake, Saburtalo...), а бот ждёт названия по-русски.
 const BOT_DISTRICT_MAP = {
+    // Белград (совпадают с config.yaml бота → cities['Белград'])
     Vracar: 'Врачар', NoviBeograd: 'Нови-Београд', Zvezdara: 'Звездара', Vozdovac: 'Вождовац',
     Zemun: 'Земун', StariGrad: 'Стари-Град', SavskiVenac: 'Савски-Венац', Palilula: 'Палилула',
-    Cukarica: 'Чукарица', Rakovica: 'Раковица', Other: 'Другой'
+    Cukarica: 'Чукарица', Rakovica: 'Раковица',
+    // Нови-Сад (совпадают с config.yaml бота → cities['Нови-Сад']).
+    // StariGrad общий с Белградом (в обоих городах «Стари-Град» — задан выше).
+    // ВНИМАНИЕ: Ново-Насеље — с сербской «њ», точь-в-точь как в config.yaml бота.
+    Liman: 'Лиман', Petrovaradin: 'Петроварадин', Detelinara: 'Детелинара',
+    NovoNaselje: 'Ново-Насеље', Podbara: 'Подбара', Grbavica: 'Грбавица', Telep: 'Телеп',
+    Other: 'Другой'
 };
 
 // Категория работ в EN/GE формах выбирается на своём языке, а бот принимает только
@@ -539,6 +552,7 @@ function sendLeadToBot(formData) {
         descParts.push('Задача: ' + (get('message') || '—'));
 
         const payload = {
+            city:        botCityFromUrl(),                  // город (Белград/Нови-Сад) — бот рассылает своему городу
             district:    BOT_DISTRICT_MAP[get('district')] || get('district') || 'Другой',
             subdistrict: 'Не указан',                       // подрайон убрали — адрес точнее
             category:    BOT_SERVICE_MAP[get('service')] || get('service') || 'Другое',
@@ -830,7 +844,7 @@ function initClientLeadFormTracking() {
         sendLeadToBot(formData);
 
         try {
-            const response = await fetch('https://formspree.io/f/xpqjbpyk', {
+            const response = await fetch('https://formspree.io/f/xljrrklq', {
                 method: 'POST',
                 body: formData,
                 headers: { 'Accept': 'application/json' }
@@ -920,7 +934,7 @@ function initMasterLeadFormTracking() {
         sendMasterLeadToBot(formData);
 
         try {
-            const response = await fetch('https://formspree.io/f/mykdoebj', {
+            const response = await fetch('https://formspree.io/f/xeajjwlo', {
                 method: 'POST',
                 body: formData,
                 headers: { 'Accept': 'application/json' }
