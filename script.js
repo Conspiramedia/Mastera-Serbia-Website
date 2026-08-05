@@ -53,7 +53,7 @@ const i18n = {
 };
 
 // Публичный username бота мастеров — для диплинка «завершить регистрацию».
-const MASTER_BOT_DEEPLINK = 'https://t.me/mastera_beograd_bot?start=master';
+const MASTER_BOT_DEEPLINK = 'https://t.me/mastera_serbia_bot?start=master';
 
 // Глобальная переменная текущего языка
 // window.__FORCE_LANG__ устанавливается в языковых подстраницах (/ru/, /sr/, /en/)
@@ -1077,9 +1077,9 @@ function initWhatsAppButtonTracking() {
     const waHref = 'https://wa.me/995557645196?text=' + (waTexts[lang] || waTexts.ru);
 
     // Telegram-бот: на странице мастеров — бот мастеров, иначе клиентский бот по языку
-    // страницы (RU/EN/GE). start=site_<lang> — для атрибуции.
-    const tgBots = { ru: 'mastera_ru_bot', en: 'mastera_en_bot', sr: 'mastera_sr_bot' };
-    const tgBot = isMastersPage ? 'mastera_beograd_bot' : (tgBots[lang] || tgBots.ru);
+    // страницы (RU/SR/EN). start=site_<lang> — для атрибуции.
+    const tgBots = { ru: 'mastera_rus_bot', en: 'mastera_eng_bot', sr: 'mastera_sr_bot' };
+    const tgBot = isMastersPage ? 'mastera_serbia_bot' : (tgBots[lang] || tgBots.ru);
     const tgHref = 'https://t.me/' + tgBot + '?start=site_' + lang;
 
     // Подписи (доступность/тултипы) по языку.
