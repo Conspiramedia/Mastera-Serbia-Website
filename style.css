@@ -176,6 +176,8 @@ header .online-counter {
     display: flex;
     align-items: center;
     margin: 0;
+    /* Все 4 плашки шапки появляются единой волной вместе с логотипом (без задержки) */
+    animation: slideDown 0.8s ease-out backwards;
 }
 
 /* ── Десктоп: компактный блок в правом углу (Вариант 2). Логотип слева, справа
@@ -306,7 +308,7 @@ header .online-counter {
     border-radius: 50px;
     border: 2px solid var(--safety-green);
     backdrop-filter: blur(10px);
-    animation: slideDown 0.8s ease-out 0.5s backwards;
+    animation: slideDown 0.8s ease-out backwards;
     box-shadow: 0 4px 15px rgba(6, 255, 165, 0.3);
 }
 
@@ -391,7 +393,7 @@ header .online-counter {
     border-radius: 50px;
     border: 2px solid var(--safety-green);
     backdrop-filter: blur(10px);
-    animation: slideDown 0.8s ease-out 0.4s backwards;
+    animation: slideDown 0.8s ease-out backwards;
     box-shadow: 0 4px 15px rgba(6, 255, 165, 0.3);
     font-family: 'Montserrat', sans-serif;
     color: #fff;
