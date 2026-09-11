@@ -1204,8 +1204,12 @@ function initTypingEffect() {
     // Город определяем по URL: /novi-sad/ → Нови-Сад, иначе Белград (город по умолчанию).
     // На masters-хабах город не показываем — там общесербский партнёрский текст (Сербия).
     const cityKey = path.includes('novi-sad') ? 'noviSad' : 'beograd';
+    // ВНИМАНИЕ: в «Нови‑Сад» дефис — НЕРАЗРЫВНЫЙ (U+2011, а не обычный минус),
+    // чтобы заголовок hero-title не разрывался по дефису на новую строку
+    // («Нови-» / «Сад»). Касается только визуального заголовка; город для бота
+    // берётся отдельно из botCityFromUrl() с обычным дефисом.
     const cityName = {
-        ru: { beograd: 'Белград', noviSad: 'Нови-Сад' },
+        ru: { beograd: 'Белград', noviSad: 'Нови‑Сад' },
         en: { beograd: 'Belgrade', noviSad: 'Novi Sad' },
         sr: { beograd: 'Beograd', noviSad: 'Novi Sad' }
     };
