@@ -287,7 +287,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">G</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Goran K.</h4>
+              <h3 class="testimonial-name">Goran K.</h3>
               <p class="testimonial-profession">Električar • 3 godine iskustva</p>
             </div>
             <div class="testimonial-rating">
@@ -304,7 +304,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">D</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Dušan M.</h4>
+              <h3 class="testimonial-name">Dušan M.</h3>
               <p class="testimonial-profession">Vodoinstalater • 5 godina iskustva</p>
             </div>
             <div class="testimonial-rating">
@@ -321,7 +321,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">N</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Nenad L.</h4>
+              <h3 class="testimonial-name">Nenad L.</h3>
               <p class="testimonial-profession">Majstor • 7 godina iskustva</p>
             </div>
             <div class="testimonial-rating">
@@ -493,7 +493,7 @@
     });
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('/sw.js').then(function (reg) {
-        reg.update(); // сразу проверяем, нет ли новой версии sw.js
+        reg.update().catch(function(){}); // проверяем новую версию sw.js (ошибки update глушим)
       }).catch(function (err) { console.warn('SW registration failed:', err); });
     });
   }

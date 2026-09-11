@@ -286,7 +286,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">Г</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Георгий К.</h4>
+              <h3 class="testimonial-name">Георгий К.</h3>
               <p class="testimonial-profession">Электрик • 3 года опыта</p>
             </div>
             <div class="testimonial-rating">
@@ -303,7 +303,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">Д</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Давид М.</h4>
+              <h3 class="testimonial-name">Давид М.</h3>
               <p class="testimonial-profession">Сантехник • 5 лет опыта</p>
             </div>
             <div class="testimonial-rating">
@@ -320,7 +320,7 @@
           <div class="testimonial-header">
             <div class="testimonial-avatar">Н</div>
             <div class="testimonial-info">
-              <h4 class="testimonial-name">Нугзар Л.</h4>
+              <h3 class="testimonial-name">Нугзар Л.</h3>
               <p class="testimonial-profession">Мастер • 7 лет опыта</p>
             </div>
             <div class="testimonial-rating">
@@ -490,7 +490,7 @@
     });
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('/sw.js').then(function (reg) {
-        reg.update(); // сразу проверяем, нет ли новой версии sw.js
+        reg.update().catch(function(){}); // проверяем новую версию sw.js (ошибки update глушим)
       }).catch(function (err) { console.warn('SW registration failed:', err); });
     });
   }

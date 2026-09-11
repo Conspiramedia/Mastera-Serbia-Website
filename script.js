@@ -1264,6 +1264,9 @@ function initTypingEffect() {
 
     async function typeText(text) {
         for (let i = 0; i < text.length; i++) {
+            // Курсор мог быть удалён (повторный запуск/уход со страницы) — тогда
+            // вставка перед ним упала бы с insertBefore-ошибкой. Проверяем родство.
+            if (cursor.parentNode !== titleElement) return;
             titleElement.insertBefore(document.createTextNode(text[i]), cursor);
             await wait(typeSpeed);
         }
@@ -1271,6 +1274,7 @@ function initTypingEffect() {
 
     async function deleteText(count) {
         for (let i = 0; i < count; i++) {
+            if (cursor.parentNode !== titleElement) return;
             if (titleElement.childNodes.length > 1) {
                 titleElement.removeChild(titleElement.childNodes[titleElement.childNodes.length - 2]);
             }
@@ -1314,6 +1318,8 @@ function initServiceTypingEffect() {
 
     async function typeText(text) {
         for (let i = 0; i < text.length; i++) {
+            // Курсор мог быть удалён — тогда insertBefore упал бы с ошибкой.
+            if (cursor.parentNode !== titleElement) return;
             titleElement.insertBefore(document.createTextNode(text[i]), cursor);
             await wait(typeSpeed);
         }
@@ -1321,7 +1327,7 @@ function initServiceTypingEffect() {
 
     async function runAnimation() {
         await typeText(line1);
-        if (line2) {
+        if (line2 && cursor.parentNode === titleElement) {
             const br = document.createElement('br');
             titleElement.insertBefore(br, cursor);
             await typeText(line2);
