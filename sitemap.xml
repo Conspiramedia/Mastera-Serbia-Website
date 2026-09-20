@@ -1024,4 +1024,191 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Компьютерный мастер в Белграде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/remont-kompyuterov-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/majstor-za-racunare-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/remont-kompyuterov-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Компьютерный мастер в Нови-Саде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/remont-kompyuterov-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Грузчики в Белграде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/gruzchiki-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/gruzchiki-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Грузчики в Нови-Саде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/gruzchiki-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/gruzchiki-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Уборка квартир в Белграде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/klining-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/klining-beograd-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Уборка квартир в Нови-Саде — все языки -->
+  <url>
+    <loc>https://pravimajstor.rs/klining-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pravimajstor.rs/klining-novi-sad-en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
