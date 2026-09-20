@@ -418,26 +418,80 @@ function initModalForms() {
     initPhoneFormatting();
 }
 
+/**
+ * Приводит сербский номер к читаемому виду: +381 60 123 4567.
+ * На вход принимает что угодно (с пробелами, скобками, дефисами),
+ * на выходе — только цифры, разбитые пробелами.
+ *
+ * Разбивка: код страны, код оператора (2 цифры), затем по 3 и 4.
+ * Слитная строка из 12 цифр читается плохо и в ней легко ошибиться,
+ * а мастеру потом по этому номеру звонить.
+ */
+function formatSerbianPhone(raw) {
+    let digits = (raw || '').replace(/\D/g, '');
+    if (!digits) return '';
+
+    // Номер всегда хранится с кодом страны. Локальный ввод «06012…»
+    // приводим к международному виду, отбрасывая ведущий ноль.
+    if (digits.startsWith('0')) digits = '381' + digits.replace(/^0+/, '');
+    else if (!digits.startsWith('381')) digits = '381' + digits;
+
+    // +381 и максимум 10 цифр после — как в PHONE_PATTERN
+    digits = digits.substring(0, 13);
+
+    const rest = digits.substring(3);           // всё после кода страны
+    const parts = ['+381'];
+    if (rest.length) parts.push(rest.substring(0, 2));   // код оператора
+    if (rest.length > 2) parts.push(rest.substring(2, 5));
+    if (rest.length > 5) parts.push(rest.substring(5));
+
+    return parts.join(' ');
+}
+
+/** Убирает пробелы: значение для валидации и отправки. */
+function unformatPhone(value) {
+    return (value || '').replace(/\s+/g, '');
+}
+
 // Форматирование телефонных номеров
 function initPhoneFormatting() {
     const phoneInputs = document.querySelectorAll('#leadPhone, #masterLeadPhone');
 
     phoneInputs.forEach(input => {
+        // Атрибут pattern в разметке не допускает пробелов и блокировал бы
+        // отправку отформатированного номера. Валидацию делает validatePhone
+        // (по значению без пробелов), поэтому нативную проверку снимаем.
+        input.removeAttribute('pattern');
+
         input.addEventListener('input', (e) => {
-            let value = e.target.value.replace(/\D/g, '');
-            if (!value.startsWith('381') && value.length > 0) {
-                value = '381' + value;
+            const el = e.target;
+
+            // Запоминаем, сколько цифр было слева от курсора: после вставки
+            // пробелов позиция сдвигается, и без пересчёта курсор прыгает
+            // в конец при правке середины номера.
+            const digitsBeforeCaret = el.value
+                .substring(0, el.selectionStart)
+                .replace(/\D/g, '').length;
+
+            el.value = formatSerbianPhone(el.value);
+
+            // Ставим курсор после той же по счёту цифры
+            let pos = 0, seen = 0;
+            while (pos < el.value.length && seen < digitsBeforeCaret) {
+                if (/\d/.test(el.value[pos])) seen++;
+                pos++;
             }
-            if (value.length > 13) value = value.substring(0, 13);
-            e.target.value = value.length > 0 ? '+' + value : '';
+            // Если курсор упёрся в пробел — перешагиваем его
+            if (el.value[pos] === ' ') pos++;
+            el.setSelectionRange(pos, pos);
         });
 
         input.addEventListener('focus', (e) => {
-            if (e.target.value === '') e.target.value = '+381';
+            if (e.target.value === '') e.target.value = '+381 ';
         });
 
         input.addEventListener('blur', (e) => {
-            if (e.target.value === '+381') e.target.value = '';
+            if (unformatPhone(e.target.value) === '+381') e.target.value = '';
         });
     });
 }
@@ -452,7 +506,9 @@ const TELEGRAM_PATTERN = /^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})$/;
 
 function validatePhone(phoneInput) {
     if (!phoneInput) return true;
-    const val = phoneInput.value;
+    // Поле показывает номер с пробелами (+381 60 123 4567) — для проверки
+    // по PHONE_PATTERN они снимаются.
+    const val = unformatPhone(phoneInput.value);
 
     if (!PHONE_PATTERN.test(val)) {
         alert(t('phoneInvalid'));
@@ -537,7 +593,9 @@ function sendLeadToBot(formData) {
     try {
         const get = (k) => (formData.get(k) || '').toString().trim();
 
-        const phone    = get('phone');
+        // Номер в поле показан с пробелами для читаемости — в бот уходит
+        // слитный (+381601234567), как ждёт его нормализация телефонов.
+        const phone    = unformatPhone(get('phone'));
         const telegram = get('telegram');
         const whatsapp = get('whatsapp');
         const name     = get('name');
@@ -712,7 +770,8 @@ function sendMasterLeadToBot(formData) {
         const experience = get('experience');
         const payload = {
             name:      get('name'),
-            phone:     get('phone'),
+            // Пробелы форматирования снимаем — см. sendLeadToBot
+            phone:     unformatPhone(get('phone')),
             telegram:  get('telegram'),
             whatsapp:  get('whatsapp'),
             specialty: experience ? `${specialty} (опыт: ${experience} лет)` : specialty,
