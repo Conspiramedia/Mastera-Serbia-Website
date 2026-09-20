@@ -400,6 +400,8 @@ function initModalForms() {
     window.addEventListener('click', (e) => {
         if (e.target.classList.contains('modal')) {
             e.target.style.display = 'none';
+            // Окно закрыто в обход _modal — снимаем блокировку прокрутки вручную
+            _syncScrollLock();
         }
     });
 
@@ -1014,6 +1016,47 @@ function closeMasterLeadForm() { _modal('masterLeadFormModal',   'none'); }
 function _modal(id, display) {
     const el = document.getElementById(id);
     if (el) el.style.display = display;
+    _syncScrollLock();
+}
+
+// Запомненная позиция прокрутки на момент открытия окна.
+// null — значит страница сейчас не заблокирована.
+let _savedScrollY = null;
+
+/**
+ * Блокирует прокрутку страницы, пока открыто хотя бы одно модальное окно.
+ *
+ * Считаем именно ВСЕ окна, а не текущее: окна могут перекрываться
+ * (например, из формы заявки открывается «спасибо»), и закрытие одного
+ * не должно разблокировать страницу, пока второе ещё на экране.
+ */
+function _syncScrollLock() {
+    // Открытым считаем окно с любым display, кроме 'none'
+    const anyOpen = Array.from(document.querySelectorAll('.modal'))
+        .some(m => m.style.display && m.style.display !== 'none');
+
+    if (anyOpen && _savedScrollY === null) {
+        // ЗАКРЫВАЕМ прокрутку: запоминаем позицию и фиксируем body.
+        _savedScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+        // Компенсируем исчезающую полосу прокрутки: на десктопе она занимает
+        // ~15px, и без отступа контент дёргается вправо в момент открытия.
+        // На мобильных и при overlay-скроллбарах ширина равна 0 — отступ не нужен.
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        if (scrollbarWidth > 0) {
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
+        }
+
+        document.body.style.top = `-${_savedScrollY}px`;
+        document.body.classList.add('modal-open');
+    } else if (!anyOpen && _savedScrollY !== null) {
+        // ВОЗВРАЩАЕМ прокрутку: снимаем фиксацию и восстанавливаем позицию
+        document.body.classList.remove('modal-open');
+        document.body.style.top = '';
+        document.body.style.paddingRight = '';
+        window.scrollTo(0, _savedScrollY);
+        _savedScrollY = null;
+    }
 }
 
 // ============================================
