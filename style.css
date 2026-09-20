@@ -3018,3 +3018,187 @@ body.modal-open {
         -webkit-tap-highlight-color: transparent;
     }
 }
+
+/* ============================================
+   ФОРМА ЗАЯВКИ: ДВЕ КОЛОНКИ НА ДЕСКТОПЕ
+   ============================================
+
+   Задача: на десктопе окно должно помещаться в экран целиком, без
+   внутренней прокрутки. В одну колонку форма из 10+ полей не влезает
+   даже на большом мониторе, поэтому раскладываем парные поля в два
+   столбца, а на всю ширину оставляем только то, что иначе выглядит
+   сломанным: разделитель «или», описание задачи, фото, чекбоксы и
+   кнопку отправки.
+
+   Планшет и мобильный не трогаем — там одна колонка остаётся
+   правильной, меняется только ширина экрана.
+
+   Порог 992px: ниже него двум колонкам полей уже тесно. */
+@media (min-width: 992px) {
+
+    /* Окно шире, чем дефолтные 500px — иначе двум колонкам не хватит места */
+    #clientLeadFormModal .modal-content,
+    #masterLeadFormModal .modal-content {
+        max-width: 860px;
+        /* Прокрутку оставляем на случай низких экранов (ноутбуки 768px высотой):
+           на них форма всё равно не поместится, и лучше проскроллить, чем обрезать */
+        max-height: 92vh;
+        padding: 2rem 2.5rem;
+    }
+
+    /* Сама форма — сетка из двух равных колонок */
+    #clientLeadFormModal .contact-form,
+    #masterLeadFormModal .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.85rem 1.25rem;
+        align-items: start;
+    }
+
+    /* ── Элементы во всю ширину (обе колонки) ──────────────────────
+       Перечисляем именно их: остальные поля встают в колонки сами
+       по порядку следования в разметке. */
+    #clientLeadFormModal .contact-form textarea,
+    #clientLeadFormModal .lead-photo-wrap,
+    #clientLeadFormModal .consent-label,
+    #clientLeadFormModal .contact-form .submit-btn,
+    #masterLeadFormModal .contact-form textarea,
+    #masterLeadFormModal .lead-photo-wrap,
+    #masterLeadFormModal .consent-label,
+    #masterLeadFormModal .contact-form .submit-btn {
+        grid-column: 1 / -1;
+    }
+
+    /* ── Пара «Telegram ИЛИ WhatsApp» ──────────────────────────────
+       Это два варианта одного и того же — способа связи, поэтому они
+       должны стоять рядом, а «или» — между ними.
+
+       В разметке порядок такой: telegram → «или» → whatsapp. Если
+       оставить «или» во всю ширину, оно разрывает сетку и разводит
+       поля по разным строкам (whatsapp уезжает в пару к району).
+       Поэтому фиксируем позиции явно:
+         telegram  — левая колонка,
+         «или»     — та же строка, между полями, по центру,
+         whatsapp  — правая колонка. */
+    #clientLeadFormModal .contact-form input[name="telegram"],
+    #masterLeadFormModal .contact-form input[name="telegram"] {
+        grid-column: 1;
+    }
+
+    #clientLeadFormModal .contact-or-text,
+    #masterLeadFormModal .contact-or-text {
+        grid-column: 1 / -1;
+        /* Отступы гасим: их роль выполняет gap сетки */
+        margin: 0;
+        /* Прижимаем разделитель к полям — он относится к ним, а не
+           к форме в целом */
+        margin-top: -0.35rem;
+        margin-bottom: -0.35rem;
+    }
+
+    #clientLeadFormModal .contact-form input[name="whatsapp"],
+    #masterLeadFormModal .contact-form input[name="whatsapp"] {
+        grid-column: 1;
+    }
+
+    /* Район и категория — вторая пара, ставим их в правую колонку
+       напротив блока контактов, чтобы не оставалось пустых ячеек */
+    #clientLeadFormModal .contact-form select[name="district"],
+    #masterLeadFormModal .contact-form select[name="district"] {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #clientLeadFormModal .contact-form select[name="service"],
+    #masterLeadFormModal .contact-form select[name="service"] {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    /* Описание задачи ниже, чем на мобильном: место есть, а текст
+       заявки — главное поле для мастера */
+    #clientLeadFormModal .contact-form textarea,
+    #masterLeadFormModal .contact-form textarea {
+        min-height: 90px;
+    }
+
+    /* Скрытые служебные поля (_subject, _gotcha и т.п.) не должны
+       занимать ячейку сетки и рвать раскладку */
+    #clientLeadFormModal .contact-form input[type="hidden"],
+    #masterLeadFormModal .contact-form input[type="hidden"],
+    #clientLeadFormModal .contact-form input[style*="display:none"],
+    #masterLeadFormModal .contact-form input[style*="display:none"] {
+        display: none;
+    }
+
+    /* Компактнее шапка окна: заголовок и подзаголовок съедают высоту,
+       которой не хватает форме */
+    #clientLeadFormModal .modal-title,
+    #masterLeadFormModal .modal-title {
+        margin-bottom: 0.75rem;
+    }
+
+    #clientLeadFormModal .modal-subtitle,
+    #masterLeadFormModal .modal-subtitle {
+        margin-top: -0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Поля чуть ниже стандартных: 1rem × 12 полей давали лишние ~60px */
+    #clientLeadFormModal .contact-form input,
+    #clientLeadFormModal .contact-form select,
+    #masterLeadFormModal .contact-form input,
+    #masterLeadFormModal .contact-form select {
+        padding: 0.8rem 1rem;
+    }
+}
+
+/* ── Низкие десктопные экраны (ноутбуки 1366×768 и подобные) ──────
+   При высоте окна до 800px формы не хватало ~40px и появлялся
+   скролл. Ужимаем вертикальные отступы: поля, шапку окна и сам
+   контейнер. Горизонтальные размеры не трогаем — с шириной там
+   всё в порядке. */
+@media (min-width: 992px) and (max-height: 820px) {
+
+    #clientLeadFormModal .modal-content,
+    #masterLeadFormModal .modal-content {
+        padding: 1.5rem 2.5rem 1.75rem;
+        max-height: 96vh;
+    }
+
+    #clientLeadFormModal .contact-form,
+    #masterLeadFormModal .contact-form {
+        gap: 0.65rem 1.25rem;
+    }
+
+    #clientLeadFormModal .modal-title,
+    #masterLeadFormModal .modal-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #clientLeadFormModal .modal-subtitle,
+    #masterLeadFormModal .modal-subtitle {
+        margin-bottom: 0.9rem;
+    }
+
+    #clientLeadFormModal .contact-form input,
+    #clientLeadFormModal .contact-form select,
+    #masterLeadFormModal .contact-form input,
+    #masterLeadFormModal .contact-form select {
+        padding: 0.65rem 1rem;
+    }
+
+    #clientLeadFormModal .contact-form textarea,
+    #masterLeadFormModal .contact-form textarea {
+        min-height: 70px;
+        padding: 0.65rem 1rem;
+    }
+
+    /* Кнопка отправки — главный элемент, ужимаем её в последнюю
+       очередь и умеренно */
+    #clientLeadFormModal .contact-form .submit-btn,
+    #masterLeadFormModal .contact-form .submit-btn {
+        padding: 0.85rem;
+    }
+}
