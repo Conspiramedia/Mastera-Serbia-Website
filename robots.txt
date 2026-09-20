@@ -1,4 +1,4 @@
-# robots.txt для Мастера Тбилиси
+# robots.txt для Мастера в Сербии
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ User-agent: Googlebot
 Allow: /
 
 # Указываем путь к карте сайта
-Sitemap: https://majstori-srbija.rs/sitemap.xml
+Sitemap: https://pravimajstor.rs/sitemap.xml
 
 # Время ожидания между запросами (в секундах)
 Crawl-delay: 1

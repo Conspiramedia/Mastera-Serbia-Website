@@ -11,7 +11,7 @@
 // ============================================================================
 
 const BOT_WEBHOOK_URL = 'https://mastera-serbia-bot-mastera-serbii.up.railway.app/webhook/new-request'; // адрес бота
-const ALLOWED_ORIGIN  = 'https://majstori-srbija.rs';                 // домен сайта
+const ALLOWED_ORIGIN  = 'https://pravimajstor.rs';                 // домен сайта
 
 export default {
   async fetch(request, env) {
