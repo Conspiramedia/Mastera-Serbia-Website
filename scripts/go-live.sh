@@ -63,13 +63,8 @@ fi
 
 # ── robots.txt: боевая версия ──────────────────────────────────────
 cat > robots.txt << 'EOF'
-# robots.txt — Pravi Majstor (pravimajstor.rs)
-
 User-agent: *
 Allow: /
-
-# Пауза между запросами (секунды)
-Crawl-delay: 1
 
 Sitemap: https://pravimajstor.rs/sitemap.xml
 EOF

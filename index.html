@@ -13,19 +13,26 @@
         window.location.replace('/');
         return;
       }
-      var lang = navigator.language || navigator.userLanguage || 'ru';
-      if (lang.startsWith('sr')) {
-        window.location.replace('/sr/');
+      // Язык по умолчанию — сербский: домен .rs, 70–80% аудитории сербы,
+      // на /sr/ же указывает hreflang x-default. Русский отдаём только
+      // тем, у кого он реально в настройках браузера (релоканты — ценный,
+      // но меньший сегмент), английский — англоязычным.
+      var lang = navigator.language || navigator.userLanguage || 'sr';
+      if (lang.startsWith('ru')) {
+        window.location.replace('/ru/');
       } else if (lang.startsWith('en')) {
         window.location.replace('/en/');
       } else {
-        window.location.replace('/ru/');
+        window.location.replace('/sr/');
       }
     })();
   </script>
 
-  <!-- Fallback для ботов без JS — редирект на RU через 0 сек -->
-  <meta http-equiv="refresh" content="0;url=/ru/">
+  <!-- meta refresh здесь намеренно НЕ используется: он уводил бы роботов на
+       /ru/, тогда как hreflang x-default указывает на /sr/ (основная
+       аудитория — сербы). Противоречие заставляет Google игнорировать
+       разметку целиком. Робот читает ссылки RUS/SRB/ENG в теле страницы
+       и hreflang, живой пользователь — JS-редирект выше. -->
 
   <!-- SEO — канонический URL и hreflang -->
   <title>Мастера в Белграде — Сантехник, Электрик, Ремонт любой сложности</title>
@@ -50,7 +57,7 @@
   <link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/">
   <link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/sr/">
   <link rel="alternate" hreflang="en" href="https://pravimajstor.rs/en/">
-  <link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/en/">
+  <link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sr/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="image/favicon.svg">

@@ -1,28 +1,9 @@
-# robots.txt — Pravi Majstor (pravimajstor.rs)
-#
-# ⚠️ РЕЖИМ ПРЕДЗАПУСКА. Сайт закрыт от индексации.
-#
-# Запрет реализован через <meta name="robots" content="noindex, nofollow">
-# на КАЖДОЙ странице, а не через Disallow. Это сделано намеренно:
-# Disallow запрещает СКАНИРОВАНИЕ, но не индексацию — робот, не сумев
-# прочитать страницу, не увидит и noindex внутри неё, и URL всё равно
-# может попасть в выдачу (без описания, по внешним ссылкам).
-# Поэтому здесь сканирование РАЗРЕШЕНО: робот заходит, читает noindex
-# и страницу не индексирует.
-#
-# Sitemap намеренно НЕ указан — не приглашаем роботов до запуска.
-#
-# ЧТО СДЕЛАТЬ ПРИ ЗАПУСКЕ (после набора мастеров):
-#   1. Во всех index.html убрать блоки PRELAUNCH, вернув строку
-#      из комментария PRELAUNCH:ORIGINAL
-#   2. В этом файле раскомментировать строку Sitemap ниже
-#   3. Удалить этот блок комментариев
+# Pre-launch: indexing is blocked by <meta name="robots" content="noindex">
+# on every page. Crawling stays allowed on purpose — a blocked crawler
+# would never read that meta tag. Sitemap is enabled at launch by
+# scripts/go-live.sh.
 
 User-agent: *
 Allow: /
 
-# Пауза между запросами (секунды)
-Crawl-delay: 1
-
-# Карта сайта — включить при запуске:
 # Sitemap: https://pravimajstor.rs/sitemap.xml
