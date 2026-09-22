@@ -580,6 +580,25 @@
     border-radius: 8px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.35);
+    /* fixed — чтобы ширина колонок задавалась нами, а не содержимым.
+       Без него браузер считает её по самой длинной строке, и у каждой
+       категории колонка «Цена» вставала на своём месте: в таблице
+       сантехника одна граница, у электрика другая. */
+    table-layout: fixed;
+}
+
+/* Колонка услуги забирает остаток, цена — фиксированные 240px.
+   Ширина подобрана по самой длинной строке во всех трёх языках:
+   английское «from 12 000 RSD (~103 €)» занимает 228px — длиннее
+   русского «от» и сербского «od», и в 220px уже не помещалось. */
+.cen-table th:first-child,
+.cen-table td:first-child {
+    width: auto;
+}
+
+.cen-table th:last-child,
+.cen-table td:last-child {
+    width: 240px;
 }
 
 .cen-table th {
@@ -592,10 +611,18 @@
     background: rgba(255, 255, 255, 0.04);
 }
 
+/* Заголовок «Цена» выравниваем вправо — по той же оси, что и сами
+   значения, иначе подпись и колонка живут отдельно друг от друга. */
+.cen-table th:last-child {
+    text-align: right;
+}
+
 .cen-table td {
     padding: 0.9rem 1.1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     color: var(--white);
+    /* Длинные названия услуг переносятся, а не распирают колонку */
+    word-break: break-word;
 }
 
 .cen-table tr:hover td {
@@ -606,6 +633,10 @@
     white-space: nowrap;
     text-align: right;
     font-weight: 600;
+    /* tabular-nums — цифры одинаковой ширины, поэтому разряды в столбце
+       выстраиваются друг под другом, а не пляшут от строки к строке. */
+    font-variant-numeric: tabular-nums;
+    color: var(--construction-yellow);
 }
 
 .cen-from {
@@ -673,6 +704,18 @@
 /* На узком экране таблица переводится в две строки на позицию,
    иначе длинные названия услуг ломают колонку с ценой. */
 @media (max-width: 560px) {
+    /* Строка превращается в карточку, поэтому колоночная сетка не нужна:
+       снимаем fixed и заданную ширину, иначе 220px останутся висеть
+       на ячейке, ставшей блочной. */
+    .cen-table {
+        table-layout: auto;
+    }
+
+    .cen-table th:last-child,
+    .cen-table td:last-child {
+        width: auto;
+    }
+
     .cen-table thead {
         display: none;
     }
