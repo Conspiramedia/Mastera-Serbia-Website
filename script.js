@@ -1176,11 +1176,10 @@ function initWhatsAppButtonTracking() {
             ? 'Hello! I want to become a partner.'
             : 'Hello! I need a handyman in Belgrade.')
     };
-    // TODO(Сербия): грузинский номер 995557645196 ждёт замены на сербский +381 (нужна сим-карта).
-    // Он же — ещё в 335 местах на 118 страницах: tel:+995557645196, wa.me/995557645196,
-    // "telephone" в JSON-LD и видимый текст «// +995 557 645 196» в шапке. Менять все разом:
-    //   grep -rl 995557645196 --include='*.html' --include='*.js' . | xargs sed -i \
-    //     -e 's/995557645196/381XXXXXXXXX/g' -e 's|// +995 557 645 196|// +381 XX XXX XXXX|g'
+    // TODO(Сербия): номер грузинский — ждёт сербский +381 (нужна сим-карта).
+    // Он же ещё в 450 местах на 118 страницах. Замена одной командой:
+    //   bash scripts/set-phone.sh +381XXXXXXXXX
+    // Подробности — docs/phone-migration.md
     const waHref = 'https://wa.me/995557645196?text=' + (waTexts[lang] || waTexts.ru);
 
     // Telegram-бот: на странице мастеров — бот мастеров, иначе клиентский бот по языку
