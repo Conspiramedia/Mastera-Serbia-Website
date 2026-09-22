@@ -48,9 +48,9 @@
 
   <!-- Сантехник в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/santehnik-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/santehnik-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -58,9 +58,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/vodoinstalater-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/vodoinstalater-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -69,8 +69,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/santehnik-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -80,9 +80,9 @@
 
   <!-- Электрик в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/elektrik-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/elektrik-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -90,9 +90,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/elektricar-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/elektricar-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -101,8 +101,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/elektrik-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -112,9 +112,9 @@
 
   <!-- Мастер на час в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -122,9 +122,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -133,8 +133,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -144,9 +144,9 @@
 
   <!-- Сборка мебели в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/sborka-mebeli-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/sborka-mebeli-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -154,9 +154,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/montaza-namestaja-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/montaza-namestaja-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -165,8 +165,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/sborka-mebeli-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -176,9 +176,9 @@
 
   <!-- Бытовой ремонт в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/bytovoy-remont-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/bytovoy-remont-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -186,9 +186,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/kucni-popravci-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/kucni-popravci-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -197,8 +197,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/bytovoy-remont-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -208,9 +208,9 @@
 
   <!-- Навеска и монтаж в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/naveska-montazh-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/naveska-montazh-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -218,9 +218,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/montaza-na-zid-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/montaza-na-zid-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -229,8 +229,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/naveska-montazh-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -240,9 +240,9 @@
 
   <!-- Районные страницы (Мастер на час по општинама Белграда) — RU + SR + EN -->
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-vracar/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-vracar/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -250,9 +250,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-vracar-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-vracar/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -261,8 +261,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-vracar-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vracar/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vracar/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vracar/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vracar-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -270,9 +270,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-novi-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-novi-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -280,9 +280,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-novi-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-novi-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -291,8 +291,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-novi-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-beograd-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -300,9 +300,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-stari-grad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-stari-grad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -310,9 +310,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-stari-grad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-stari-grad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -321,8 +321,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-stari-grad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -330,9 +330,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-savski-venac/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-savski-venac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -340,9 +340,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-savski-venac-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-savski-venac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -351,8 +351,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-savski-venac-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-savski-venac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-savski-venac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-savski-venac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-savski-venac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -360,9 +360,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-vozdovac/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-vozdovac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -370,9 +370,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-vozdovac-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-vozdovac/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -381,8 +381,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-vozdovac-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-vozdovac/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-vozdovac/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-vozdovac/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-vozdovac-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -390,9 +390,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-zemun/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-zemun/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -400,9 +400,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-zemun-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-zemun/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -411,8 +411,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-zemun-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zemun/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zemun/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zemun/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zemun-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -420,9 +420,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-zvezdara/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-zvezdara/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -430,9 +430,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-zvezdara-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-zvezdara/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -441,8 +441,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-zvezdara-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-zvezdara/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-zvezdara/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-zvezdara/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-zvezdara-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -450,9 +450,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-palilula/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-palilula/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -460,9 +460,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-palilula-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-palilula/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -471,8 +471,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-palilula-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-palilula/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-palilula/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-palilula/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-palilula-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -480,9 +480,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-cukarica/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-cukarica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -490,9 +490,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-cukarica-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-cukarica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -501,8 +501,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-cukarica-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-cukarica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-cukarica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-cukarica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-cukarica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -510,9 +510,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-rakovica/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-rakovica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -520,9 +520,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-rakovica-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-rakovica/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -531,8 +531,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-rakovica-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-rakovica/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-rakovica/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-rakovica/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-rakovica-en/"/>
     <lastmod>2026-07-30</lastmod>
@@ -573,9 +573,9 @@
   </url>
 
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -583,9 +583,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -594,8 +594,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -603,9 +603,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/santehnik-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/santehnik-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -613,9 +613,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/vodoinstalater-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/vodoinstalater-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -624,8 +624,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/santehnik-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/santehnik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/santehnik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/vodoinstalater-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/santehnik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -633,9 +633,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/elektrik-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/elektrik-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -643,9 +643,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/elektricar-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/elektricar-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -654,8 +654,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/elektrik-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/elektrik-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/elektrik-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/elektricar-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/elektrik-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -663,9 +663,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/bytovoy-remont-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/bytovoy-remont-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -673,9 +673,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/kucni-popravci-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/kucni-popravci-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -684,8 +684,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/bytovoy-remont-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/bytovoy-remont-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/bytovoy-remont-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/kucni-popravci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/bytovoy-remont-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -693,9 +693,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/naveska-montazh-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/naveska-montazh-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -703,9 +703,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/montaza-na-zid-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/montaza-na-zid-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -714,8 +714,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/naveska-montazh-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/naveska-montazh-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/naveska-montazh-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-na-zid-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/naveska-montazh-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -723,9 +723,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/sborka-mebeli-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/sborka-mebeli-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -733,9 +733,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/montaza-namestaja-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/montaza-namestaja-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -744,8 +744,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/sborka-mebeli-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/sborka-mebeli-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/sborka-mebeli-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/montaza-namestaja-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/sborka-mebeli-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -784,9 +784,9 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-stari-grad-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -794,9 +794,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -805,8 +805,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-stari-grad-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-stari-grad-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-stari-grad-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -814,9 +814,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-liman-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-liman-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -824,9 +824,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-liman-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-liman-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -835,8 +835,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-liman-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-liman-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-liman-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -844,9 +844,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-petrovaradin-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -854,9 +854,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -865,8 +865,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-petrovaradin-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-petrovaradin-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-petrovaradin-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -874,9 +874,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-detelinara-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-detelinara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -884,9 +884,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -895,8 +895,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-detelinara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-detelinara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-detelinara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -904,9 +904,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-novo-naselje-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -914,9 +914,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -925,8 +925,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-novo-naselje-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-novo-naselje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-novo-naselje-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -934,9 +934,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-podbara-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-podbara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -944,9 +944,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -955,8 +955,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-podbara-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-podbara-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-podbara-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -964,9 +964,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-grbavica-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-grbavica-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -974,9 +974,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -985,8 +985,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-grbavica-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-grbavica-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-grbavica-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -994,9 +994,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/master-na-chas-telep-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/master-na-chas-telep-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-07-31</lastmod>
@@ -1004,9 +1004,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-sve-telep-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-sve-telep-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -1015,8 +1015,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/master-na-chas-telep-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-sve-telep-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/master-na-chas-telep-novi-sad-en/"/>
     <lastmod>2026-08-04</lastmod>
@@ -1026,9 +1026,9 @@
 
   <!-- Компьютерный мастер в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/remont-kompyuterov-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/remont-kompyuterov-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1036,9 +1036,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-racunare-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-racunare-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1047,8 +1047,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/remont-kompyuterov-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1057,9 +1057,9 @@
   </url>
   <!-- Компьютерный мастер в Нови-Саде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/remont-kompyuterov-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/remont-kompyuterov-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1067,9 +1067,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/majstor-za-racunare-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1078,8 +1078,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/remont-kompyuterov-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/majstor-za-racunare-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/remont-kompyuterov-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1088,9 +1088,9 @@
   </url>
   <!-- Грузчики в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/gruzchiki-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/gruzchiki-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1098,9 +1098,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/selidbe-i-nosaci-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1109,8 +1109,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/gruzchiki-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1119,9 +1119,9 @@
   </url>
   <!-- Грузчики в Нови-Саде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/gruzchiki-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/gruzchiki-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1129,9 +1129,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/selidbe-i-nosaci-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1140,8 +1140,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/gruzchiki-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/gruzchiki-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/gruzchiki-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/selidbe-i-nosaci-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/gruzchiki-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1150,9 +1150,9 @@
   </url>
   <!-- Уборка квартир в Белграде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/klining-beograd/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ru/klining-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1160,9 +1160,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1171,8 +1171,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/klining-beograd-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-beograd/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-beograd/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-beograd/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-beograd-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1181,9 +1181,9 @@
   </url>
   <!-- Уборка квартир в Нови-Саде — все языки -->
   <url>
-    <loc>https://pravimajstor.rs/klining-novi-sad/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ru/klining-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1191,9 +1191,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <loc>https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
@@ -1202,8 +1202,8 @@
   </url>
   <url>
     <loc>https://pravimajstor.rs/klining-novi-sad-en/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/klining-novi-sad/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad-sr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/klining-novi-sad/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/ciscenje-i-odrzavanje-novi-sad/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/klining-novi-sad-en/"/>
     <lastmod>2026-09-20</lastmod>
