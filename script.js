@@ -561,7 +561,7 @@ function botCityFromUrl() {
     return window.location.pathname.includes('novi-sad') ? 'Нови-Сад' : 'Белград';
 }
 
-// Район на сайте выбирается слугами (Vake, Saburtalo...), а бот ждёт названия по-русски.
+// Район на сайте выбирается слугами (Vracar, NoviBeograd...), а бот ждёт названия по-русски.
 const BOT_DISTRICT_MAP = {
     // Белград (совпадают с config.yaml бота → cities['Белград'])
     Vracar: 'Врачар', NoviBeograd: 'Нови-Београд', Zvezdara: 'Звездара', Vozdovac: 'Вождовац',
@@ -1176,7 +1176,11 @@ function initWhatsAppButtonTracking() {
             ? 'Hello! I want to become a partner.'
             : 'Hello! I need a handyman in Belgrade.')
     };
-    // TODO(Сербия): заменить номер 995557645196 на сербский +381, когда будет сим-карта.
+    // TODO(Сербия): грузинский номер 995557645196 ждёт замены на сербский +381 (нужна сим-карта).
+    // Он же — ещё в 335 местах на 118 страницах: tel:+995557645196, wa.me/995557645196,
+    // "telephone" в JSON-LD и видимый текст «// +995 557 645 196» в шапке. Менять все разом:
+    //   grep -rl 995557645196 --include='*.html' --include='*.js' . | xargs sed -i \
+    //     -e 's/995557645196/381XXXXXXXXX/g' -e 's|// +995 557 645 196|// +381 XX XXX XXXX|g'
     const waHref = 'https://wa.me/995557645196?text=' + (waTexts[lang] || waTexts.ru);
 
     // Telegram-бот: на странице мастеров — бот мастеров, иначе клиентский бот по языку
