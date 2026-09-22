@@ -359,3 +359,115 @@
         height: 40px !important;
     }
 }
+
+/* ============================================================
+   ДЕСКТОП: ВЫБОР ГОРОДА — ВЫПАДАЮЩИЙ СПИСОК
+   ============================================================
+
+   Было: обе кнопки городов видны сразу, плашка росла с каждым
+   новым городом. Стало: видна только текущая, остальные — в
+   списке по клику. При добавлении городов ширина не меняется.
+
+   Разметка та же (.city-switcher > .city-btn), меняем только
+   отображение — HTML 228 страниц править не потребовалось.
+   Раскрытием управляет класс .is-open (ставит script.js).
+
+   Мобильная версия (<769px) не затронута: там правила ниже
+   не действуют, кнопки остаются в ряд как были. */
+@media (min-width: 769px) {
+
+  .city-switcher {
+    position: relative;
+    /* Ширина равна плашке «Для мастеров» над ней — задаётся
+       переменной, которую считает скрипт после отрисовки шрифтов. */
+    width: var(--city-switcher-w, auto);
+    /* Контент прижат влево: иконка, город, стрелка справа */
+    justify-content: flex-start;
+    padding-right: 2.2rem;   /* место под стрелку */
+    cursor: pointer;
+  }
+
+  /* Стрелка ⌄ справа — рисуем псевдоэлементом, чтобы не трогать HTML */
+  .city-switcher::after {
+    content: '';
+    position: absolute;
+    right: 1.1rem;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid var(--construction-yellow);
+    border-bottom: 2px solid var(--construction-yellow);
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.25s ease;
+    pointer-events: none;
+  }
+
+  .city-switcher.is-open::after {
+    transform: rotate(-135deg) translateY(-2px);
+  }
+
+  /* Неактивные города прячем в выпадающий список */
+  .city-switcher .city-btn:not(.active) {
+    position: absolute;
+    /* Плашка имеет рамку 2px, а пункт позиционируется от её внутренней
+       области. Сдвигаем на толщину рамки и добавляем её к ширине, чтобы
+       края пункта совпали с краями плашки. */
+    left: -2px;
+    width: calc(100% + 4px);
+    box-sizing: border-box;
+    /* Позиция по вертикали задаётся ниже, для 1-го и 2-го пунктов */
+    background: var(--dark-concrete);
+    border: 2px solid var(--safety-green);
+    border-radius: 14px;
+    padding: 0.7rem 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Скрыто до клика: visibility и opacity вместо display,
+       чтобы работал плавный переход */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 200;
+  }
+
+  /* Раскрытый список: пункты идут вниз друг за другом.
+     Отступ сверху = высота плашки (52px) + зазор. */
+  .city-switcher.is-open .city-btn:not(.active) {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Позиция каждого пункта в списке задаётся из скрипта (--i = номер
+     пункта, 0, 1, 2…). Селекторами это выразить трудно: порядок
+     пунктов зависит от того, какой город сейчас активен, а он
+     исключён из списка. */
+  .city-switcher .city-btn:not(.active) {
+    top: calc(100% + 0.4rem + var(--i, 0) * 3.1rem);
+  }
+
+  .city-switcher .city-btn:not(.active):hover {
+    background: rgba(253, 185, 19, 0.12);
+    border-color: var(--construction-yellow);
+    color: #fff;
+  }
+
+  /* Текущий город — просто текст внутри плашки, без своей рамки:
+     плашка сама выглядит как кнопка */
+  .city-switcher .city-btn.active {
+    background: none;
+    box-shadow: none;
+    color: #fff;
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    pointer-events: none;   /* клик обрабатывает вся плашка */
+  }
+
+  /* ── Выравнивание пар: город = «Для мастеров», язык = счётчик ──
+     Ширины задаёт скрипт в переменных, здесь только их применяем. */
+  .language-switcher {
+    width: var(--lang-switcher-w, auto);
+    justify-content: space-evenly;
+  }
+}

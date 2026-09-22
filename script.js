@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initWhatsAppButtonTracking();
     initBannerShift();
     initFAQ();
+    initCityDropdown();
 });
 
 // ============================================
@@ -1439,4 +1440,98 @@ function initServiceTypingEffect() {
     }
 
     setTimeout(runAnimation, 500);
+}
+
+// ============================================
+// 19. ВЫБОР ГОРОДА — ВЫПАДАЮЩИЙ СПИСОК (ДЕСКТОП)
+// ============================================
+
+/**
+ * Превращает ряд кнопок городов в выпадающий список и выравнивает
+ * плашки шапки попарно: город = «Для мастеров», язык = счётчик.
+ *
+ * Работает только на десктопе (>=769px): на мобильном плашки идут
+ * в столбец на всю ширину, и список там не нужен.
+ *
+ * Разметку не меняем — раскрытием управляет класс .is-open,
+ * ширины отдаём в CSS через переменные.
+ */
+function initCityDropdown() {
+    const DESKTOP = '(min-width: 769px)';
+    const city = document.querySelector('.city-switcher');
+    if (!city) return;
+
+    // Нумеруем пункты списка: CSS по --i расставляет их друг под другом.
+    // Активный город в список не входит, поэтому считаем только остальные.
+    city.querySelectorAll('.city-btn:not(.active)').forEach((btn, i) => {
+        btn.style.setProperty('--i', i);
+    });
+
+    // ── Раскрытие по клику ──
+    city.addEventListener('click', (e) => {
+        if (!window.matchMedia(DESKTOP).matches) return;
+        // Клик по пункту списка — это переход по ссылке, не мешаем
+        if (e.target.closest('.city-btn:not(.active)')) return;
+        e.preventDefault();
+        city.classList.toggle('is-open');
+    });
+
+    // Клик вне плашки и Escape — закрываем
+    document.addEventListener('click', (e) => {
+        if (!city.contains(e.target)) city.classList.remove('is-open');
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') city.classList.remove('is-open');
+    });
+
+    // ── Выравнивание пар ──
+    // Ширину считаем в JS, а не в CSS: она зависит от длины надписей,
+    // а те меняются при переключении языка (RUS/SRB/ENG) и от шрифта.
+    const lang = document.querySelector('.language-switcher');
+    const masters = document.querySelector('.audience-link');
+    const counter = document.querySelector('.online-counter');
+
+    function syncWidths() {
+        const root = document.documentElement.style;
+
+        if (!window.matchMedia(DESKTOP).matches) {
+            // На мобильном ширины не навязываем — плашки тянутся сами
+            root.removeProperty('--city-switcher-w');
+            root.removeProperty('--lang-switcher-w');
+            return;
+        }
+
+        // Снимаем прежние значения, чтобы замерить естественную ширину
+        root.removeProperty('--city-switcher-w');
+        root.removeProperty('--lang-switcher-w');
+
+        if (masters && city) {
+            // Плашка города не должна быть уже своего содержимого
+            const need = Math.max(masters.offsetWidth, city.scrollWidth);
+            root.setProperty('--city-switcher-w', need + 'px');
+        }
+        if (counter && lang) {
+            const need = Math.max(counter.offsetWidth, lang.scrollWidth);
+            root.setProperty('--lang-switcher-w', need + 'px');
+        }
+    }
+
+    // Первый расчёт — после загрузки шрифтов: до неё ширины текста
+    // отличаются, и плашки разъезжались бы при подмене шрифта.
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(syncWidths);
+    } else {
+        syncWidths();
+    }
+    syncWidths();
+
+    // Пересчёт при изменении размера окна и смене языка
+    let t = null;
+    window.addEventListener('resize', () => {
+        clearTimeout(t);
+        t = setTimeout(syncWidths, 150);
+    });
+    document.querySelectorAll('.lang-btn').forEach(b =>
+        b.addEventListener('click', () => setTimeout(syncWidths, 50))
+    );
 }
