@@ -2068,8 +2068,12 @@ footer {
 .language-switcher::before {
     content: '';
     position: absolute;
-    inset: -2px;
-    border-radius: 27px;
+    /* inset: 0, а не -2px — радужная рамка рисуется ВНУТРИ плашки.
+       Раньше она вылезала на 2px с каждой стороны, и переключатель
+       выглядел на 4px толще соседнего счётчика мастеров (56 против 52),
+       хотя сам элемент был такой же высоты. */
+    inset: 0;
+    border-radius: 25px;
     background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #ff8800, #00ffff, #ff00ff, #88ff00, #8800ff, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
     background-size: 400%;
     z-index: -1;
@@ -2090,7 +2094,10 @@ footer {
     background: transparent;
     border: 1px solid rgba(253, 185, 19, 0.3);
     color: rgba(255, 255, 255, 0.6);
-    padding: 0.5rem 1rem;
+    /* Отступы чуть меньше, чем были (0.5rem): рамка ::before переехала
+       внутрь плашки и забрала 2px, а общая высота должна остаться 52px —
+       вровень со счётчиком мастеров и ссылкой «Для мастеров». */
+    padding: 0.42rem 1rem;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
