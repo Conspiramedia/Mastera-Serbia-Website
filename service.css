@@ -524,23 +524,11 @@
     line-height: 1.65;
 }
 
-/* Кнопка вызова — тот же акцент, что у основных CTA сайта */
-.cen-cta {
-    display: inline-block;
-    padding: 0.9rem 2.2rem;
-    border: 2px solid var(--construction-yellow);
-    border-radius: 8px;
-    color: var(--construction-yellow);
-    font-weight: 700;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-}
-
-.cen-cta:hover,
-.cen-cta:focus-visible {
-    background: var(--construction-yellow);
-    color: var(--dark-concrete);
-}
+/* Кнопка вызова берётся готовая — .cta-button .cta-clients, та же, что
+   на лендингах: стеклянная, со скруглением 50px и зелёной подсветкой.
+   Свой .cen-cta был ошибкой — прямоугольная рамка выбивалась из системы.
+   Дополнительных правил не нужно: .cta-main и .cta-sub уже блочные,
+   и на <a> класс работает так же, как на <button>. */
 
 /* Блок УТП «фиксированная цена» — ради него страница и существует */
 .cen-utp {
@@ -684,21 +672,55 @@
     line-height: 1.6;
 }
 
+/* Кнопка и вторичная ссылка ставятся столбиком: рядом в строку они
+   выглядели как две равноправные кнопки, хотя приоритет у CTA. */
 .cen-bottom-cta {
     display: flex;
-    gap: 1.2rem;
+    flex-direction: column;
+    gap: 1.4rem;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 1rem 0 2rem;
 }
 
+/* .cta-button задан как display:block с margin:0 auto — внутри flex-колонки
+   это растянуло бы его на всю ширину, поэтому сжимаем по содержимому. */
+.cen-bottom-cta .cta-button,
+.cen-hero .cta-button {
+    width: fit-content;
+}
+
+/* «На главную» — намеренно скромная вторичная ссылка: рядом стоит
+   основная зелёная кнопка, и две одинаково заметные сбивали бы выбор.
+   Подчёркивание заменено на пунктир, чтобы не спорить с CTA. */
 .cen-back {
-    color: rgba(250, 250, 250, 0.6);
-    text-decoration: underline;
+    color: rgba(250, 250, 250, 0.55);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(250, 250, 250, 0.3);
+    padding-bottom: 2px;
+    font-size: 0.95rem;
+    transition: color 0.2s, border-color 0.2s;
 }
 
-.cen-back:hover {
-    color: var(--white);
+.cen-back:hover,
+.cen-back:focus-visible {
+    color: var(--construction-yellow);
+    border-bottom-color: var(--construction-yellow);
+}
+
+/* Ссылка «Смотреть все цены →» под таблицей цен на лендингах услуг */
+.cen-inline-link {
+    color: var(--construction-yellow);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(253, 185, 19, 0.35);
+    padding-bottom: 2px;
+    transition: border-color 0.2s;
+}
+
+.cen-inline-link:hover,
+.cen-inline-link:focus-visible {
+    border-bottom-color: var(--construction-yellow);
 }
 
 /* На узком экране таблица переводится в две строки на позицию,
