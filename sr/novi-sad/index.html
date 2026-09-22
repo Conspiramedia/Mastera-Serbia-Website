@@ -594,7 +594,7 @@
       <h2 class="modal-title">Ostavi prijavu</h2>
       <p class="modal-subtitle">Opišite zadatak — mi ćemo izabrati majstora</p>
       <form action="https://formspree.io/f/xljrrklq" method="POST" class="contact-form" id="clientLeadForm">
-        <input type="text" name="name" placeholder="Vaše ime (opciono)">
+        <input type="text" name="name" placeholder="Vaše ime" required minlength="2">
         <input type="tel" name="phone" id="leadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$" title="Format: +381XXXXXXXX">
         <input type="text" name="telegram" placeholder="Telegram: @username" pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">ili</p>
@@ -613,6 +613,7 @@
         </select>
         <select name="service" required>
           <option value="" disabled selected>Kategorija posla</option>
+          <option value="Majstor na sat">Majstor na sat</option>
           <option value="Vodoinstalacije">Vodoinstalacije</option>
           <option value="Elektrika">Elektrika</option>
           <option value="Popravke">Popravke</option>

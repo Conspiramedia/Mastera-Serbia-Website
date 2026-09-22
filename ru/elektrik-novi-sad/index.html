@@ -482,7 +482,7 @@
       <h2 class="modal-title">Вызвать электрика</h2>
       <p class="modal-subtitle">Опишите задачу — мастер откликнется за 60 мин</p>
       <form action="https://formspree.io/f/xljrrklq" method="POST" class="contact-form" id="clientLeadForm">
-        <input type="text" name="name" placeholder="Ваше имя (необязательно)">
+        <input type="text" name="name" placeholder="Ваше имя" required minlength="2">
         <input type="tel" name="phone" id="leadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$" title="Формат: +381XXXXXXXX">
         <input type="text" name="telegram" placeholder="Telegram: @username" pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">ИЛИ</p>
@@ -499,7 +499,17 @@
           <option value="Telep">Телеп</option>
           <option value="Other">Другой</option>
         </select>
-        <input type="hidden" name="service" value="Электрика">
+        <select name="service" required>
+          <option value="" disabled>Категория работ</option>
+          <option value="Majstor na sat">Мастер на час</option>
+          <option value="Vodoinstalacije">Сантехника</option>
+          <option value="Elektrika" selected>Электрика</option>
+          <option value="Popravke">Ремонт</option>
+          <option value="Nameštaj">Мебель</option>
+          <option value="Selidbe">Грузчики</option>
+          <option value="Čišćenje">Клининг</option>
+          <option value="Ostalo">Другое</option>
+        </select>
         <textarea name="message" rows="4" placeholder="Опишите задачу — например, течёт смеситель" required></textarea>
         <input type="hidden" name="_subject" value="Заявка — Электрик в Нови-Саде">
         <input type="hidden" name="_language" value="ru">

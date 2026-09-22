@@ -412,7 +412,7 @@
       <h2 class="modal-title">Call a handyman by the hour in Novi Sad</h2>
       <p class="modal-subtitle">Describe the task — a master responds within 60 min</p>
       <form action="https://formspree.io/f/xljrrklq" method="POST" class="contact-form" id="clientLeadForm">
-        <input type="text" name="name" placeholder="Your name (optional)">
+        <input type="text" name="name" placeholder="Your name" required minlength="2">
         <input type="tel" name="phone" id="leadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$" title="Format: +381XXXXXXXX">
         <input type="text" name="telegram" placeholder="Telegram: @username" pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">OR</p>
@@ -429,7 +429,17 @@
           <option value="Telep">Telep</option>
           <option value="Other">Other</option>
         </select>
-        <input type="hidden" name="service" value="Handyman — Novi Sad">
+        <select name="service" required>
+          <option value="" disabled>Type of work</option>
+          <option value="Majstor na sat" selected>Handyman</option>
+          <option value="Vodoinstalacije">Plumbing</option>
+          <option value="Elektrika">Electrical</option>
+          <option value="Popravke">Repair</option>
+          <option value="Nameštaj">Furniture</option>
+          <option value="Selidbe">Movers</option>
+          <option value="Čišćenje">Cleaning</option>
+          <option value="Ostalo">Other</option>
+        </select>
         <textarea name="message" rows="4" placeholder="Describe the job — e.g. a leaking tap" required></textarea>
         <input type="hidden" name="_subject" value="Request — Handyman Novi Sad">
         <input type="hidden" name="_language" value="en">
