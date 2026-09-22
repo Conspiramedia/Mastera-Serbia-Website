@@ -381,41 +381,27 @@
     /* Ширина равна плашке «Для мастеров» над ней — задаётся
        переменной, которую считает скрипт после отрисовки шрифтов. */
     width: var(--city-switcher-w, auto);
-    /* Контент прижат влево: иконка, город, стрелка справа */
-    justify-content: flex-start;
-    padding-right: 2.2rem;   /* место под стрелку */
+    /* Контент по центру, как у соседних плашек шапки */
+    justify-content: center;
+    padding-right: 2.2rem;   /* место под стрелку справа */
+    padding-left: 2.2rem;    /* столько же слева — чтобы текст был по центру */
     cursor: pointer;
-    /* Пункты списка появляются ВНУТРИ этой же плашки, поэтому
-       раскладка — колонкой, а высота растёт вместе с содержимым. */
-    flex-direction: column;
-    align-items: stretch;
-    /* Список не должен «вылезать» из скруглённых углов плашки,
-       пока она ещё закрыта. */
-    overflow: hidden;
-    /* Плавное раскрытие: анимируем максимальную высоту, а не height,
-       потому что точную высоту содержимого CSS не знает. */
-    transition: max-height 0.28s ease, box-shadow 0.28s ease;
+    /* Плашка в потоке всегда 52px: раскрывающаяся часть уходит в
+       абсолютное позиционирование (ниже), поэтому шапка не двигается. */
+    overflow: visible;
+    transition: box-shadow 0.28s ease;
   }
 
-  /* Первая строка плашки — иконка и текущий город, всегда видима.
-     Высота фиксирована (52px минус рамки), чтобы закрытая плашка
-     совпадала по высоте с остальными плашками шапки. */
-  .city-switcher > .city-switcher-icon,
-  .city-switcher > .city-btn.active {
-    flex: 0 0 auto;
-  }
-
-  /* Иконку и активный город кладём в одну строку. Обёртки в HTML нет,
-     поэтому выстраиваем их абсолютно внутри верхней зоны плашки. */
+  /* Иконка «локация» — слева, поверх padding-слота */
   .city-switcher > .city-switcher-icon {
     position: absolute;
-    left: 0.75rem;
-    top: 0;
-    height: 48px;          /* высота плашки минус рамки 2+2 */
-    display: flex;
-    align-items: center;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
   }
 
+  /* Текущий город — по центру плашки */
   .city-switcher > .city-btn.active {
     background: none;
     box-shadow: none;
@@ -423,70 +409,54 @@
     color: #fff;
     font-size: 0.95rem;
     font-weight: 500;
-    /* Отступ слева — под иконку; высота строки = высоте плашки */
-    padding: 0 0 0 2.1rem;
-    height: 48px;
-    line-height: 48px;
+    padding: 0;
+    text-align: center;
     pointer-events: none;   /* клик обрабатывает вся плашка */
   }
 
-  /* Закрытая плашка: видна только первая строка.
-     Через :not(.is-open), а не общим правилом — иначе раскрытие
-     пришлось бы перебивать более специфичным селектором, и любое
-     правило высоты ниже по файлу снова его ломало бы. */
-  .city-switcher:not(.is-open) {
-    max-height: 52px;
-  }
-
-  /* Раскрытая — вырастает вниз под содержимое.
-     Селектор с header: в style.css высота всех плашек шапки задана
-     как `header .city-switcher { height: 52px }`, и правило с одним
-     классом её бы не перебило. */
-  header .city-switcher.is-open,
-  .city-switcher.is-open {
-    /* !important здесь оправдан: высоту всех плашек шапки задаёт общее
-       правило `header .city-switcher { height: 52px }` в style.css, и
-       раскрытие должно его перебивать независимо от порядка файлов. */
-    height: auto !important;
-    max-height: 320px !important;   /* с запасом на несколько городов */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45),
-                0 4px 15px rgba(6, 255, 165, 0.3);
-  }
-
-  /* Пункты списка — строки ВНУТРИ плашки, без собственной рамки
-       и фона: рамка у плашки одна на всё. */
+  /* ── Выпадающая часть ─────────────────────────────────────────
+     Абсолютная, поэтому НЕ меняет высоту плашки и не двигает шапку.
+     Визуально продолжает плашку: та же рамка и фон, скруглены только
+     нижние углы, верх состыкован встык. */
   .city-switcher .city-btn:not(.active) {
-    background: none;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
+    position: absolute;
+    left: -2px;                       /* компенсация рамки плашки */
+    width: calc(100% + 4px);
+    box-sizing: border-box;
+    background: var(--dark-concrete);
+    border: 2px solid var(--safety-green);
+    border-top: none;                 /* стык с плашкой без двойной линии */
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
     color: rgba(255, 255, 255, 0.85);
-    text-align: left;
-    padding: 0.55rem 0.4rem 0.55rem 2.1rem;   /* слева — под иконку */
-    margin: 0 -0.5rem;                        /* компенсируем padding плашки */
-    /* Свёрнуты, пока плашка закрыта */
-    max-height: 0;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    /* Позиция: сразу под плашкой. --i задаёт скрипт (0, 1, 2…) */
+    top: calc(100% - 2px + var(--i, 0) * 2.6rem);
+    /* Скрыта до клика */
     opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.28s ease, opacity 0.2s ease, padding 0.28s ease;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 200;
   }
 
   .city-switcher.is-open .city-btn:not(.active) {
-    max-height: 46px;
     opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
-  /* Разделительная линия между текущим городом и списком */
-  .city-switcher.is-open .city-btn:not(.active):first-of-type,
-  .city-switcher.is-open .city-btn.active + .city-btn:not(.active) {
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    margin-top: 0.2rem;
-    padding-top: 0.6rem;
+  /* Пока открыто — у плашки скруглён только верх, чтобы стык
+     со списком выглядел одним элементом */
+  .city-switcher.is-open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
+  /* Наведение: без заливки — только подсветка текста */
   .city-switcher .city-btn:not(.active):hover {
-    background: rgba(253, 185, 19, 0.12);
-    color: #fff;
+    color: var(--construction-yellow);
   }
 
   /* Стрелка ⌄ справа — рисуем псевдоэлементом, чтобы не трогать HTML */
@@ -494,18 +464,18 @@
     content: '';
     position: absolute;
     right: 1.1rem;
-    top: 20px;              /* по центру первой строки */
+    top: 50%;
     width: 9px;
     height: 9px;
     border-right: 2px solid var(--construction-yellow);
     border-bottom: 2px solid var(--construction-yellow);
-    transform: rotate(45deg);
+    transform: translateY(-70%) rotate(45deg);
     transition: transform 0.25s ease;
     pointer-events: none;
   }
 
   .city-switcher.is-open::after {
-    transform: rotate(-135deg) translateY(4px);
+    transform: translateY(-30%) rotate(-135deg);
   }
 
   /* ── Выравнивание пар: город = «Для мастеров», язык = счётчик ──

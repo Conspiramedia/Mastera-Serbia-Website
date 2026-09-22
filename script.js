@@ -1461,6 +1461,13 @@ function initCityDropdown() {
     const city = document.querySelector('.city-switcher');
     if (!city) return;
 
+    // Нумеруем пункты выпадающей части: CSS по --i ставит их друг под
+    // другом. Активный город в список не входит, поэтому считаем только
+    // остальные — иначе первый пункт уехал бы на место второго.
+    city.querySelectorAll('.city-btn:not(.active)').forEach((btn, i) => {
+        btn.style.setProperty('--i', i);
+    });
+
     // ── Раскрытие по клику ──
     city.addEventListener('click', (e) => {
         if (!window.matchMedia(DESKTOP).matches) return;
