@@ -220,9 +220,12 @@
         </div>
       </div>
     </div>
-    <div class="header-controls">
-      <!-- Переключателя города здесь намеренно нет: прайс общий для
-           Белграда и Нови-Сада, и выбор города вводил бы в заблуждение. -->
+    <div class="header-controls cen-header-controls" style="--cen-lang-width: 286px">
+      <!-- Порядок групп тот же, что на лендингах: сначала навигация,
+           затем статус. Правило в style.css (min-width: 769px) само
+           ставит статус верхней строкой, а навигацию — нижней.
+           Переключателя города здесь нет: прайс общий для Белграда
+           и Нови-Сада, и выбор города вводил бы в заблуждение. -->
       <div class="header-group">
         <div class="language-switcher">
           <a href="/ru/cenovnik/" class="lang-btn" data-lang="ru">RUS</a>
