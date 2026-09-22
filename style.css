@@ -3235,3 +3235,57 @@ body.modal-open {
         padding: 0.85rem 2.5rem;
     }
 }
+
+/* ============================================
+   VIBER FAB — заготовка, пока отключена
+
+   Viber в Сербии — основной мессенджер, и кнопка нужна рядом с WhatsApp.
+   Разметка лежит закомментированной в каждой странице: ссылка
+   viber://chat?number=… с фиктивным номером открывала бы у человека
+   пустой чат, поэтому включается она одной командой вместе с реальным
+   номером (см. scripts/set-phone.sh и docs/phone-migration.md).
+
+   Позиция: над кнопкой WhatsApp, с тем же отступом справа.
+   ============================================ */
+
+.viber-fab {
+    position: fixed;
+    right: 30px;
+    bottom: 105px;              /* 30px WhatsApp + 65px её высота + 10px зазор */
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #7360F2;        /* фирменный цвет Viber */
+    box-shadow: 0 4px 14px rgba(115, 96, 242, 0.45);
+    z-index: 10000;             /* вровень с whatsapp-fab, выше баннера */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.viber-fab:hover,
+.viber-fab:focus-visible {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(115, 96, 242, 0.6);
+}
+
+.viber-fab svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .viber-fab {
+        right: 20px;
+        bottom: 92px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .viber-fab svg {
+        width: 26px;
+        height: 26px;
+    }
+}

@@ -107,3 +107,72 @@ git push origin main
 - Не путать с `scripts/go-live.sh` — тот снимает `noindex` перед
   запуском сайта. Это независимые шаги: телефон можно поменять
   хоть до, хоть после открытия индексации.
+
+## Кнопка Viber — включить вместе с номером
+
+В Сербии Viber — основной мессенджер, и кнопка для него нужна рядом
+с WhatsApp. Разметка уже лежит на всех 120 страницах, но **закомментирована**:
+
+```html
+<!-- VIBER:START — включить вместе с реальным номером.
+  <a href="viber://chat?number=%2B381XXXXXXXXX" class="viber-fab" ...>
+     VIBER:END -->
+```
+
+Так сделано намеренно. Ссылка `viber://chat?number=…` с несуществующим
+номером открывает у человека **пустой чат** — это хуже, чем отсутствие
+кнопки: клиент решает, что сервис не работает, и уходит.
+
+Стили `.viber-fab` уже в `style.css` и ничего не ломают, пока блок
+закрыт комментарием. Кнопка позиционируется над WhatsApp
+(`bottom: 105px` на десктопе, `92px` на мобильном).
+
+### Порядок включения
+
+1. Поменять номер по всему сайту:
+
+```bash
+bash scripts/set-phone.sh +381XXXXXXXXX
+```
+
+2. Раскомментировать блок Viber на всех страницах:
+
+```bash
+python - <<'PY'
+import io, subprocess
+files = subprocess.check_output(['git','ls-files','*.html'], text=True).split()
+n = 0
+for p in files:
+    with io.open(p, encoding='utf-8', newline='') as f: s = f.read()
+    if 'VIBER:START' not in s: continue
+    i = s.index('<!-- VIBER:START')
+    j = s.index('VIBER:END -->') + len('VIBER:END -->')
+    block = s[i:j]
+    # оставляем только сам <a>…</a>, комментарий убираем целиком
+    a0 = block.index('<a href="viber:')
+    a1 = block.index('</a>') + 4
+    s = s[:i] + block[a0:a1] + s[j:]
+    with io.open(p, 'w', encoding='utf-8', newline='') as f: f.write(s)
+    n += 1
+print('раскомментировано:', n)
+PY
+```
+
+3. Проверить, что номер подставился и в Viber-ссылку:
+
+```bash
+grep -rho 'viber://chat?number=[^"]*' --include="*.html" . | sort -u
+```
+
+Должен вывестись один вариант с реальным номером и без `XXXXXXXXX`.
+
+4. Проверить ссылки и закоммитить:
+
+```bash
+bash scripts/check-links.sh
+```
+
+### Если номер для Viber отдельный
+
+`set-phone.sh` меняет номер везде разом. Если для Viber будет свой
+номер, правьте `viber://chat?number=` отдельно — как и `wa.me/`.
