@@ -1506,13 +1506,16 @@ function initCityDropdown() {
         root.removeProperty('--city-switcher-w');
         root.removeProperty('--lang-switcher-w');
 
+        // Округляем вверх: дробная ширина (например 174.6px) даёт
+        // субпиксельный сдвиг, и рамка выпадающего списка не сходится
+        // с рамкой плашки ровно.
         if (masters && city) {
             // Плашка города не должна быть уже своего содержимого
-            const need = Math.max(masters.offsetWidth, city.scrollWidth);
+            const need = Math.ceil(Math.max(masters.offsetWidth, city.scrollWidth));
             root.setProperty('--city-switcher-w', need + 'px');
         }
         if (counter && lang) {
-            const need = Math.max(counter.offsetWidth, lang.scrollWidth);
+            const need = Math.ceil(Math.max(counter.offsetWidth, lang.scrollWidth));
             root.setProperty('--lang-switcher-w', need + 'px');
         }
     }
