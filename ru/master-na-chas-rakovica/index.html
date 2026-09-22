@@ -487,11 +487,11 @@
       <h2 class="modal-title">Вызвать мастера на час на Раковице</h2>
       <p class="modal-subtitle">Опишите задачу — мастер откликнется за 60 мин</p>
       <form action="https://formspree.io/f/xljrrklq" method="POST" class="contact-form" id="clientLeadForm">
-        <input type="text" name="name" placeholder="Ваше имя" required minlength="2">
+        <input type="text" name="name" placeholder="Ваше имя (необязательно)">
         <input type="tel" name="phone" id="leadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$" title="Формат: +381XXXXXXXX">
-        <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
+        <input type="text" name="telegram" placeholder="Telegram: @username" pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">ИЛИ</p>
-        <input type="text" name="whatsapp" placeholder="WhatsApp: номер телефона" data-contact-required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp: номер телефона">
         <select name="district" required>
         <option value="" disabled>Выберите општину</option>
         <option value="Vracar">Врачар</option>
@@ -507,12 +507,12 @@
         <option value="Other">Другой</option>
         </select>
         <input type="hidden" name="service" value="Мастер на час — Раковица">
-        <textarea name="message" rows="4" placeholder="Опишите задачу: собрать шкаф, повесить полки, мелкий ремонт..." required minlength="10"></textarea>
+        <textarea name="message" rows="4" placeholder="Опишите задачу — например, течёт смеситель (необязательно)"></textarea>
         <input type="hidden" name="_subject" value="Заявка — Мастер на час Раковица, Белград">
         <input type="hidden" name="_language" value="ru">
         <input type="text" name="_gotcha" style="display:none">
         <label class="consent-label">
-          <input type="checkbox" id="leadConsent" checked required>
+          <input type="checkbox" id="leadConsent" checked>
           <span>Согласен на обработку данных</span>
         </label>
         <button type="submit" class="submit-btn" id="leadSubmitBtn">Отправить заявку</button>

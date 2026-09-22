@@ -611,11 +611,11 @@
       <h2 class="modal-title">Submit a request</h2>
       <p class="modal-subtitle">Describe the task — we'll find a master</p>
       <form action="https://formspree.io/f/xljrrklq" method="POST" class="contact-form" id="clientLeadForm">
-        <input type="text" name="name" placeholder="Your name" required minlength="2">
+        <input type="text" name="name" placeholder="Your name (optional)">
         <input type="tel" name="phone" id="leadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$" title="Format: +381XXXXXXXX">
-        <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
+        <input type="text" name="telegram" placeholder="Telegram: @username" pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">OR</p>
-        <input type="text" name="whatsapp" placeholder="WhatsApp: phone number" data-contact-required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp: phone number">
         <select name="district" required>
           <option value="" disabled selected>Select district</option>
           <option value="Vracar">Vračar</option>
@@ -638,12 +638,12 @@
           <option value="Cleaning">Cleaning</option>
           <option value="Other">Other</option>
         </select>
-        <textarea name="message" rows="4" placeholder="Tell us more about the task" required minlength="10"></textarea>
+        <textarea name="message" rows="4" placeholder="Describe the job — e.g. leaking tap (optional)"></textarea>
         <input type="hidden" name="_subject" value="New request - Find a master">
         <input type="hidden" name="_language" value="en">
         <input type="text" name="_gotcha" style="display:none">
         <label class="consent-label">
-          <input type="checkbox" id="leadConsent" checked required>
+          <input type="checkbox" id="leadConsent" checked>
           <span>I agree to data processing</span>
         </label>
         <button type="submit" class="submit-btn" id="leadSubmitBtn">Submit request</button>

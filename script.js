@@ -953,18 +953,14 @@ function validateLeadForm(e) {
     const form          = e.target;
     const phoneInput    = document.getElementById('leadPhone');
     const telegramInput = form.querySelector('input[name="telegram"]');
-    const whatsappInput = form.querySelector('input[name="whatsapp"]');
 
     const telegramValue = telegramInput ? telegramInput.value.trim() : '';
-    const whatsappValue = whatsappInput ? whatsappInput.value.trim() : '';
 
-    if (!telegramValue && !whatsappValue) {
-        alert(t('contactRequired'));
-        if (telegramInput && !telegramValue) telegramInput.focus();
-        else if (whatsappInput) whatsappInput.focus();
-        return false;
-    }
-
+    // Обязателен только телефон. Раньше форма требовала ещё Telegram или
+    // WhatsApp и показывала alert, если их не заполнили, — но сербская
+    // аудитория звонит, а не пишет, и этот alert отсекал основной поток
+    // заявок. Мессенджеры остались полем «по желанию»: кто пользуется —
+    // укажет, остальным хватает номера.
     if (!validatePhone(phoneInput)) return false;
     if (telegramValue && !validateTelegram(telegramInput)) return false;
 
