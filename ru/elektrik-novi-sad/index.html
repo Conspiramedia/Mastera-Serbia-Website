@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подсказки загрузчику. Шрифты обнаруживаются только после разбора
+       style.css (92 КБ) — до этого текст ждёт. Предзагружаем два самых
+       частых начертания; medium и semibold подтянутся обычным порядком.
+       hero-bg сознательно НЕ предзагружается: блок .hero лежит ниже
+       первого экрана, и приоритетная загрузка отняла бы полосу у шрифтов. -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-bold.woff2" crossorigin>
 
   <title>Электрик в Нови-Саде | Pravi Majstor</title>
   <meta name="description" content="Вызов проверенного электрика в Нови-Саде. Замена розеток, проводки, подключение техники, установка освещения. Отклик за 60 минут. Без комиссий.">
@@ -525,7 +534,7 @@
   <div id="masterThankYouModal" class="modal" style="display:none"></div>
 <!-- WhatsApp floating button -->
   <a id="scrollToTop" class="scroll-to-top whatsapp-fab" href="https://wa.me/995557645196" target="_blank" rel="noopener">
-    <img src="../../image/whatsapp-icon.png" alt="WhatsApp" loading="lazy">
+    <img src="../../image/whatsapp-icon.png" alt="WhatsApp" width="128" height="128" decoding="async">
   </a>
 
 
