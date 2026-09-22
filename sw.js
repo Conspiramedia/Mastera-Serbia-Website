@@ -1,7 +1,7 @@
 // Service Worker для лендинга Мастера в Белграде
 // Базовое кэширование: оболочка страниц, манифест, стили, шрифты
 
-const CACHE_NAME = 'mastera-landing-v5';
+const CACHE_NAME = 'mastera-landing-v6';
 
 const PRECACHE_URLS = [
   '/',
