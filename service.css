@@ -496,3 +496,202 @@
     justify-content: space-evenly;
   }
 }
+
+/* ============================================
+   СТРАНИЦА ПРАЙСА — /cenovnik/, /ru/cenovnik/, /en/pricelist/
+
+   Префикс cen- намеренный: класс .price-table уже занят карточкой
+   цен на лендингах услуг, и переиспользование сломало бы их вёрстку.
+   ============================================ */
+
+.cen-page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2rem 5% 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cen-hero {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.cen-lead {
+    max-width: 620px;
+    margin: 1.2rem auto 2rem;
+    color: rgba(250, 250, 250, 0.75);
+    line-height: 1.65;
+}
+
+/* Кнопка вызова — тот же акцент, что у основных CTA сайта */
+.cen-cta {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    border: 2px solid var(--construction-yellow);
+    border-radius: 8px;
+    color: var(--construction-yellow);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.cen-cta:hover,
+.cen-cta:focus-visible {
+    background: var(--construction-yellow);
+    color: var(--dark-concrete);
+}
+
+/* Блок УТП «фиксированная цена» — ради него страница и существует */
+.cen-utp {
+    margin: 2.5rem 0 3rem;
+    padding: 1.6rem 1.8rem;
+    border-left: 3px solid var(--construction-yellow);
+    border-radius: 6px;
+    background: rgba(253, 185, 19, 0.06);
+}
+
+.cen-utp-title {
+    margin: 0 0 0.8rem;
+    color: var(--construction-yellow);
+    font-size: 1.25rem;
+}
+
+.cen-utp-text {
+    margin: 0;
+    color: rgba(250, 250, 250, 0.8);
+    line-height: 1.65;
+}
+
+.cen-group {
+    margin-bottom: 2.5rem;
+}
+
+.cen-group-title {
+    margin: 0 0 1rem;
+    color: var(--construction-yellow);
+    font-size: 1.3rem;
+}
+
+.cen-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(253, 185, 19, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.cen-table th {
+    padding: 0.85rem 1.1rem;
+    text-align: left;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.6);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.cen-table td {
+    padding: 0.9rem 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    color: var(--white);
+}
+
+.cen-table tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.cen-cell {
+    white-space: nowrap;
+    text-align: right;
+    font-weight: 600;
+}
+
+.cen-from {
+    color: rgba(250, 250, 250, 0.5);
+    font-weight: 400;
+}
+
+.cen-eur {
+    color: rgba(250, 250, 250, 0.45);
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.cen-note {
+    margin: 2rem 0 3rem;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(250, 250, 250, 0.6);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.cen-faq {
+    margin-bottom: 3rem;
+}
+
+.cen-faq-item {
+    margin-bottom: 0.7rem;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.cen-faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.cen-faq-item p {
+    margin: 0.8rem 0 0;
+    color: rgba(250, 250, 250, 0.72);
+    line-height: 1.6;
+}
+
+.cen-bottom-cta {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cen-back {
+    color: rgba(250, 250, 250, 0.6);
+    text-decoration: underline;
+}
+
+.cen-back:hover {
+    color: var(--white);
+}
+
+/* На узком экране таблица переводится в две строки на позицию,
+   иначе длинные названия услуг ломают колонку с ценой. */
+@media (max-width: 560px) {
+    .cen-table thead {
+        display: none;
+    }
+
+    .cen-table tr {
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .cen-table td {
+        display: block;
+        border: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .cen-cell {
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 0.9rem;
+        color: var(--construction-yellow);
+    }
+}

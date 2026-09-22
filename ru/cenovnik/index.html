@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подсказки загрузчику. Шрифты обнаруживаются только после разбора
+       style.css (92 КБ) — до этого текст ждёт. Предзагружаем два самых
+       частых начертания; medium и semibold подтянутся обычным порядком.
+       hero-bg сознательно НЕ предзагружается: блок .hero лежит ниже
+       первого экрана, и приоритетная загрузка отняла бы полосу у шрифтов. -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-bold.woff2" crossorigin>
+
+  <title>Цены на услуги мастеров | Pravi Majstor</title>
+  <meta name="description" content="Цены на услуги в Белграде и Нови-Саде: сантехник, электрик, мастер на час, сборка мебели, клининг. Фиксированная цена заранее.">
+  <meta name="author" content="Pravi Majstor">
+  <!-- PRELAUNCH:START — убрать этот блок при запуске, вернув строку из PRELAUNCH:ORIGINAL -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- PRELAUNCH:ORIGINAL <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"> -->
+  <!-- PRELAUNCH:END -->
+  <link rel="canonical" href="https://pravimajstor.rs/ru/cenovnik/">
+
+  <link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/cenovnik/">
+  <link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/cenovnik/">
+  <link rel="alternate" hreflang="en" href="https://pravimajstor.rs/en/pricelist/">
+  <link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/cenovnik/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pravimajstor.rs/ru/cenovnik/">
+  <meta property="og:title" content="Цены на услуги — Pravi Majstor">
+  <meta property="og:description" content="Фиксированная цена заранее, без сюрпризов">
+  <meta property="og:image" content="https://pravimajstor.rs/image/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RS">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Цены на услуги — Pravi Majstor">
+  <meta name="twitter:description" content="Фиксированная цена заранее, без сюрпризов">
+  <meta name="twitter:image" content="https://pravimajstor.rs/image/og-preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="../../image/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="../../image/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#FDB913">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SLML317LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7SLML317LT');
+  </script>
+
+  <script>window.__FORCE_LANG__ = 'ru';</script>
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Сантехник",
+      "serviceType": "Сантехник",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Устранение засора", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Замена смесителя", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Устранение течи трубы", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Электрик",
+      "serviceType": "Электрик",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Замена розетки или выключателя", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Монтаж люстры", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Прокладка новой линии", "priceSpecification": { "@type": "PriceSpecification", "price": "8000", "priceCurrency": "RSD", "minPrice": "8000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Замена электрощита", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Мастер на час",
+      "serviceType": "Мастер на час",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Разовая мелкая работа", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Минимальный выезд", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "1 рабочий час", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Сборка мебели",
+      "serviceType": "Сборка мебели",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Сборка кровати", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Кухонный модуль", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Сборка шкафа", "priceSpecification": { "@type": "PriceSpecification", "price": "6000", "priceCurrency": "RSD", "minPrice": "6000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Мелкий ремонт",
+      "serviceType": "Мелкий ремонт",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Замена дверной ручки", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Регулировка окна", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Замена замка", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Навеска и монтаж",
+      "serviceType": "Навеска и монтаж",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Навеска полки", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Установка карниза", "priceSpecification": { "@type": "PriceSpecification", "price": "2500", "priceCurrency": "RSD", "minPrice": "2500", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Навеска зеркала", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Монтаж телевизора на стену", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Клининг",
+      "serviceType": "Клининг",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Уборка от пыли", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Регулярная уборка студии", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Генеральная уборка", "priceSpecification": { "@type": "PriceSpecification", "price": "10000", "priceCurrency": "RSD", "minPrice": "10000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Уборка после ремонта", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Переезды и грузчики",
+      "serviceType": "Переезды и грузчики",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Работа грузчика (час)", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Подъём мебели на этаж", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Перевозка (считается отдельно)", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Переезд квартиры (одна комната)", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Компьютерный мастер",
+      "serviceType": "Компьютерный мастер",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Диагностика", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Установка Windows", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Чистка от пыли", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Подбор мастера платный?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Для заказчиков сервис бесплатный — мы не берём комиссию со стоимости работы. Вы платите только мастеру, напрямую, по согласованной цене." } },
+        { "@type": "Question", "name": "Может ли цена измениться в процессе работы?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Мастер осматривает задачу и называет фиксированную цену до начала. Если по ходу обнаружится что-то, чего не было видно, мастер сначала согласует это с вами." } },
+        { "@type": "Question", "name": "Материалы входят в цену?", "acceptedAnswer": { "@type": "Answer", "text": "Нет, в таблице указана стоимость работы. Материалы оплачиваются отдельно — мастер может их закупить, либо вы предоставляете свои." } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Pravi Majstor", "item": "https://pravimajstor.rs/ru/" },
+        { "@type": "ListItem", "position": 2, "name": "Цены на услуги", "item": "https://pravimajstor.rs/ru/cenovnik/" }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../service.css">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+  <div class="gradient-dots-bg"></div>
+
+  <header>
+    <div class="logo">
+      <div class="logo-text">
+        <div class="logo-title">Pravi Majstor</div>
+        <div class="subtitle">// Majstori za bilo koji zadatak</div>
+        <div class="subtitle header-phone">
+          <a href="tel:+995557645196" class="header-phone-link">// +995 557 645 196</a>
+        </div>
+        <div class="subtitle header-support">
+          <a href="https://t.me/masterasupport" target="_blank" class="header-support-link">// @masterasupport</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-controls">
+      <div class="header-group">
+        <div class="language-switcher">
+          <a href="/ru/cenovnik/" class="lang-btn active" data-lang="ru">RUS</a>
+          <a href="/cenovnik/" class="lang-btn" data-lang="sr">SRB</a>
+          <a href="/en/pricelist/" class="lang-btn" data-lang="en">ENG</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cen-page">
+    <section class="cen-hero">
+      <h1 class="service-title">Цены на услуги</h1>
+      <p class="cen-lead">Ориентировочные цены работ в Белграде и Нови-Саде. Точную цену мастер подтверждает до начала работы — без доплат по ходу.</p>
+      <a href="/ru/" class="cen-cta">Вызвать мастера</a>
+    </section>
+
+    <section class="cen-utp">
+      <h2 class="cen-utp-title">Фиксированная цена заранее, без сюрпризов</h2>
+      <p class="cen-utp-text">Мастер осматривает задачу, называет цену и только потом начинает. По ходу работы цена не меняется. Подбор мастера через сервис для заказчиков бесплатный — вы платите только за работу мастера, напрямую ему.</p>
+    </section>
+
+      <section class="cen-group">
+        <h2 class="cen-group-title">Сантехник</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Устранение засора</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Замена смесителя</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Устранение течи трубы</td><td class="cen-cell"><span class="cen-from">от</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Электрик</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Замена розетки или выключателя</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Монтаж люстры</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Прокладка новой линии</td><td class="cen-cell"><span class="cen-from">от</span> 8 000 RSD <span class="cen-eur">(~68 €)</span></td></tr>
+            <tr><td>Замена электрощита</td><td class="cen-cell"><span class="cen-from">от</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Мастер на час</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Разовая мелкая работа</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Минимальный выезд</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>1 рабочий час</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Сборка мебели</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Сборка кровати</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Кухонный модуль</td><td class="cen-cell"><span class="cen-from">от</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Сборка шкафа</td><td class="cen-cell"><span class="cen-from">от</span> 6 000 RSD <span class="cen-eur">(~51 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Мелкий ремонт</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Замена дверной ручки</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Регулировка окна</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Замена замка</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Навеска и монтаж</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Навеска полки</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Установка карниза</td><td class="cen-cell"><span class="cen-from">от</span> 2 500 RSD <span class="cen-eur">(~21 €)</span></td></tr>
+            <tr><td>Навеска зеркала</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Монтаж телевизора на стену</td><td class="cen-cell"><span class="cen-from">от</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Клининг</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Уборка от пыли</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Регулярная уборка студии</td><td class="cen-cell"><span class="cen-from">от</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Генеральная уборка</td><td class="cen-cell"><span class="cen-from">от</span> 10 000 RSD <span class="cen-eur">(~85 €)</span></td></tr>
+            <tr><td>Уборка после ремонта</td><td class="cen-cell"><span class="cen-from">от</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Переезды и грузчики</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Работа грузчика (час)</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Подъём мебели на этаж</td><td class="cen-cell"><span class="cen-from">от</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Перевозка (считается отдельно)</td><td class="cen-cell"><span class="cen-from">от</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Переезд квартиры (одна комната)</td><td class="cen-cell"><span class="cen-from">от</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Компьютерный мастер</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Услуга</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td>Диагностика</td><td class="cen-cell"><span class="cen-from">от</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Установка Windows</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Чистка от пыли</td><td class="cen-cell"><span class="cen-from">от</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    <p class="cen-note">Цены ориентировочные и зависят от сложности работы и количества материала. Указаны минимальные цены — точную мастер подтверждает после осмотра.</p>
+
+    <section class="cen-faq">
+      <h2 class="cen-group-title">Частые вопросы о ценах</h2>
+      <details class="cen-faq-item"><summary>Подбор мастера платный?</summary><p>Нет. Для заказчиков сервис бесплатный — мы не берём комиссию со стоимости работы. Вы платите только мастеру, напрямую, по согласованной цене.</p></details>
+      <details class="cen-faq-item"><summary>Может ли цена измениться в процессе работы?</summary><p>Нет. Мастер осматривает задачу и называет фиксированную цену до начала. Если по ходу обнаружится что-то, чего не было видно, мастер сначала согласует это с вами.</p></details>
+      <details class="cen-faq-item"><summary>Материалы входят в цену?</summary><p>Нет, в таблице указана стоимость работы. Материалы оплачиваются отдельно — мастер может их закупить, либо вы предоставляете свои.</p></details>
+    </section>
+
+    <section class="cen-bottom-cta">
+      <a href="/ru/" class="cen-cta">Вызвать мастера</a>
+      <a href="/ru/" class="cen-back">На главную</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2026 Pravi Majstor • Цены на услуги • Email: <a href="mailto:mastera.handyman@gmail.com" class="footer-link">mastera.handyman@gmail.com</a></p>
+    <p class="footer-privacy">Отправляя любую форму, вы соглашаетесь на обработку персональных данных в соответствии с законодательством Республики Сербия.</p>
+  </footer>
+
+  <a id="scrollToTop" class="scroll-to-top whatsapp-fab" href="https://wa.me/995557645196" target="_blank" rel="noopener">
+    <img src="../../image/whatsapp-icon.png" alt="WhatsApp" width="128" height="128" decoding="async">
+  </a>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подсказки загрузчику. Шрифты обнаруживаются только после разбора
+       style.css (92 КБ) — до этого текст ждёт. Предзагружаем два самых
+       частых начертания; medium и semibold подтянутся обычным порядком.
+       hero-bg сознательно НЕ предзагружается: блок .hero лежит ниже
+       первого экрана, и приоритетная загрузка отняла бы полосу у шрифтов. -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-bold.woff2" crossorigin>
+
+  <title>Cenovnik usluga majstora | Pravi Majstor</title>
+  <meta name="description" content="Cenovnik usluga u Beogradu i Novom Sadu: vodoinstalater, električar, majstor na sat, montaža nameštaja, čišćenje. Fiksna cena unapred.">
+  <meta name="author" content="Pravi Majstor">
+  <!-- PRELAUNCH:START — убрать этот блок при запуске, вернув строку из PRELAUNCH:ORIGINAL -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- PRELAUNCH:ORIGINAL <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"> -->
+  <!-- PRELAUNCH:END -->
+  <link rel="canonical" href="https://pravimajstor.rs/cenovnik/">
+
+  <link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/cenovnik/">
+  <link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/cenovnik/">
+  <link rel="alternate" hreflang="en" href="https://pravimajstor.rs/en/pricelist/">
+  <link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/cenovnik/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pravimajstor.rs/cenovnik/">
+  <meta property="og:title" content="Cenovnik usluga — Pravi Majstor">
+  <meta property="og:description" content="Fiksna cena unapred, bez iznenađenja">
+  <meta property="og:image" content="https://pravimajstor.rs/image/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="sr_RS">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cenovnik usluga — Pravi Majstor">
+  <meta name="twitter:description" content="Fiksna cena unapred, bez iznenađenja">
+  <meta name="twitter:image" content="https://pravimajstor.rs/image/og-preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="../image/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#FDB913">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SLML317LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7SLML317LT');
+  </script>
+
+  <script>window.__FORCE_LANG__ = 'sr';</script>
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Vodoinstalater",
+      "serviceType": "Vodoinstalater",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Čišćenje zapušenja", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Zamena slavine", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Popravka curenja cevi", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Električar",
+      "serviceType": "Električar",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Zamena utičnice ili prekidača", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Montaža lustera", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Postavljanje nove linije", "priceSpecification": { "@type": "PriceSpecification", "price": "8000", "priceCurrency": "RSD", "minPrice": "8000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Zamena elektro table", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Majstor na sat",
+      "serviceType": "Majstor na sat",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Jednokratni sitni posao", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Minimalni izlazak", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "1 radni sat", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Montaža nameštaja",
+      "serviceType": "Montaža nameštaja",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Montaža kreveta", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Kuhinjski element", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Montaža ormara", "priceSpecification": { "@type": "PriceSpecification", "price": "6000", "priceCurrency": "RSD", "minPrice": "6000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Kućne popravke",
+      "serviceType": "Kućne popravke",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Zamena kvake", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Podešavanje prozora", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Zamena brave", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Kačenje i montaža",
+      "serviceType": "Kačenje i montaža",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Kačenje police", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Postavljanje karniše", "priceSpecification": { "@type": "PriceSpecification", "price": "2500", "priceCurrency": "RSD", "minPrice": "2500", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Kačenje ogledala", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Montaža televizora na zid", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Čišćenje",
+      "serviceType": "Čišćenje",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Čišćenje od prašine", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Redovno čišćenje garsonjere", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Generalno čišćenje", "priceSpecification": { "@type": "PriceSpecification", "price": "10000", "priceCurrency": "RSD", "minPrice": "10000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Čišćenje posle renoviranja", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Selidbe i nosači",
+      "serviceType": "Selidbe i nosači",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Rad nosača (na sat)", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Iznošenje nameštaja na sprat", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Prevoz (računa se posebno)", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Selidba stana (jedna soba)", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Majstor za računare",
+      "serviceType": "Majstor za računare",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Dijagnostika", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Instalacija Windows-a", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Čišćenje od prašine", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Da li je pretraga majstora besplatna?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Za naručioce je servis besplatan — ne uzimamo proviziju od cene rada. Plaćate samo majstoru, direktno, po dogovorenoj ceni." } },
+        { "@type": "Question", "name": "Može li cena da se promeni tokom rada?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Majstor pregleda zadatak i kaže fiksnu cenu pre početka. Ako se u toku posla otkrije nešto što nije bilo vidljivo, majstor to prvo dogovara sa vama." } },
+        { "@type": "Question", "name": "Da li je materijal uračunat u cenu?", "acceptedAnswer": { "@type": "Answer", "text": "Ne, cene u tabeli su cene rada. Materijal se plaća posebno — majstor ga može nabaviti ili ga obezbeđujete sami." } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Pravi Majstor", "item": "https://pravimajstor.rs/sr/" },
+        { "@type": "ListItem", "position": 2, "name": "Cenovnik usluga", "item": "https://pravimajstor.rs/cenovnik/" }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../service.css">
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+  <div class="gradient-dots-bg"></div>
+
+  <header>
+    <div class="logo">
+      <div class="logo-text">
+        <div class="logo-title">Pravi Majstor</div>
+        <div class="subtitle">// Majstori za bilo koji zadatak</div>
+        <div class="subtitle header-phone">
+          <a href="tel:+995557645196" class="header-phone-link">// +995 557 645 196</a>
+        </div>
+        <div class="subtitle header-support">
+          <a href="https://t.me/masterasupport" target="_blank" class="header-support-link">// @masterasupport</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-controls">
+      <div class="header-group">
+        <div class="language-switcher">
+          <a href="/ru/cenovnik/" class="lang-btn" data-lang="ru">RUS</a>
+          <a href="/cenovnik/" class="lang-btn active" data-lang="sr">SRB</a>
+          <a href="/en/pricelist/" class="lang-btn" data-lang="en">ENG</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cen-page">
+    <section class="cen-hero">
+      <h1 class="service-title">Cenovnik usluga</h1>
+      <p class="cen-lead">Okvirne cene radova u Beogradu i Novom Sadu. Tačnu cenu majstor potvrđuje pre početka posla — bez naknadnih doplata.</p>
+      <a href="/sr/" class="cen-cta">Pozovi majstora</a>
+    </section>
+
+    <section class="cen-utp">
+      <h2 class="cen-utp-title">Fiksna cena unapred, bez iznenađenja</h2>
+      <p class="cen-utp-text">Majstor pregleda zadatak, kaže cenu i tek onda počinje. Cena se ne menja usput. Pretraga majstora preko servisa je za naručioce besplatna — plaćate samo rad majstora, direktno njemu.</p>
+    </section>
+
+      <section class="cen-group">
+        <h2 class="cen-group-title">Vodoinstalater</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Čišćenje zapušenja</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Zamena slavine</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Popravka curenja cevi</td><td class="cen-cell"><span class="cen-from">od</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Električar</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Zamena utičnice ili prekidača</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Montaža lustera</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Postavljanje nove linije</td><td class="cen-cell"><span class="cen-from">od</span> 8 000 RSD <span class="cen-eur">(~68 €)</span></td></tr>
+            <tr><td>Zamena elektro table</td><td class="cen-cell"><span class="cen-from">od</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Majstor na sat</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Jednokratni sitni posao</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Minimalni izlazak</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>1 radni sat</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Montaža nameštaja</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Montaža kreveta</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Kuhinjski element</td><td class="cen-cell"><span class="cen-from">od</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Montaža ormara</td><td class="cen-cell"><span class="cen-from">od</span> 6 000 RSD <span class="cen-eur">(~51 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Kućne popravke</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Zamena kvake</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Podešavanje prozora</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Zamena brave</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Kačenje i montaža</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Kačenje police</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Postavljanje karniše</td><td class="cen-cell"><span class="cen-from">od</span> 2 500 RSD <span class="cen-eur">(~21 €)</span></td></tr>
+            <tr><td>Kačenje ogledala</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Montaža televizora na zid</td><td class="cen-cell"><span class="cen-from">od</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Čišćenje</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Čišćenje od prašine</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Redovno čišćenje garsonjere</td><td class="cen-cell"><span class="cen-from">od</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Generalno čišćenje</td><td class="cen-cell"><span class="cen-from">od</span> 10 000 RSD <span class="cen-eur">(~85 €)</span></td></tr>
+            <tr><td>Čišćenje posle renoviranja</td><td class="cen-cell"><span class="cen-from">od</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Selidbe i nosači</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Rad nosača (na sat)</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Iznošenje nameštaja na sprat</td><td class="cen-cell"><span class="cen-from">od</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Prevoz (računa se posebno)</td><td class="cen-cell"><span class="cen-from">od</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Selidba stana (jedna soba)</td><td class="cen-cell"><span class="cen-from">od</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Majstor za računare</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Usluga</th><th scope="col">Cena</th></tr></thead>
+          <tbody>
+            <tr><td>Dijagnostika</td><td class="cen-cell"><span class="cen-from">od</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Instalacija Windows-a</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Čišćenje od prašine</td><td class="cen-cell"><span class="cen-from">od</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    <p class="cen-note">Cene su okvirne i zavise od složenosti posla i količine materijala. Prikazane su minimalne cene — majstor potvrđuje tačnu cenu nakon pregleda.</p>
+
+    <section class="cen-faq">
+      <h2 class="cen-group-title">Česta pitanja o cenama</h2>
+      <details class="cen-faq-item"><summary>Da li je pretraga majstora besplatna?</summary><p>Da. Za naručioce je servis besplatan — ne uzimamo proviziju od cene rada. Plaćate samo majstoru, direktno, po dogovorenoj ceni.</p></details>
+      <details class="cen-faq-item"><summary>Može li cena da se promeni tokom rada?</summary><p>Ne. Majstor pregleda zadatak i kaže fiksnu cenu pre početka. Ako se u toku posla otkrije nešto što nije bilo vidljivo, majstor to prvo dogovara sa vama.</p></details>
+      <details class="cen-faq-item"><summary>Da li je materijal uračunat u cenu?</summary><p>Ne, cene u tabeli su cene rada. Materijal se plaća posebno — majstor ga može nabaviti ili ga obezbeđujete sami.</p></details>
+    </section>
+
+    <section class="cen-bottom-cta">
+      <a href="/sr/" class="cen-cta">Pozovi majstora</a>
+      <a href="/sr/" class="cen-back">Na početnu</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2026 Pravi Majstor • Cenovnik usluga • Email: <a href="mailto:mastera.handyman@gmail.com" class="footer-link">mastera.handyman@gmail.com</a></p>
+    <p class="footer-privacy">Slanjem bilo koje forme saglasni ste sa obradom ličnih podataka u skladu sa zakonodavstvom Republike Srbije.</p>
+  </footer>
+
+  <a id="scrollToTop" class="scroll-to-top whatsapp-fab" href="https://wa.me/995557645196" target="_blank" rel="noopener">
+    <img src="../image/whatsapp-icon.png" alt="WhatsApp" width="128" height="128" decoding="async">
+  </a>
+</body>
+</html>

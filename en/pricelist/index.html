@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подсказки загрузчику. Шрифты обнаруживаются только после разбора
+       style.css (92 КБ) — до этого текст ждёт. Предзагружаем два самых
+       частых начертания; medium и semibold подтянутся обычным порядком.
+       hero-bg сознательно НЕ предзагружается: блок .hero лежит ниже
+       первого экрана, и приоритетная загрузка отняла бы полосу у шрифтов. -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-bold.woff2" crossorigin>
+
+  <title>Price List for Handyman Services | Pravi Majstor</title>
+  <meta name="description" content="Price list for Belgrade and Novi Sad: plumber, electrician, handyman, furniture assembly, cleaning. Fixed price agreed upfront.">
+  <meta name="author" content="Pravi Majstor">
+  <!-- PRELAUNCH:START — убрать этот блок при запуске, вернув строку из PRELAUNCH:ORIGINAL -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- PRELAUNCH:ORIGINAL <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"> -->
+  <!-- PRELAUNCH:END -->
+  <link rel="canonical" href="https://pravimajstor.rs/en/pricelist/">
+
+  <link rel="alternate" hreflang="ru" href="https://pravimajstor.rs/ru/cenovnik/">
+  <link rel="alternate" hreflang="sr" href="https://pravimajstor.rs/cenovnik/">
+  <link rel="alternate" hreflang="en" href="https://pravimajstor.rs/en/pricelist/">
+  <link rel="alternate" hreflang="x-default" href="https://pravimajstor.rs/cenovnik/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pravimajstor.rs/en/pricelist/">
+  <meta property="og:title" content="Price List — Pravi Majstor">
+  <meta property="og:description" content="Fixed price upfront, no surprises">
+  <meta property="og:image" content="https://pravimajstor.rs/image/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_RS">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Price List — Pravi Majstor">
+  <meta name="twitter:description" content="Fixed price upfront, no surprises">
+  <meta name="twitter:image" content="https://pravimajstor.rs/image/og-preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="../../image/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="../../image/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#FDB913">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SLML317LT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7SLML317LT');
+  </script>
+
+  <script>window.__FORCE_LANG__ = 'en';</script>
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Plumber",
+      "serviceType": "Plumber",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Clearing a blockage", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Tap replacement", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Pipe leak repair", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Electrician",
+      "serviceType": "Electrician",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Socket or switch replacement", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Chandelier installation", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "New wiring line", "priceSpecification": { "@type": "PriceSpecification", "price": "8000", "priceCurrency": "RSD", "minPrice": "8000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Fuse box replacement", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Handyman by the hour",
+      "serviceType": "Handyman by the hour",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "One-off small job", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Minimum call-out", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "1 working hour", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Furniture assembly",
+      "serviceType": "Furniture assembly",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Bed assembly", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Kitchen unit", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Wardrobe assembly", "priceSpecification": { "@type": "PriceSpecification", "price": "6000", "priceCurrency": "RSD", "minPrice": "6000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Home repairs",
+      "serviceType": "Home repairs",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Door handle replacement", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Window adjustment", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Lock replacement", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Mounting",
+      "serviceType": "Mounting",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Shelf mounting", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Curtain rail fitting", "priceSpecification": { "@type": "PriceSpecification", "price": "2500", "priceCurrency": "RSD", "minPrice": "2500", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Mirror mounting", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Wall-mounting a TV", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Cleaning",
+      "serviceType": "Cleaning",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Dust cleaning", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Regular studio cleaning", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Deep cleaning", "priceSpecification": { "@type": "PriceSpecification", "price": "10000", "priceCurrency": "RSD", "minPrice": "10000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Post-renovation cleaning", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Movers",
+      "serviceType": "Movers",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Mover (per hour)", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Carrying furniture upstairs", "priceSpecification": { "@type": "PriceSpecification", "price": "3000", "priceCurrency": "RSD", "minPrice": "3000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Transport (charged separately)", "priceSpecification": { "@type": "PriceSpecification", "price": "5000", "priceCurrency": "RSD", "minPrice": "5000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "One-room flat move", "priceSpecification": { "@type": "PriceSpecification", "price": "12000", "priceCurrency": "RSD", "minPrice": "12000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Computer technician",
+      "serviceType": "Computer technician",
+      "provider": { "@type": "LocalBusiness", "name": "Pravi Majstor", "url": "https://pravimajstor.rs" },
+      "areaServed": [ { "@type": "City", "name": "Beograd" }, { "@type": "City", "name": "Novi Sad" } ],
+      "offers": [
+        { "@type": "Offer", "name": "Diagnostics", "priceSpecification": { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "RSD", "minPrice": "2000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Windows installation", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } },
+        { "@type": "Offer", "name": "Dust cleaning", "priceSpecification": { "@type": "PriceSpecification", "price": "4000", "priceCurrency": "RSD", "minPrice": "4000", "valueAddedTaxIncluded": false } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is finding a handyman free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The service is free for customers — we take no commission on the price of the work. You pay the handyman directly, at the agreed price." } },
+        { "@type": "Question", "name": "Can the price change during the job?", "acceptedAnswer": { "@type": "Answer", "text": "No. The handyman inspects the job and states a fixed price before starting. If something hidden comes up, they agree it with you first." } },
+        { "@type": "Question", "name": "Are materials included in the price?", "acceptedAnswer": { "@type": "Answer", "text": "No, the table shows the cost of labour. Materials are paid separately — the handyman can source them, or you can provide your own." } }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Pravi Majstor", "item": "https://pravimajstor.rs/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Price List", "item": "https://pravimajstor.rs/en/pricelist/" }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../service.css">
+  <script src="../../script.js" defer></script>
+</head>
+
+<body>
+  <div class="gradient-dots-bg"></div>
+
+  <header>
+    <div class="logo">
+      <div class="logo-text">
+        <div class="logo-title">Pravi Majstor</div>
+        <div class="subtitle">// Majstori za bilo koji zadatak</div>
+        <div class="subtitle header-phone">
+          <a href="tel:+995557645196" class="header-phone-link">// +995 557 645 196</a>
+        </div>
+        <div class="subtitle header-support">
+          <a href="https://t.me/masterasupport" target="_blank" class="header-support-link">// @masterasupport</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-controls">
+      <div class="header-group">
+        <div class="language-switcher">
+          <a href="/ru/cenovnik/" class="lang-btn" data-lang="ru">RUS</a>
+          <a href="/cenovnik/" class="lang-btn" data-lang="sr">SRB</a>
+          <a href="/en/pricelist/" class="lang-btn active" data-lang="en">ENG</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cen-page">
+    <section class="cen-hero">
+      <h1 class="service-title">Price List</h1>
+      <p class="cen-lead">Indicative prices in Belgrade and Novi Sad. The exact price is confirmed by the handyman before work starts — no add-ons along the way.</p>
+      <a href="/en/" class="cen-cta">Call a handyman</a>
+    </section>
+
+    <section class="cen-utp">
+      <h2 class="cen-utp-title">Fixed price upfront, no surprises</h2>
+      <p class="cen-utp-text">The handyman inspects the job, states the price, and only then begins. The price does not change mid-job. Finding a handyman through the service is free for customers — you pay only for the work, directly to the handyman.</p>
+    </section>
+
+      <section class="cen-group">
+        <h2 class="cen-group-title">Plumber</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Clearing a blockage</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Tap replacement</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Pipe leak repair</td><td class="cen-cell"><span class="cen-from">from</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Electrician</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Socket or switch replacement</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Chandelier installation</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>New wiring line</td><td class="cen-cell"><span class="cen-from">from</span> 8 000 RSD <span class="cen-eur">(~68 €)</span></td></tr>
+            <tr><td>Fuse box replacement</td><td class="cen-cell"><span class="cen-from">from</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Handyman by the hour</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>One-off small job</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Minimum call-out</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>1 working hour</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Furniture assembly</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Bed assembly</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Kitchen unit</td><td class="cen-cell"><span class="cen-from">from</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Wardrobe assembly</td><td class="cen-cell"><span class="cen-from">from</span> 6 000 RSD <span class="cen-eur">(~51 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Home repairs</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Door handle replacement</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Window adjustment</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Lock replacement</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Mounting</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Shelf mounting</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Curtain rail fitting</td><td class="cen-cell"><span class="cen-from">from</span> 2 500 RSD <span class="cen-eur">(~21 €)</span></td></tr>
+            <tr><td>Mirror mounting</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Wall-mounting a TV</td><td class="cen-cell"><span class="cen-from">from</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Cleaning</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Dust cleaning</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Regular studio cleaning</td><td class="cen-cell"><span class="cen-from">from</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>Deep cleaning</td><td class="cen-cell"><span class="cen-from">from</span> 10 000 RSD <span class="cen-eur">(~85 €)</span></td></tr>
+            <tr><td>Post-renovation cleaning</td><td class="cen-cell"><span class="cen-from">from</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Movers</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Mover (per hour)</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Carrying furniture upstairs</td><td class="cen-cell"><span class="cen-from">from</span> 3 000 RSD <span class="cen-eur">(~26 €)</span></td></tr>
+            <tr><td>Transport (charged separately)</td><td class="cen-cell"><span class="cen-from">from</span> 5 000 RSD <span class="cen-eur">(~43 €)</span></td></tr>
+            <tr><td>One-room flat move</td><td class="cen-cell"><span class="cen-from">from</span> 12 000 RSD <span class="cen-eur">(~103 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="cen-group">
+        <h2 class="cen-group-title">Computer technician</h2>
+        <table class="cen-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">Price</th></tr></thead>
+          <tbody>
+            <tr><td>Diagnostics</td><td class="cen-cell"><span class="cen-from">from</span> 2 000 RSD <span class="cen-eur">(~17 €)</span></td></tr>
+            <tr><td>Windows installation</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+            <tr><td>Dust cleaning</td><td class="cen-cell"><span class="cen-from">from</span> 4 000 RSD <span class="cen-eur">(~34 €)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    <p class="cen-note">Prices are indicative and depend on the complexity of the job and the materials needed. Minimum prices are shown — the exact price is confirmed after inspection.</p>
+
+    <section class="cen-faq">
+      <h2 class="cen-group-title">Frequently asked questions about prices</h2>
+      <details class="cen-faq-item"><summary>Is finding a handyman free?</summary><p>Yes. The service is free for customers — we take no commission on the price of the work. You pay the handyman directly, at the agreed price.</p></details>
+      <details class="cen-faq-item"><summary>Can the price change during the job?</summary><p>No. The handyman inspects the job and states a fixed price before starting. If something hidden comes up, they agree it with you first.</p></details>
+      <details class="cen-faq-item"><summary>Are materials included in the price?</summary><p>No, the table shows the cost of labour. Materials are paid separately — the handyman can source them, or you can provide your own.</p></details>
+    </section>
+
+    <section class="cen-bottom-cta">
+      <a href="/en/" class="cen-cta">Call a handyman</a>
+      <a href="/en/" class="cen-back">Back to home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2026 Pravi Majstor • Price list • Email: <a href="mailto:mastera.handyman@gmail.com" class="footer-link">mastera.handyman@gmail.com</a></p>
+    <p class="footer-privacy">By submitting any form you consent to the processing of personal data in accordance with the legislation of the Republic of Serbia.</p>
+  </footer>
+
+  <a id="scrollToTop" class="scroll-to-top whatsapp-fab" href="https://wa.me/995557645196" target="_blank" rel="noopener">
+    <img src="../../image/whatsapp-icon.png" alt="WhatsApp" width="128" height="128" decoding="async">
+  </a>
+</body>
+</html>
