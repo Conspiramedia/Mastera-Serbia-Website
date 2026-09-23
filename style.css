@@ -3154,6 +3154,32 @@ body.modal-open {
         grid-row: 4;
     }
 
+    /* ── Анкета мастера: специальность → уточнение → опыт ──────────
+       В анкете мастера разделителя «или» нет (Telegram обязателен,
+       WhatsApp — по желанию), поэтому строки сдвинуты относительно
+       клиентской формы:
+         row 1 — имя / телефон,
+         row 2 — Telegram / район,
+         row 3 — WhatsApp / специальность,
+         row 4 — опыт / уточнение «Другое».
+
+       Позиции задаём явно: иначе поле specialty_other, появляющееся
+       по выбору «Другое», встаёт в ближайшую свободную ячейку (левую)
+       и выталкивает «Опыт работы» в правую колонку — поля меняются
+       местами прямо на глазах у мастера. */
+    #masterLeadFormModal .contact-form select[name="specialty"] {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #masterLeadFormModal .contact-form input[name="experience"] {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #masterLeadFormModal .contact-form input[name="specialty_other"] {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
     /* Описание задачи ниже, чем на мобильном: место есть, а текст
        заявки — главное поле для мастера */
     #clientLeadFormModal .contact-form textarea,
