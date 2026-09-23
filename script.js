@@ -812,7 +812,11 @@ function sendMasterLeadToBot(formData) {
             telegram:  get('telegram'),
             whatsapp:  get('whatsapp'),
             specialty: experience ? `${specialty} (опыт: ${experience} лет)` : specialty,
-            message:   get('message'),
+            // Рассказ мастера о себе лежит в <textarea name="about"> (во всех трёх
+            // языковых анкетах). Раньше читалось только 'message' — такого поля в
+            // форме нет, и обязательный текст об опыте молча терялся по пути в бота.
+            // 'message' оставлен вторым вариантом на случай других форм.
+            message:   get('about') || get('message') || '',
             honeypot:  get('_gotcha'),
             lang:      ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru'
         };
