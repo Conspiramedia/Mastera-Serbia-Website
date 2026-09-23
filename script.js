@@ -872,6 +872,48 @@ function initClientPhotoUpload() {
     initClientPhotoUpload._reset = () => { leadPhotoDataUrls = []; renderPreviews(); };
 }
 
+// Одноразовый код связки «анкета на сайте ↔ мастер в боте». Генерируется при
+// отправке формы, уходит в бота полем code и подставляется в диплинк кнопки
+// «Завершить регистрацию» (?start=m_<code>). По нему бот подтянет анкету, и
+// мастеру не придётся вводить данные заново — только пройти селфи-верификацию.
+//
+// Почему код, а не username Telegram: мастер может указать в анкете один ник, а
+// прийти в бота с другого аккаунта (или вообще без username) — связать анкету с
+// человеком по нику нельзя. Код приходит в самом диплинке, поэтому связка точная.
+let masterLeadCode = '';
+function generateMasterLeadCode() {
+    // 24 hex-символа в нижнем регистре: безопасно для диплинка Telegram
+    // (?start=… допускает [A-Za-z0-9_-]) и переживает .toLowerCase() при разборе в боте.
+    try {
+        const bytes = new Uint8Array(12);
+        crypto.getRandomValues(bytes);
+        return Array.from(bytes, b => b.toString(16).padStart(2, '0')).join('');
+    } catch (e) {
+        // Фолбэк без Web Crypto (очень старые браузеры)
+        return (Date.now().toString(16) + Math.random().toString(16).slice(2)).slice(0, 24);
+    }
+}
+
+// Город мастера по выбранному району: бот рассылает заявки мастерам ОДНОГО
+// города (фильтр city в get_masters_by_rating), а в анкете поля города нет.
+// «Стари-Град» есть в обоих городах — для него город определить нельзя,
+// поэтому отдаём пустую строку, и бот спросит город сам.
+function masterCityFromDistrict(slug) {
+    if (!slug || slug === 'All' || slug === 'StariGrad') return '';
+    if (Object.prototype.hasOwnProperty.call(NOVI_SAD_DISTRICTS, slug)) return 'Нови-Сад';
+    if (Object.prototype.hasOwnProperty.call(BELGRADE_DISTRICTS, slug)) return 'Белград';
+    return '';
+}
+
+// Диплинк «завершить регистрацию»: если есть код связки — ведём на ?start=m_<code>
+// (бот подтянет анкету и попросит только селфи), иначе на общий ?start=master.
+function masterFinishDeeplink() {
+    if (masterLeadCode) {
+        return MASTER_BOT_DEEPLINK.replace(/\?start=.*$/, '') + '?start=m_' + masterLeadCode;
+    }
+    return MASTER_BOT_DEEPLINK;
+}
+
 // Отправка анкеты мастера в Telegram-бота (лид админу). Fire-and-forget, не влияет на email.
 function sendMasterLeadToBot(formData) {
     try {
@@ -892,6 +934,20 @@ function sendMasterLeadToBot(formData) {
             // Исходный текст не теряем: «Vodoinstalater» админу понятнее, чем
             // «Сантехника», а боту для матчинга нужна именно категория выше.
             specialty: experience ? `${specialty} (опыт: ${experience} лет)` : specialty,
+            // Поля ниже — для автоподстановки в боте при входе по ?start=m_<code>.
+            // Опыт числом лет: бот сам переведёт его в свою подпись
+            // («До 1 года / 1–3 года / 3–5 лет / 5+ лет»).
+            experience: experience,
+            // Район работы: в форме это слуг (Vracar), боту нужен канон-RU (Врачар),
+            // как и в клиентской заявке. All → «Все районы».
+            district:  BOT_DISTRICT_MAP[get('district')]
+                       || (get('district') === 'All' ? 'Все районы' : get('district'))
+                       || 'Все районы',
+            // Город выводим из района: рассылка заявок фильтрует мастеров по городу,
+            // а поля города в анкете нет. Пусто — бот спросит сам.
+            city:      masterCityFromDistrict(get('district')),
+            // Код связки с диплинком ?start=m_<code>.
+            code:      masterLeadCode,
             // Рассказ мастера о себе лежит в <textarea name="about"> (во всех трёх
             // языковых анкетах). Раньше читалось только 'message' — такого поля в
             // форме нет, и обязательный текст об опыте молча терялся по пути в бота.
@@ -920,17 +976,22 @@ function ensureMasterTelegramButton() {
     const modal = document.getElementById('masterThankYouModal');
     if (!modal) return;
     const content = modal.querySelector('.thank-you-content');
-    if (!content || content.querySelector('.master-tg-finish-btn')) return;
-    const link = document.createElement('a');
-    link.className = 'master-tg-finish-btn';
-    link.href = MASTER_BOT_DEEPLINK;
-    link.target = '_blank';
-    link.rel = 'noopener';
-    link.textContent = t('masterFinishTelegram');
-    // Вставляем перед кнопкой «Отлично!», если она есть
-    const okBtn = content.querySelector('.thank-you-btn');
-    if (okBtn) content.insertBefore(link, okBtn);
-    else content.appendChild(link);
+    if (!content) return;
+    // При повторном вызове (после отправки формы) кнопка уже есть — её нужно не
+    // пропустить, а обновить: href должен получить свежий код связки.
+    let link = content.querySelector('.master-tg-finish-btn');
+    if (!link) {
+        link = document.createElement('a');
+        link.className = 'master-tg-finish-btn';
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = t('masterFinishTelegram');
+        // Вставляем перед кнопкой «Отлично!», если она есть
+        const okBtn = content.querySelector('.thank-you-btn');
+        if (okBtn) content.insertBefore(link, okBtn);
+        else content.appendChild(link);
+    }
+    link.href = masterFinishDeeplink();
 }
 
 // ============================================
@@ -1166,6 +1227,10 @@ function initMasterLeadFormTracking() {
         isSubmitting = true;
 
         const formData = new FormData(masterLeadForm);
+
+        // Новый код связки на каждую отправку: он уйдёт в бота и попадёт в диплинк
+        // кнопки «Завершить регистрацию» (?start=m_<code>).
+        masterLeadCode = generateMasterLeadCode();
 
         // Дублируем анкету мастера в Telegram-бота (лид админу), не влияет на email
         sendMasterLeadToBot(formData);
