@@ -433,19 +433,36 @@
           <option value="Ostalo">Ostalo</option>
         </select>
         <input type="number" name="experience" placeholder="Iskustvo (godine)" required min="0" max="50">
+        <!-- Opštine su grupisane po gradu: bot šalje porudžbine majstorima JEDNOG grada,
+             a u prijavi nema posebnog polja za grad — izvodi se iz izabrane opštine
+             (vidi masterCityFromDistrict u script.js). Zato «Stari Grad» postoji u oba
+             grada sa različitim vrednostima: StariGrad (Beograd) i StariGradNS (Novi Sad). -->
         <select name="district" required>
           <option value="" disabled selected>Radna opština</option>
-          <option value="Vracar">Vračar</option>
-          <option value="NoviBeograd">Novi Beograd</option>
-          <option value="StariGrad">Stari Grad</option>
-          <option value="SavskiVenac">Savski Venac</option>
-          <option value="Vozdovac">Voždovac</option>
-          <option value="Zemun">Zemun</option>
-          <option value="Zvezdara">Zvezdara</option>
-          <option value="Palilula">Palilula</option>
-          <option value="Cukarica">Čukarica</option>
-          <option value="Rakovica">Rakovica</option>
-          <option value="All">Sve opštine</option>
+          <optgroup label="Beograd">
+            <option value="Vracar">Vračar</option>
+            <option value="NoviBeograd">Novi Beograd</option>
+            <option value="StariGrad">Stari Grad</option>
+            <option value="SavskiVenac">Savski Venac</option>
+            <option value="Vozdovac">Voždovac</option>
+            <option value="Zemun">Zemun</option>
+            <option value="Zvezdara">Zvezdara</option>
+            <option value="Palilula">Palilula</option>
+            <option value="Cukarica">Čukarica</option>
+            <option value="Rakovica">Rakovica</option>
+            <option value="AllBG">Sve opštine (Beograd)</option>
+          </optgroup>
+          <optgroup label="Novi Sad">
+            <option value="Liman">Liman</option>
+            <option value="Detelinara">Detelinara</option>
+            <option value="Grbavica">Grbavica</option>
+            <option value="Telep">Telep</option>
+            <option value="Podbara">Podbara</option>
+            <option value="Petrovaradin">Petrovaradin</option>
+            <option value="NovoNaselje">Novo Naselje</option>
+            <option value="StariGradNS">Stari Grad</option>
+            <option value="AllNS">Sve opštine (Novi Sad)</option>
+          </optgroup>
         </select>
         <textarea name="about" rows="3" placeholder="Recite nam nešto o sebi i svom iskustvu" required minlength="20"></textarea>
         <input type="hidden" name="_subject" value="Nova prijava majstora - registracija">

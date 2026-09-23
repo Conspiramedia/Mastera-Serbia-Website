@@ -895,14 +895,36 @@ function generateMasterLeadCode() {
 }
 
 // Город мастера по выбранному району: бот рассылает заявки мастерам ОДНОГО
-// города (фильтр city в get_masters_by_rating), а в анкете поля города нет.
-// «Стари-Град» есть в обоих городах — для него город определить нельзя,
-// поэтому отдаём пустую строку, и бот спросит город сам.
+// города (фильтр city в get_masters_by_rating), а отдельного поля города в
+// анкете нет — <select name="district"> сгруппирован по городам через <optgroup>.
+//
+// Значения, специфичные для анкеты мастера (в клиентской заявке их нет):
+//   StariGrad   — Стари-Град в Белграде;
+//   StariGradNS — Стари-Град в Нови-Саде (район называется так же, поэтому нужны
+//                 разные значения: иначе город из района не вывести);
+//   AllBG/AllNS — «все районы» в пределах города;
+//   All         — устаревшее «все районы» без города (осталось в кэше страниц у
+//                 тех, кто открыл сайт до этой правки) — город неизвестен.
 function masterCityFromDistrict(slug) {
-    if (!slug || slug === 'All' || slug === 'StariGrad') return '';
-    if (Object.prototype.hasOwnProperty.call(NOVI_SAD_DISTRICTS, slug)) return 'Нови-Сад';
+    if (!slug || slug === 'All') return '';   // город неизвестен — бот спросит сам
+    if (slug === 'AllBG') return 'Белград';
+    if (slug === 'AllNS') return 'Нови-Сад';
+    if (slug === 'StariGradNS') return 'Нови-Сад';
+    // Белград проверяем ПЕРВЫМ: ключ StariGrad есть в обоих справочниках
+    // (в клиентских формах район так называется в обоих городах), и при обратном
+    // порядке белградский «StariGrad» ошибочно давал бы Нови-Сад.
     if (Object.prototype.hasOwnProperty.call(BELGRADE_DISTRICTS, slug)) return 'Белград';
+    if (Object.prototype.hasOwnProperty.call(NOVI_SAD_DISTRICTS, slug)) return 'Нови-Сад';
     return '';
+}
+
+// Район мастера в каноническом виде для бота. В анкете значения свои
+// (StariGradNS, AllBG/AllNS), поэтому обычного BOT_DISTRICT_MAP недостаточно.
+function masterDistrictForBot(slug) {
+    if (!slug) return 'Все районы';
+    if (slug === 'All' || slug === 'AllBG' || slug === 'AllNS') return 'Все районы';
+    if (slug === 'StariGradNS') return 'Стари-Град';   // как в config.yaml бота
+    return BOT_DISTRICT_MAP[slug] || slug;
 }
 
 // Диплинк «завершить регистрацию»: если есть код связки — ведём на ?start=m_<code>
@@ -938,11 +960,9 @@ function sendMasterLeadToBot(formData) {
             // Опыт числом лет: бот сам переведёт его в свою подпись
             // («До 1 года / 1–3 года / 3–5 лет / 5+ лет»).
             experience: experience,
-            // Район работы: в форме это слуг (Vracar), боту нужен канон-RU (Врачар),
-            // как и в клиентской заявке. All → «Все районы».
-            district:  BOT_DISTRICT_MAP[get('district')]
-                       || (get('district') === 'All' ? 'Все районы' : get('district'))
-                       || 'Все районы',
+            // Район работы: в форме это слуг (Vracar), боту нужен канон-RU (Врачар).
+            // AllBG/AllNS/All → «Все районы», StariGradNS → «Стари-Град».
+            district:  masterDistrictForBot(get('district')),
             // Город выводим из района: рассылка заявок фильтрует мастеров по городу,
             // а поля города в анкете нет. Пусто — бот спросит сам.
             city:      masterCityFromDistrict(get('district')),

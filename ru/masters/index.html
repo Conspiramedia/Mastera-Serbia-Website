@@ -432,19 +432,37 @@
           <option value="Другое">Другое</option>
         </select>
         <input type="number" name="experience" placeholder="Опыт работы (лет)" required min="0" max="50">
+        <!-- Районы сгруппированы по городу: бот рассылает заявки мастерам ОДНОГО
+             города, а отдельного поля города в анкете нет — он выводится из
+             выбранного района (см. masterCityFromDistrict в script.js). Поэтому
+             «Стари-Град» есть в обоих городах с разными значениями:
+             StariGrad (Белград) и StariGradNS (Нови-Сад). -->
         <select name="district" required>
           <option value="" disabled selected>Район работы</option>
-          <option value="Vracar">Врачар</option>
-          <option value="NoviBeograd">Нови-Београд</option>
-          <option value="StariGrad">Стари-Град</option>
-          <option value="SavskiVenac">Савски-Венац</option>
-          <option value="Vozdovac">Вождовац</option>
-          <option value="Zemun">Земун</option>
-          <option value="Zvezdara">Звездара</option>
-          <option value="Palilula">Палилула</option>
-          <option value="Cukarica">Чукарица</option>
-          <option value="Rakovica">Раковица</option>
-          <option value="All">Все районы</option>
+          <optgroup label="Белград">
+            <option value="Vracar">Врачар</option>
+            <option value="NoviBeograd">Нови-Београд</option>
+            <option value="StariGrad">Стари-Град</option>
+            <option value="SavskiVenac">Савски-Венац</option>
+            <option value="Vozdovac">Вождовац</option>
+            <option value="Zemun">Земун</option>
+            <option value="Zvezdara">Звездара</option>
+            <option value="Palilula">Палилула</option>
+            <option value="Cukarica">Чукарица</option>
+            <option value="Rakovica">Раковица</option>
+            <option value="AllBG">Все районы (Белград)</option>
+          </optgroup>
+          <optgroup label="Нови-Сад">
+            <option value="Liman">Лиман</option>
+            <option value="Detelinara">Детелинара</option>
+            <option value="Grbavica">Грбавица</option>
+            <option value="Telep">Телеп</option>
+            <option value="Podbara">Подбара</option>
+            <option value="Petrovaradin">Петроварадин</option>
+            <option value="NovoNaselje">Ново-Населье</option>
+            <option value="StariGradNS">Стари-Град</option>
+            <option value="AllNS">Все районы (Нови-Сад)</option>
+          </optgroup>
         </select>
         <textarea name="about" rows="3" placeholder="Расскажите о себе и опыте работы" required minlength="20"></textarea>
         <input type="hidden" name="_subject" value="Новая заявка мастера - Регистрация">
