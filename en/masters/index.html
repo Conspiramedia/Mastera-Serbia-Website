@@ -418,9 +418,10 @@
       <form action="https://formspree.io/f/xeajjwlo" method="POST" class="contact-form" id="masterLeadForm">
         <input type="text" name="name" placeholder="Your name" required minlength="2">
         <input type="tel" name="phone" id="masterLeadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$">
-        <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
-        <p class="contact-or-text">OR</p>
-        <input type="text" name="whatsapp" placeholder="WhatsApp: phone number" data-contact-required>
+        <!-- Telegram is required: the master finishes registration in the bot through it
+             (deep link ?start=m_<code>) and receives orders. WhatsApp is an extra contact. -->
+        <input type="text" name="telegram" placeholder="Telegram: @username" required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})$">
+        <input type="text" name="whatsapp" placeholder="WhatsApp: phone number (optional)">
         <!-- Categories match the bot's own list (config.yaml →
              master_registration.specialties): the bot uses them to match a master
              with orders. Choosing "Other" reveals the specialty_other field. -->

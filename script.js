@@ -12,6 +12,7 @@ const i18n = {
         phoneInvalid:        'Пожалуйста, введите корректный сербский номер телефона в формате: +381XXXXXXXX (8–10 цифр после +381)',
         telegramInvalid:     'Пожалуйста, введите корректный Telegram username (например: @username) или номер телефона',
         contactRequired:     'Пожалуйста, заполните хотя бы один из контактов: Telegram или WhatsApp',
+        telegramRequiredMaster: 'Пожалуйста, укажите Telegram — верификация мастера проходит в Telegram-боте',
         submitError:         'Ошибка при отправке. Попробуйте ещё раз.',
         photoLabel:          '📷 Фото проблемы (по желанию, до 3)',
         photoAdd:            'Прикрепить фото',
@@ -28,6 +29,7 @@ const i18n = {
         phoneInvalid:        'Molimo unesite ispravan srpski broj telefona u formatu: +381XXXXXXXX (8–10 cifara posle +381)',
         telegramInvalid:     'Molimo unesite ispravno Telegram korisničko ime (npr: @username) ili broj telefona',
         contactRequired:     'Molimo popunite bar jedno polje za kontakt: Telegram ili WhatsApp',
+        telegramRequiredMaster: 'Molimo unesite Telegram — verifikacija majstora se obavlja u Telegram botu',
         submitError:         'Došlo je do greške pri slanju. Pokušajte ponovo.',
         photoLabel:          '📷 Fotografija problema (opciono, do 3)',
         photoAdd:            'Priloži fotografiju',
@@ -44,6 +46,7 @@ const i18n = {
         phoneInvalid:        'Please enter a valid Serbian phone number in the format: +381XXXXXXXX (8–10 digits after +381)',
         telegramInvalid:     'Please enter a valid Telegram username (e.g. @username) or phone number',
         contactRequired:     'Please fill in at least one contact field: Telegram or WhatsApp',
+        telegramRequiredMaster: 'Please provide your Telegram — master verification happens in the Telegram bot',
         submitError:         'An error occurred while submitting. Please try again.',
         photoLabel:          '📷 Photo of the problem (optional, up to 3)',
         photoAdd:            'Attach photo',
@@ -1363,20 +1366,20 @@ function validateMasterLeadForm(e) {
     const form          = e.target;
     const phoneInput    = document.getElementById('masterLeadPhone');
     const telegramInput = form.querySelector('input[name="telegram"]');
-    const whatsappInput = form.querySelector('input[name="whatsapp"]');
 
     const telegramValue = telegramInput ? telegramInput.value.trim() : '';
-    const whatsappValue = whatsappInput ? whatsappInput.value.trim() : '';
 
-    if (!telegramValue && !whatsappValue) {
-        alert(t('contactRequired'));
-        if (telegramInput && !telegramValue) telegramInput.focus();
-        else if (whatsappInput) whatsappInput.focus();
+    // Для мастера Telegram обязателен: верификация (селфи+код) и приём заявок идут
+    // в Telegram-боте, туда же ведёт диплинк ?start=m_<code> с кодом связки.
+    // WhatsApp — по желанию, дополнительный контакт для админа.
+    if (!telegramValue) {
+        alert(t('telegramRequiredMaster'));
+        if (telegramInput) telegramInput.focus();
         return false;
     }
 
     if (!validatePhone(phoneInput)) return false;
-    if (telegramValue && !validateTelegram(telegramInput)) return false;
+    if (!validateTelegram(telegramInput)) return false;
 
     // Если специальность «Другое» — уточнение обязательно: иначе в бота уйдёт
     // голая категория «Другое», и админ не поймёт, кто зарегистрировался.
