@@ -382,7 +382,7 @@ ru/ sr/ en/             — языковые хабы
 {услуга}-{город}-sr/    — SR-версия
 {услуга}-{город}-en/    — EN-версия
 script.js               — форма заявки → BOT_REQUEST_URL, BOT_MASTER_URL
-bot-proxy-worker.js     — Cloudflare Worker, прокси к боту
+                          (напрямую в Railway; Cloudflare Worker-прокси удалён)
 sitemap.xml             — ~103 URL
 CNAME                   — pravimajstor.rs
 ```
