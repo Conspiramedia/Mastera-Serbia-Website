@@ -213,6 +213,43 @@ header .online-counter {
         align-self: stretch;          /* строка занимает всю ширину блока */
         justify-content: space-between;/* город — слева, язык — справа */
     }
+
+    /* ── Страницы БЕЗ переключателя города (анкета мастера и т.п.) ──────────
+       В нижней строке остаётся один переключатель языка, и при space-between он
+       прижимался к левому краю — вставал под «Для клиентов», а не под счётчиком.
+
+       Раскладываем ОБЕ строки одной сеткой из двух колонок: ширину первой задаёт
+       «Для клиентов», второй — счётчик. Переключатель языка кладём во вторую
+       колонку — он автоматически встаёт ровно под счётчик и получает его ширину.
+       Ничего не захардкожено: колонки считает сама сетка, поэтому раскладка не
+       поедет от длины текста на другом языке. */
+    .header-controls:not(:has(.city-switcher)) {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;         /* блок держится у правого края шапки */
+    }
+    /* Группы больше не контейнеры-строки: их содержимое раскладывает сама сетка */
+    .header-controls:not(:has(.city-switcher)) .header-group {
+        display: contents;
+    }
+    .header-controls:not(:has(.city-switcher)) .audience-link {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .header-controls:not(:has(.city-switcher)) .online-counter {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    /* Переключатель языка — вторая колонка, под счётчиком, во всю её ширину */
+    .header-controls:not(:has(.city-switcher)) .language-switcher {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    /* Кнопки RUS/SRB/ENG делят ширину поровну — переключатель выглядит цельной
+       плашкой, как счётчик сверху, а не тремя кнопками, прижатыми влево. */
+    .header-controls:not(:has(.city-switcher)) .lang-btn {
+        flex: 1;
+    }
 }
 
 .logo {
