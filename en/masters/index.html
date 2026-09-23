@@ -492,13 +492,17 @@
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
         </svg>
       </div>
-      <h2 class="thank-you-title">Request sent!</h2>
-      <p class="thank-you-text">We received your master registration request.<br>Our specialist will contact you for confirmation and to start working.</p>
-      <div class="thank-you-badge">
-        <span class="badge-label">Processing time</span>
-        <span class="badge-value">up to 24 hours</span>
+      <h2 class="thank-you-title">Application received!</h2>
+      <p class="thank-you-text">We received your application.<br>To start getting orders, complete a quick registration in Telegram — it takes 30 seconds.</p>
+      <!-- The "processing time" block and the "Great!" button are removed on purpose:
+           the master should be led into the Telegram bot, not given a way to close
+           the window and leave. The "Continue in Telegram" button is added by the
+           script (ensureMasterTelegramButton) — its link carries the one-time code
+           that links this application to the master. -->
+      <div class="thank-you-privacy">
+        <span class="thank-you-privacy-item">🔒 Your data is protected</span>
+        <span class="thank-you-privacy-item">🚫 Never shared with third parties</span>
       </div>
-      <button class="submit-btn thank-you-btn thank-you-master-btn" onclick="closeMasterThankYou()">Great!</button>
     </div>
   </div>
 

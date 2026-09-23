@@ -492,13 +492,16 @@
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
         </svg>
       </div>
-      <h2 class="thank-you-title">Заявка отправлена!</h2>
-      <p class="thank-you-text">Мы получили вашу заявку на регистрацию мастера.<br>Наш специалист свяжется с вами для подтверждения и начала работы.</p>
-      <div class="thank-you-badge">
-        <span class="badge-label">Время обработки</span>
-        <span class="badge-value">до 24 часов</span>
+      <h2 class="thank-you-title">Анкета принята!</h2>
+      <p class="thank-you-text">Мы получили вашу анкету.<br>Чтобы начать получать заказы, пройдите быструю регистрацию в Telegram — это займёт 30 секунд.</p>
+      <!-- Блок «время обработки» и кнопка «Отлично!» убраны намеренно: мастера
+           нужно вести в Telegram-бота, а не давать ему закрыть окно и уйти.
+           Кнопку «Продолжить в Telegram» добавляет скрипт (ensureMasterTelegramButton) —
+           её ссылка содержит одноразовый код связки с анкетой. -->
+      <div class="thank-you-privacy">
+        <span class="thank-you-privacy-item">🔒 Данные защищены</span>
+        <span class="thank-you-privacy-item">🚫 Не передаются третьим лицам</span>
       </div>
-      <button class="submit-btn thank-you-btn thank-you-master-btn" onclick="closeMasterThankYou()">Отлично!</button>
     </div>
   </div>
 

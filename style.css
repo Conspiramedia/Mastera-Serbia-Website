@@ -2391,6 +2391,25 @@ body.modal-open {
     margin-bottom: 2rem;
 }
 
+/* Гарантии в окне «Анкета принята» — снимают опасение отдать контакты.
+   Стоят вместо блока «время обработки»: мастеру важнее понять, что дальше
+   идти в Telegram, а не ждать звонка. */
+.thank-you-privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.thank-you-privacy-item {
+    display: block;   /* каждая гарантия — своей строкой, даже без flex */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
+
 .thank-you-badge {
     display: inline-block;
     padding: 1rem 2rem;

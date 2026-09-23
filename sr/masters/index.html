@@ -492,13 +492,16 @@
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
         </svg>
       </div>
-      <h2 class="thank-you-title">Prijava je poslata!</h2>
-      <p class="thank-you-text">Primili smo vašu prijavu za registraciju majstora.<br>Naš specijalista će vas kontaktirati radi potvrde i početka rada.</p>
-      <div class="thank-you-badge">
-        <span class="badge-label">Vreme obrade</span>
-        <span class="badge-value">do 24 sata</span>
+      <h2 class="thank-you-title">Prijava je primljena!</h2>
+      <p class="thank-you-text">Primili smo vašu prijavu.<br>Da biste počeli da primate porudžbine, završite brzu registraciju u Telegramu — traje 30 sekundi.</p>
+      <!-- Blok «vreme obrade» i dugme «Odlično!» su namerno uklonjeni: majstora
+           treba voditi u Telegram bot, a ne mu dati da zatvori prozor i ode.
+           Dugme «Nastavi u Telegramu» dodaje skripta (ensureMasterTelegramButton) —
+           njegov link sadrži jednokratni kod veze sa prijavom. -->
+      <div class="thank-you-privacy">
+        <span class="thank-you-privacy-item">🔒 Podaci su zaštićeni</span>
+        <span class="thank-you-privacy-item">🚫 Ne prosleđuju se trećim licima</span>
       </div>
-      <button class="submit-btn thank-you-btn thank-you-master-btn" onclick="closeMasterThankYou()">Odlično!</button>
     </div>
   </div>
 
