@@ -422,14 +422,18 @@
         <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">ili</p>
         <input type="text" name="whatsapp" placeholder="WhatsApp: broj" data-contact-required>
+        <!-- Kategorije su iste kao u botu (config.yaml → master_registration.specialties),
+             samo na srpskom: po njima bot uparuje majstora sa porudžbinama.
+             Kod «Ostalo» skripta prikazuje dodatno polje specialty_other. -->
         <select name="specialty" required>
           <option value="" disabled selected>Vaša specijalnost</option>
-          <option value="Vodoinstalater">Vodoinstalater</option>
-          <option value="Električar">Električar</option>
-          <option value="Majstor za popravke">Majstor za popravke</option>
-          <option value="Monter nameštaja">Monter nameštaja</option>
-          <option value="Čistač">Čistač</option>
-          <option value="Nosač">Nosač</option>
+          <option value="Majstor na sat">Majstor na sat</option>
+          <option value="Vodoinstalacije">Vodoinstalacije</option>
+          <option value="Elektrika">Elektrika</option>
+          <option value="Popravke">Popravke</option>
+          <option value="Nameštaj">Nameštaj</option>
+          <option value="Selidbe">Selidbe</option>
+          <option value="Čišćenje">Čišćenje</option>
           <option value="Ostalo">Ostalo</option>
         </select>
         <input type="number" name="experience" placeholder="Iskustvo (godine)" required min="0" max="50">

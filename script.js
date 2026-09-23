@@ -20,6 +20,8 @@ const i18n = {
         photoTooBig:         'Файл слишком большой (до 10 МБ)',
         photoRemove:         'Удалить',
         masterFinishTelegram:'✅ Завершить регистрацию в Telegram',
+        specialtyOtherPlaceholder: 'Укажите вашу специальность',
+        specialtyOtherRequired:    'Пожалуйста, укажите вашу специальность',
         urgentLabel:         '🚨 Срочный заказ',
     },
     sr: {
@@ -34,6 +36,8 @@ const i18n = {
         photoTooBig:         'Fajl je prevelik (do 10 MB)',
         photoRemove:         'Ukloni',
         masterFinishTelegram:'✅ Završi registraciju u Telegramu',
+        specialtyOtherPlaceholder: 'Navedite vašu specijalnost',
+        specialtyOtherRequired:    'Molimo navedite vašu specijalnost',
         urgentLabel:         '🚨 Hitna porudžbina',
     },
     en: {
@@ -48,6 +52,8 @@ const i18n = {
         photoTooBig:         'File is too large (up to 10 MB)',
         photoRemove:         'Remove',
         masterFinishTelegram:'✅ Finish registration in Telegram',
+        specialtyOtherPlaceholder: 'Specify your specialty',
+        specialtyOtherRequired:    'Please specify your specialty',
         urgentLabel:         '🚨 Urgent order',
     }
 };
@@ -83,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initClientPhotoUpload();
     initClientDistrictOptions();
     initClientUrgentOption();
+    initMasterSpecialtyOther();
     initMasterLeadFormTracking();
     initWhatsAppButtonTracking();
     initBannerShift();
@@ -653,20 +660,23 @@ const BOT_SPECIALTY_MAP = {
     'Nosač': 'Грузчики', 'Nosac': 'Грузчики',
     'Грузчик': 'Грузчики', 'Mover': 'Грузчики',
     // ── Другое ──
-    'Ostalo': 'Другое', 'Другое': 'Другое', 'Other': 'Другое',
-    // Уже канонические значения — на случай, если форму когда-нибудь
-    // переведут на категории вместо профессий.
-    'Сантехника': 'Сантехника', 'Электрика': 'Электрика', 'Ремонт': 'Ремонт',
-    'Мебель': 'Мебель', 'Грузчики': 'Грузчики', 'Мастер на час': 'Мастер на час'
+    'Ostalo': 'Другое', 'Другое': 'Другое', 'Other': 'Другое'
 };
 
-// Приводит профессию из анкеты мастера к канонической категории бота.
+// Приводит специальность из анкеты мастера к канонической категории бота.
+//
+// Сейчас <select> в анкете перечисляет те же категории, что и в боте, на языке
+// страницы («Vodoinstalacije», «Сантехника», «Plumbing») — их разбирает
+// BOT_SERVICE_MAP, общий с формой заявки клиента. BOT_SPECIALTY_MAP оставлен
+// первым: он покрывает ПРОФЕССИИ («Vodoinstalater», «Отделочник», «Plumber»),
+// которые стояли в анкете раньше и могут прийти из закэшированной страницы.
+//
 // Незнакомое значение → «Другое»: бот принимает такую анкету, а админ
 // в уведомлении всё равно видит исходный текст специальности.
 function normalizeSpecialty(raw) {
     const value = (raw || '').trim();
     if (!value) return 'Другое';
-    return BOT_SPECIALTY_MAP[value] || 'Другое';
+    return BOT_SPECIALTY_MAP[value] || BOT_SERVICE_MAP[value] || 'Другое';
 }
 
 // Сообщает в GA4, что заявка не доехала до бота.
@@ -872,6 +882,45 @@ function initClientPhotoUpload() {
     initClientPhotoUpload._reset = () => { leadPhotoDataUrls = []; renderPreviews(); };
 }
 
+// Значение опции «Другое» в select специальности по языкам (value из HTML).
+const SPECIALTY_OTHER_VALUE = { ru: 'Другое', sr: 'Ostalo', en: 'Other' };
+
+// Инжектит поле «уточните специальность» в анкету мастера: показывается только
+// когда в select специальности выбрано «Другое». Без правки HTML каждой страницы
+// (как initClientPhotoUpload / initClientUrgentOption).
+//
+// Зачем: без уточнения в бота уходила бы голая категория «Другое», и админ не
+// знал бы, кто именно зарегистрировался — плиточник, маляр или сварщик.
+function initMasterSpecialtyOther() {
+    const form = document.getElementById('masterLeadForm');
+    if (!form) return;
+    const select = form.querySelector('select[name="specialty"]');
+    if (!select) return;
+    if (form.querySelector('input[name="specialty_other"]')) return; // уже добавлено
+
+    const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
+    const otherValue = SPECIALTY_OTHER_VALUE[lang] || SPECIALTY_OTHER_VALUE.ru;
+
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.name = 'specialty_other';
+    input.placeholder = t('specialtyOtherPlaceholder');
+    input.style.display = 'none';           // скрыто, пока не выбрано «Другое»
+    input.minLength = 2;
+
+    // Вставляем сразу после select специальности
+    select.insertAdjacentElement('afterend', input);
+
+    function sync() {
+        const isOther = select.value === otherValue;
+        input.style.display = isOther ? '' : 'none';
+        input.required = isOther;
+        if (!isOther) input.value = '';
+    }
+    select.addEventListener('change', sync);
+    sync();
+}
+
 // Одноразовый код связки «анкета на сайте ↔ мастер в боте». Генерируется при
 // отправке формы, уходит в бота полем code и подставляется в диплинк кнопки
 // «Завершить регистрацию» (?start=m_<code>). По нему бот подтянет анкету, и
@@ -940,10 +989,22 @@ function masterFinishDeeplink() {
 function sendMasterLeadToBot(formData) {
     try {
         const get = (k) => (formData.get(k) || '').toString().trim();
-        const specialty = get('specialty');
         const experience = get('experience');
+
         // Каноническая категория бота — по ней он потом матчит мастера с заявками.
-        const category = normalizeSpecialty(specialty);
+        // Считаем её по значению select'а ДО подмены на уточнение, иначе
+        // «Плиточник» не нашёлся бы в маппинге и категория всё равно стала бы «Другое».
+        const category = normalizeSpecialty(get('specialty'));
+
+        // Если выбрано «Другое» и заполнено уточнение — в текст для админа идёт оно
+        // («Плиточник», «Маляр»), а категорией для бота остаётся «Другое».
+        const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
+        const otherValue = SPECIALTY_OTHER_VALUE[lang] || SPECIALTY_OTHER_VALUE.ru;
+        const specialtyOther = get('specialty_other');
+        let specialty = get('specialty');
+        if (specialty === otherValue && specialtyOther) {
+            specialty = specialtyOther;
+        }
         const payload = {
             name:      get('name'),
             // Пробелы форматирования снимаем — см. sendLeadToBot
@@ -1316,6 +1377,20 @@ function validateMasterLeadForm(e) {
 
     if (!validatePhone(phoneInput)) return false;
     if (telegramValue && !validateTelegram(telegramInput)) return false;
+
+    // Если специальность «Другое» — уточнение обязательно: иначе в бота уйдёт
+    // голая категория «Другое», и админ не поймёт, кто зарегистрировался.
+    const specialtySel = form.querySelector('select[name="specialty"]');
+    const otherInput   = form.querySelector('input[name="specialty_other"]');
+    if (specialtySel && otherInput) {
+        const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
+        const otherValue = SPECIALTY_OTHER_VALUE[lang] || SPECIALTY_OTHER_VALUE.ru;
+        if (specialtySel.value === otherValue && !otherInput.value.trim()) {
+            alert(t('specialtyOtherRequired'));
+            otherInput.focus();
+            return false;
+        }
+    }
 
     return true;
 }

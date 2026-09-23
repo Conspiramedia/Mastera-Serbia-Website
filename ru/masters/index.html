@@ -421,14 +421,18 @@
         <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">ИЛИ</p>
         <input type="text" name="whatsapp" placeholder="WhatsApp: номер телефона" data-contact-required>
+        <!-- Категории те же, что у бота (config.yaml → master_registration.specialties):
+             по ним бот подбирает мастеру заявки. При выборе «Другое» скрипт
+             показывает дополнительное поле specialty_other. -->
         <select name="specialty" required>
           <option value="" disabled selected>Ваша специальность</option>
-          <option value="Сантехник">Сантехник</option>
-          <option value="Электрик">Электрик</option>
-          <option value="Отделочник">Отделочник</option>
-          <option value="Мебельщик">Мебельщик</option>
+          <option value="Мастер на час">Мастер на час</option>
+          <option value="Сантехника">Сантехника</option>
+          <option value="Электрика">Электрика</option>
+          <option value="Ремонт">Ремонт</option>
+          <option value="Мебель">Мебель</option>
+          <option value="Грузчики">Грузчики</option>
           <option value="Клининг">Клининг</option>
-          <option value="Грузчик">Грузчик</option>
           <option value="Другое">Другое</option>
         </select>
         <input type="number" name="experience" placeholder="Опыт работы (лет)" required min="0" max="50">

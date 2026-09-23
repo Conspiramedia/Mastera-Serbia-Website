@@ -421,14 +421,18 @@
         <input type="text" name="telegram" placeholder="Telegram: @username" data-contact-required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})?$">
         <p class="contact-or-text">OR</p>
         <input type="text" name="whatsapp" placeholder="WhatsApp: phone number" data-contact-required>
+        <!-- Categories match the bot's own list (config.yaml →
+             master_registration.specialties): the bot uses them to match a master
+             with orders. Choosing "Other" reveals the specialty_other field. -->
         <select name="specialty" required>
           <option value="" disabled selected>Your specialty</option>
-          <option value="Plumber">Plumber</option>
-          <option value="Electrician">Electrician</option>
-          <option value="Finisher">Finisher</option>
-          <option value="Furniture maker">Furniture maker</option>
+          <option value="Handyman">Handyman</option>
+          <option value="Plumbing">Plumbing</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Repair">Repair</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Movers">Movers</option>
           <option value="Cleaning">Cleaning</option>
-          <option value="Mover">Mover</option>
           <option value="Other">Other</option>
         </select>
         <input type="number" name="experience" placeholder="Work experience (years)" required min="0" max="50">
