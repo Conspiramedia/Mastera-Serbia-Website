@@ -624,6 +624,28 @@ function normalizeService(raw) {
     return BOT_SERVICE_MAP[value] || BOT_SERVICE_MAP[base] || 'Другое';
 }
 
+// Сообщает в GA4, что заявка не доехала до бота.
+//
+// Отправка в бота — fire-and-forget: пользователь видит «спасибо», а заявка
+// параллельно уходит на email через Formspree. Раньше сбой глушился пустым
+// .catch(() => {}), и если бот лежал, узнать об этом было невозможно: письма
+// приходят, а в Telegram мастерам — ничего. Теперь каждый сбой виден в GA4.
+//
+// `form` — 'client' | 'master'; `reason` — 'network' | 'http'.
+function trackBotFail(form, reason, detail) {
+    try {
+        console.error('Bot send failed:', form, reason, detail);
+        if (typeof gtag !== 'function') return;
+        gtag('event', 'lead_bot_fail', {
+            form_type: form,          // какая форма не доехала
+            fail_reason: reason,      // сеть/CORS или HTTP-статус от бота
+            error: String(detail || '').slice(0, 100)  // сообщение или код статуса
+        });
+    } catch (e) {
+        // Аналитика не должна ломать отправку — если и она упала, просто молчим.
+    }
+}
+
 // Отправка клиентской заявки в Telegram-бота через прокси.
 // Не блокирует пользователя и не зависит от ответа — заявка в любом случае уйдёт на email.
 function sendLeadToBot(formData) {
@@ -672,7 +694,13 @@ function sendLeadToBot(formData) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
             keepalive: !hasPhotos
-        }).catch(() => {}); // молча игнорируем — на email заявка всё равно уходит
+        }).then(function (response) {
+            // Бот ответил, но отказал: 403 (чужой Origin), 400 (поля), 500, 502.
+            if (!response.ok) trackBotFail('client', 'http', response.status);
+        }).catch(function (error) {
+            // Сеть/CORS/бот недоступен — до сервера не дошли вовсе.
+            trackBotFail('client', 'network', error && error.message);
+        });
     } catch (e) {
         console.error('sendLeadToBot error:', e);
     }
@@ -825,7 +853,11 @@ function sendMasterLeadToBot(formData) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
             keepalive: true
-        }).catch(() => {});
+        }).then(function (response) {
+            if (!response.ok) trackBotFail('master', 'http', response.status);
+        }).catch(function (error) {
+            trackBotFail('master', 'network', error && error.message);
+        });
     } catch (e) {
         console.error('sendMasterLeadToBot error:', e);
     }
