@@ -854,7 +854,17 @@ function ensureMasterTelegramButton() {
 // ============================================
 
 // Недостающие на сайте районы бота (slug -> подпись по языкам). Добавляются в <select> скриптом.
-const DISTRICT_LABELS = {
+//
+// Разделены по городам: бот рассылает заявку мастерам ОДНОГО города (фильтр
+// `city = ?` в get_masters_by_rating), поэтому район обязан принадлежать тому же
+// городу, что и `city` в заявке. Раньше список был один (только Белград) и
+// дозаполнялся на любой странице — на страницах Нови-Сада клиент видел Врачар и
+// Земун и мог отправить заявку «city=Нови-Сад + district=Врачар».
+//
+// Ключи — PascalCase-слуги, как в <option value="..."> на 114 страницах и в
+// BOT_DISTRICT_MAP: по ним идёт и проверка «опция уже есть», и перевод района в
+// русское название для бота.
+const BELGRADE_DISTRICTS = {
     Vracar:      { ru: 'Врачар',       en: 'Vračar',       sr: 'Vračar' },
     NoviBeograd: { ru: 'Нови-Београд', en: 'New Belgrade', sr: 'Novi Beograd' },
     Zvezdara:    { ru: 'Звездара',     en: 'Zvezdara',     sr: 'Zvezdara' },
@@ -867,6 +877,28 @@ const DISTRICT_LABELS = {
     Rakovica:    { ru: 'Раковица',     en: 'Rakovica',     sr: 'Rakovica' }
 };
 
+// Нови-Сад — восемь районов из config.yaml бота (cities['Нови-Сад']).
+// «Стари-Град» есть в обоих городах: город различает сам бот по полю city.
+// Подписи — ровно те же, что уже стоят в <select> на страницах Нови-Сада.
+const NOVI_SAD_DISTRICTS = {
+    Liman:       { ru: 'Лиман',        en: 'Liman',        sr: 'Liman' },
+    Detelinara:  { ru: 'Детелинара',   en: 'Detelinara',   sr: 'Detelinara' },
+    Grbavica:    { ru: 'Грбавица',     en: 'Grbavica',     sr: 'Grbavica' },
+    Telep:       { ru: 'Телеп',        en: 'Telep',        sr: 'Telep' },
+    Podbara:     { ru: 'Подбара',      en: 'Podbara',      sr: 'Podbara' },
+    Petrovaradin:{ ru: 'Петроварадин', en: 'Petrovaradin', sr: 'Petrovaradin' },
+    NovoNaselje: { ru: 'Ново-Населье', en: 'Novo Naselje', sr: 'Novo Naselje' },
+    StariGrad:   { ru: 'Стари-Град',   en: 'Stari Grad',   sr: 'Stari Grad' }
+};
+
+// Подпись опции «Другой» по языкам — та же, что уже стоит в разметке.
+const DISTRICT_OTHER_LABEL = { ru: 'Другой', en: 'Other', sr: 'Ostalo' };
+
+// Набор районов для текущей страницы — по городу из URL (botCityFromUrl).
+function districtLabelsForPage() {
+    return botCityFromUrl() === 'Нови-Сад' ? NOVI_SAD_DISTRICTS : BELGRADE_DISTRICTS;
+}
+
 // Дозаполняет недостающие районы бота в клиентской форме на всех страницах —
 // через JS, без правки HTML каждой страницы.
 function initClientDistrictOptions() {
@@ -876,17 +908,40 @@ function initClientDistrictOptions() {
     if (!districtSel) return;
 
     const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
+    const labels = districtLabelsForPage();   // только районы города этой страницы
 
-    // Дозаполняем недостающие районы бота (Мтацминда, Крцаниси) — перед «Other», если он есть
-    Object.keys(DISTRICT_LABELS).forEach(function (slug) {
+    // 1) Убираем районы ЧУЖОГО города, если они остались в разметке страницы.
+    //    Пустой placeholder (value="") и «Other» не трогаем.
+    districtSel.querySelectorAll('option').forEach(function (opt) {
+        const slug = opt.value;
+        if (!slug || slug === 'Other') return;
+        if (!labels[slug]) opt.remove();
+    });
+
+    // 2) Дозаполняем недостающие районы бота — перед «Other», если он есть.
+    const other = districtSel.querySelector('option[value="Other"]');
+    Object.keys(labels).forEach(function (slug) {
         if (districtSel.querySelector('option[value="' + slug + '"]')) return;
         const opt = document.createElement('option');
         opt.value = slug;
-        opt.textContent = DISTRICT_LABELS[slug][lang] || DISTRICT_LABELS[slug].ru;
-        const other = districtSel.querySelector('option[value="Other"]');
+        opt.textContent = labels[slug][lang] || labels[slug].ru;
         if (other) districtSel.insertBefore(opt, other);
         else districtSel.appendChild(opt);
     });
+
+    // 3) «Другой» должен быть в списке всегда и последним: без него на странице,
+    //    где район не совпал ни с одним из города, выбрать было бы нечего.
+    if (!other) {
+        const opt = document.createElement('option');
+        opt.value = 'Other';
+        opt.textContent = DISTRICT_OTHER_LABEL[lang] || DISTRICT_OTHER_LABEL.ru;
+        districtSel.appendChild(opt);
+    }
+
+    // 4) Если выбранная до перестройки опция удалена (район чужого города),
+    //    сбрасываем на placeholder — иначе в браузере остался бы выбран
+    //    несуществующий пункт и в бота ушёл бы пустой район.
+    if (districtSel.selectedIndex < 0) districtSel.selectedIndex = 0;
 }
 
 // Инжектит галочку «Срочный заказ» в клиентскую форму на всех страницах —
