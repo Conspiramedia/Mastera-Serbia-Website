@@ -267,6 +267,25 @@ header .online-counter {
     z-index: 2;
 }
 
+/* Заголовок в шапке — ссылка на главную того же языка. Оборачиваем ТОЛЬКО
+   заголовок, а не весь .logo: внутри .logo-text лежат ссылки на телефон и
+   поддержку, а вложенный <a> внутри <a> — невалидный HTML, браузер такую
+   разметку «распутывает» и ломает вёрстку.
+   Ссылка не должна менять вид логотипа: гасим подчёркивание и наследуем цвет. */
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .logo-link:hover .logo-title {
+        /* Лёгкий отклик, чтобы кликабельность была заметна, но логотип
+           не «прыгал»: только прозрачность, без сдвига и подчёркивания. */
+        opacity: 0.85;
+    }
+}
+
 .logo-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
@@ -275,6 +294,7 @@ header .online-counter {
     color: var(--construction-yellow);
     text-transform: uppercase;
     line-height: 1;
+    transition: opacity 0.2s ease;
 }
 
 .subtitle {
