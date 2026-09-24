@@ -8,15 +8,18 @@ make-legal-pages.py — генератор юридических страниц
 право: закон о защите персональных данных (Zakon o zaštiti podataka o
 ličnosti, «Sl. glasnik RS» br. 87/2018) и закон о защите потребителей.
 
-Реквизиты компании оставлены плейсхолдерами в квадратных скобках —
-их подставят, когда будут готовы документы и сербский номер:
+Юридическое лицо ещё не оформлено, поэтому тексты написаны от имени
+платформы («Pravi Majstor platforma»), без ПИБ и точного адреса —
+указывать реквизиты незаполненными хуже, чем не указывать вовсе.
+Когда фирма будет зарегистрирована, ПИБ и адрес добавляются в PH.
 
-    [NAZIV_KOMPANIJE]  [PIB_BROJ]  [ADRESA_BEOGRAD]
-    [TELEFON_381]      [EMAIL_PODRSKA]
+Единственный оставшийся плейсхолдер — телефон:
 
-ВАЖНО: до заполнения плейсхолдеров страницы стоят под noindex
-(блок PRELAUNCH, как на остальном сайте) — незаполненная юридическая
-страница в индексе хуже, чем её отсутствие.
+    [TELEFON_381]   ждёт сербскую сим-карту,
+                    заменится через scripts/set-phone.sh
+
+ВАЖНО: страницы стоят под noindex (блок PRELAUNCH, как на остальном
+сайте) и откроются вместе со всем сайтом через scripts/go-live.sh.
 
 URL-структура повторяет принятую на сайте: сербский — в корне,
 остальные языки — в своих папках.
@@ -40,28 +43,32 @@ DRY = "--dry-run" in sys.argv
 
 SITE = "https://pravimajstor.rs"
 
-# ── Плейсхолдеры реквизитов ────────────────────────────────────────
+# ── Реквизиты ──────────────────────────────────────────────────────
+# Юридическое лицо ещё не оформлено, поэтому в текстах фигурирует не
+# название фирмы с ПИБ, а платформа: «Pravi Majstor platforma». Строки
+# с ПИБ и точным адресом убраны совсем — указывать их незаполненными
+# хуже, чем не указывать: это прямой антисигнал доверия.
+#
+# Плейсхолдером остался только телефон: он ждёт сербскую сим-карту и
+# заменится по всему сайту через scripts/set-phone.sh.
 PH = {
     "sr": {
-        "company": "[NAZIV_KOMPANIJE]",
-        "pib": "[PIB_BROJ]",
-        "address": "[ADRESA_BEOGRAD]",
+        "company": "Pravi Majstor platforma",
+        "address": "Beograd, Srbija",
         "phone": "[TELEFON_381]",
-        "email": "[EMAIL_PODRSKA]",
+        "email": "kontakt@pravimajstor.rs",
     },
     "ru": {
-        "company": "[НАЗВАНИЕ КОМПАНИИ]",
-        "pib": "[ПИБ]",
-        "address": "[АДРЕС В БЕЛГРАДЕ]",
+        "company": "Pravi Majstor platforma",
+        "address": "Белград, Сербия",
         "phone": "[ТЕЛЕФОН +381...]",
-        "email": "[EMAIL ПОДДЕРЖКИ]",
+        "email": "kontakt@pravimajstor.rs",
     },
     "en": {
-        "company": "[NAZIV_KOMPANIJE]",
-        "pib": "[PIB_BROJ]",
-        "address": "[ADRESA_BEOGRAD]",
+        "company": "Pravi Majstor platforma",
+        "address": "Belgrade, Serbia",
         "phone": "[TELEFON_381]",
-        "email": "[EMAIL_PODRSKA]",
+        "email": "kontakt@pravimajstor.rs",
     },
 }
 
@@ -158,9 +165,8 @@ def body_about(lang):
             P("Za naručioce je pretraga majstora <strong>besplatna</strong>. Plaćate samo rad majstora i to direktno njemu — servis ne uzima proviziju od naručioca."),
             H("Provera majstora"),
             P("Svaki majstor pre prvog posla prolazi proveru: lična identifikacija, selfi-potvrda i podaci o iskustvu. Majstori sa niskom ocenom prestaju da dobijaju prijave — ocenu daju sami naručioci posle završenog posla."),
-            H("Podaci o firmi"),
-            P(f"Naziv: {p['company']}<br>PIB: {p['pib']}<br>Adresa: {p['address']}<br>Telefon: {p['phone']}<br>E-pošta: {p['email']}"),
             H("Kontakt"),
+            P(f"Servis: {p['company']}<br>Područje rada: {p['address']}<br>Telefon: {p['phone']}<br>E-pošta: {p['email']}"),
             P(f"Za pitanja o radu servisa pišite na {p['email']} ili na Telegram <a href=\"https://t.me/masterasupport\" class=\"inline-link\">@masterasupport</a>. Radno vreme podrške: 08:00–23:00, svakog dana."),
         ])
     if lang == "ru":
@@ -171,9 +177,8 @@ def body_about(lang):
             P("Для заказчиков поиск мастера <strong>бесплатен</strong>. Вы платите только за работу мастера и напрямую ему — сервис не берёт комиссию с заказчика."),
             H("Проверка мастеров"),
             P("Каждый мастер до первого заказа проходит проверку: идентификация личности, селфи-подтверждение и данные об опыте. Мастера с низким рейтингом перестают получать заявки — оценку ставят сами заказчики после выполненной работы."),
-            H("Реквизиты"),
-            P(f"Название: {p['company']}<br>ПИБ (налоговый номер): {p['pib']}<br>Адрес: {p['address']}<br>Телефон: {p['phone']}<br>E-mail: {p['email']}"),
             H("Контакты"),
+            P(f"Сервис: {p['company']}<br>Зона работы: {p['address']}<br>Телефон: {p['phone']}<br>E-mail: {p['email']}"),
             P(f"По вопросам работы сервиса пишите на {p['email']} или в Telegram <a href=\"https://t.me/masterasupport\" class=\"inline-link\">@masterasupport</a>. Режим работы поддержки: 08:00–23:00, ежедневно."),
         ])
     return "\n".join([
@@ -183,9 +188,8 @@ def body_about(lang):
         P("For customers, finding a master is <strong>free</strong>. You pay only for the master's work and pay them directly — the service takes no commission from the customer."),
         H("Master verification"),
         P("Before the first job, every master passes a check: identity verification, a selfie confirmation and details of their experience. Masters with a low rating stop receiving requests — the rating is given by customers themselves after the job is done."),
-        H("Company details"),
-        P(f"Name: {p['company']}<br>PIB (tax number): {p['pib']}<br>Address: {p['address']}<br>Phone: {p['phone']}<br>E-mail: {p['email']}"),
         H("Contact"),
+        P(f"Service: {p['company']}<br>Service area: {p['address']}<br>Phone: {p['phone']}<br>E-mail: {p['email']}"),
         P(f"For questions about the service, write to {p['email']} or via Telegram <a href=\"https://t.me/masterasupport\" class=\"inline-link\">@masterasupport</a>. Support hours: 08:00–23:00, daily."),
     ])
 
@@ -196,7 +200,7 @@ def body_privacy(lang):
         return "\n".join([
             P(f"Ova politika objašnjava koje podatke {p['company']} (u daljem tekstu — „servis“) prikuplja preko sajta pravimajstor.rs i šta sa njima radi. Obrada se vrši u skladu sa Zakonom o zaštiti podataka o ličnosti („Sl. glasnik RS“ br. 87/2018)."),
             H("1. Rukovalac podacima"),
-            P(f"{p['company']}, PIB {p['pib']}, {p['address']}. Kontakt za pitanja o podacima: {p['email']}, telefon {p['phone']}."),
+            P(f"Podacima rukuje {p['company']}, {p['address']}. Kontakt za pitanja o podacima: {p['email']}, telefon {p['phone']}."),
             H("2. Koje podatke prikupljamo"),
             P("<strong>Podaci iz prijave:</strong> ime, broj telefona ili Telegram, grad i opština, opis zadatka i, ako ih priložite, fotografije zadatka."),
             P("<strong>Tehnički podaci:</strong> IP adresa, tip uređaja i pretraživača, stranice koje ste posetili — preko Google Analytics."),
@@ -220,7 +224,7 @@ def body_privacy(lang):
         return "\n".join([
             P(f"Эта политика объясняет, какие данные {p['company']} (далее — «сервис») собирает через сайт pravimajstor.rs и что с ними делает. Обработка ведётся по Закону о защите персональных данных Республики Сербия („Sl. glasnik RS“ № 87/2018)."),
             H("1. Кто обрабатывает данные"),
-            P(f"{p['company']}, ПИБ {p['pib']}, {p['address']}. Контакт по вопросам данных: {p['email']}, телефон {p['phone']}."),
+            P(f"Данными распоряжается {p['company']}, {p['address']}. Контакт по вопросам данных: {p['email']}, телефон {p['phone']}."),
             H("2. Какие данные мы собираем"),
             P("<strong>Данные из заявки:</strong> имя, телефон или Telegram, город и район, описание задачи и, если вы их приложили, фотографии."),
             P("<strong>Технические данные:</strong> IP-адрес, тип устройства и браузера, просмотренные страницы — через Google Analytics."),
@@ -243,7 +247,7 @@ def body_privacy(lang):
     return "\n".join([
         P(f"This policy explains what data {p['company']} (the “service”) collects through pravimajstor.rs and what we do with it. Processing follows the Serbian Personal Data Protection Act (“Sl. glasnik RS” No. 87/2018)."),
         H("1. Data controller"),
-        P(f"{p['company']}, PIB {p['pib']}, {p['address']}. Contact for data questions: {p['email']}, phone {p['phone']}."),
+        P(f"Data is controlled by {p['company']}, {p['address']}. Contact for data questions: {p['email']}, phone {p['phone']}."),
         H("2. What we collect"),
         P("<strong>Request data:</strong> name, phone number or Telegram, city and district, task description and, if you attach them, photos of the task."),
         P("<strong>Technical data:</strong> IP address, device and browser type, pages visited — via Google Analytics."),
@@ -269,7 +273,7 @@ def body_terms(lang):
     p = PH[lang]
     if lang == "sr":
         return "\n".join([
-            P(f"Korišćenjem sajta pravimajstor.rs prihvatate ove uslove. Servis vodi {p['company']}, PIB {p['pib']}, {p['address']}."),
+            P(f"Korišćenjem sajta pravimajstor.rs prihvatate ove uslove. Servis vodi {p['company']} — {p['address']}."),
             H("1. Šta servis radi"),
             P("Servis je <strong>posrednik</strong>: povezuje naručioce i majstore. Servis ne izvodi radove, ne zapošljava majstore i nije strana u dogovoru između vas i majstora."),
             H("2. Cena i plaćanje"),
@@ -290,7 +294,7 @@ def body_terms(lang):
         ])
     if lang == "ru":
         return "\n".join([
-            P(f"Используя сайт pravimajstor.rs, вы принимаете эти условия. Сервис ведёт {p['company']}, ПИБ {p['pib']}, {p['address']}."),
+            P(f"Используя сайт pravimajstor.rs, вы принимаете эти условия. Сервис ведёт {p['company']} — {p['address']}."),
             H("1. Что делает сервис"),
             P("Сервис — это <strong>посредник</strong>: он сводит заказчиков и мастеров. Сервис не выполняет работы, не нанимает мастеров и не является стороной договорённости между вами и мастером."),
             H("2. Цена и оплата"),
@@ -310,7 +314,7 @@ def body_terms(lang):
             P("К этим условиям применяется право Республики Сербия. Споры решаем переговорами, а если это невозможно — в компетентном суде в Белграде."),
         ])
     return "\n".join([
-        P(f"By using pravimajstor.rs you accept these terms. The service is operated by {p['company']}, PIB {p['pib']}, {p['address']}."),
+        P(f"By using pravimajstor.rs you accept these terms. The service is operated by {p['company']} — {p['address']}."),
         H("1. What the service does"),
         P("The service is an <strong>intermediary</strong>: it connects customers and masters. It does not perform the work, does not employ masters and is not a party to the agreement between you and the master."),
         H("2. Price and payment"),
@@ -342,9 +346,9 @@ PAGES = [
             "en": "About us — Pravi Majstor",
         },
         "desc": {
-            "sr": "Ko smo i kako radimo: servis za pronalaženje proverenih majstora u Beogradu i Novom Sadu. Podaci o firmi i kontakt.",
-            "ru": "Кто мы и как работаем: сервис поиска проверенных мастеров в Белграде и Нови-Саде. Реквизиты и контакты.",
-            "en": "Who we are and how we work: a service for finding verified handymen in Belgrade and Novi Sad. Company details and contact.",
+            "sr": "Ko smo i kako radimo: servis za pronalaženje proverenih majstora u Beogradu i Novom Sadu. Kontakt i radno vreme.",
+            "ru": "Кто мы и как работаем: сервис поиска проверенных мастеров в Белграде и Нови-Саде. Контакты и режим работы.",
+            "en": "Who we are and how we work: a service for finding verified handymen in Belgrade and Novi Sad. Contact and opening hours.",
         },
         "h1": {"sr": "O nama", "ru": "О нас", "en": "About us"},
         "body": body_about,
