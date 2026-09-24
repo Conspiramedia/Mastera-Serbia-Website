@@ -3416,6 +3416,16 @@ body.modal-open {
     line-height: 1.5;
 }
 
+/* Внутри .cen-page (прайс, юридические страницы) контейнер уже узкий —
+   860px с собственным паддингом и по центру. Своя подложка и вторые 5%
+   превратили бы крошки в тёмную плашку посреди страницы, поэтому здесь
+   блок прозрачный и без горизонтальных отступов. */
+.cen-page .breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .breadcrumb-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -3502,7 +3512,9 @@ body.modal-open {
 .legal-content {
     max-width: 780px;
     margin: 0 auto;
-    padding: 0 5% 4rem;
+    /* Горизонтальных отступов нет: .cen-page уже даёт свои 5%, а нижние
+       4rem там же — вторые создавали бы пустой провал перед футером. */
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.82);
     font-size: 1rem;

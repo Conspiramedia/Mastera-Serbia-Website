@@ -77,6 +77,9 @@ UI = {
         "masters_text": "Za majstore",
         "online": "Sada na mreži: ",
         "online_tail": " majstora",
+        # Ширина плашки языков = ширине счётчика мастеров:
+        # перевод разной длины, поэтому значение своё для каждого языка.
+        "lang_width": "286",
         "footer_owner": "© 2026 Usluge majstora",
         "price_url": "/cenovnik/",
         "price_text": "Cenovnik",
@@ -95,6 +98,9 @@ UI = {
         "masters_text": "Для мастеров",
         "online": "Сейчас онлайн: ",
         "online_tail": " мастеров",
+        # Ширина плашки языков = ширине счётчика мастеров:
+        # перевод разной длины, поэтому значение своё для каждого языка.
+        "lang_width": "306",
         "footer_owner": "© 2026 Handyman Service",
         "price_url": "/ru/cenovnik/",
         "price_text": "Цены на услуги",
@@ -113,6 +119,9 @@ UI = {
         "masters_text": "For masters",
         "online": "Online now: ",
         "online_tail": " masters",
+        # Ширина плашки языков = ширине счётчика мастеров:
+        # перевод разной длины, поэтому значение своё для каждого языка.
+        "lang_width": "258",
         "footer_owner": "© 2026 Handyman Service",
         "price_url": "/en/pricelist/",
         "price_text": "Price list",
@@ -483,7 +492,7 @@ def render(page, lang):
         </div>
       </div>
     </div>
-    <div class="header-controls cen-header-controls" style="--cen-lang-width: 286px">
+    <div class="header-controls cen-header-controls" style="--cen-lang-width: {ui['lang_width']}px">
       <!-- Переключателя города нет: страница общая для Белграда и Нови-Сада. -->
       <div class="header-group">
         <div class="language-switcher">
@@ -495,6 +504,11 @@ def render(page, lang):
 
       <div class="header-group">
         <a href="{ui['masters']}" class="audience-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg> <span class="audience-link-text">{ui['masters_text']}</span></a>
+
+        <div class="online-counter">
+          <span class="online-indicator"></span>
+          <span class="online-text">{ui['online']}<strong class="online-count" data-base="3">3</strong>{ui['online_tail']}</span>
+        </div>
       </div>
     </div>
   </header>
