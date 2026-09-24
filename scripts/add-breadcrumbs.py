@@ -3,13 +3,17 @@
 """
 add-breadcrumbs.py — хлебные крошки на страницы, где их ещё нет.
 
-Что делает за один проход:
-  1. JSON-LD BreadcrumbList в <script type="application/ld+json"> — дописывает
-     объект в конец существующего массива схем (у всех целевых страниц схема
-     оформлена массивом, поэтому новый узел просто добавляется элементом).
-  2. Видимый <nav class="breadcrumb"> сразу после <main> — ссылки один в один
-     повторяют JSON-LD, иначе Google считает разметку несоответствующей
-     содержимому страницы и игнорирует её.
+Ставит JSON-LD BreadcrumbList в <script type="application/ld+json">:
+дописывает объект в конец существующего массива схем (у всех целевых
+страниц схема оформлена массивом, поэтому новый узел просто добавляется
+элементом). Именно эта разметка рисует путь в сниппете Google вместо
+голого URL.
+
+Видимый <nav class="breadcrumb"> скрипт больше НЕ ставит: блок убран со
+всего сайта (scripts/remove-visible-breadcrumbs.py), потому что полоса
+над заголовком спорила с крупным hero-экраном. Функции build_nav и
+insert_nav оставлены рабочими — если крошки решат вернуть, достаточно
+раскомментировать вызов в patch().
 
 Схема пути — ровно та же, что на 53 страницах, где крошки уже стоят:
     Главная → Услуга в городе → Район        (районные лендинги)
@@ -23,8 +27,8 @@ add-breadcrumbs.py — хлебные крошки на страницы, где
     python scripts/add-breadcrumbs.py            # правит файлы
     python scripts/add-breadcrumbs.py --dry-run  # только показывает план
 
-Скрипт идемпотентен: страницы, где уже есть BreadcrumbList или nav.breadcrumb,
-пропускаются. Повторный запуск ничего не сломает.
+Скрипт идемпотентен: страницы, где BreadcrumbList уже есть, пропускаются.
+Повторный запуск ничего не сломает.
 """
 
 import json
@@ -261,13 +265,20 @@ def patch(path, lang, crumbs):
         html = html[: m.start(2)] + new_block + html[m.end(2):]
         changed.append("json-ld")
 
-    # ── 2. Видимая навигация ──────────────────────────────────────
-    if 'class="breadcrumb"' not in html:
-        patched = insert_nav(html, lang, crumbs)
-        if patched is None:
-            return None, "нет <main>"
-        html = patched
-        changed.append("nav")
+    # ── 2. Видимая навигация — БОЛЬШЕ НЕ СТАВИТСЯ ─────────────────
+    # Раньше здесь вставлялся <nav class="breadcrumb">. Блок убран со
+    # всего сайта: полоса над заголовком спорила с крупным hero-экраном
+    # (см. scripts/remove-visible-breadcrumbs.py). В выдаче путь рисует
+    # JSON-LD выше, и для этого видимый блок не обязателен.
+    #
+    # Если решите вернуть крошки на страницы — раскомментируйте вызов
+    # insert_nav ниже; функция и build_nav оставлены рабочими.
+    #
+    #   patched = insert_nav(html, lang, crumbs)
+    #   if patched is None:
+    #       return None, "нет <main>"
+    #   html = patched
+    #   changed.append("nav")
 
     if not changed:
         return None, "уже есть"
@@ -277,27 +288,14 @@ def patch(path, lang, crumbs):
 
 
 def patch_existing(path):
-    """Второй проход: видимый nav на страницах, где JSON-LD уже стоял.
+    """Второй проход. Сейчас не делает ничего.
 
-    Крошки читаются из самой страницы. Страницы-корни языков (/sr/, /ru/,
-    /en/) пропускаем: там крошка вела бы сама на себя.
+    Он существовал ради видимого <nav>: дописывал его страницам, у
+    которых JSON-LD уже был. Видимые крошки убраны со всего сайта, так
+    что проход стал пустым. Оставлен вместе с read_existing_crumbs и
+    insert_nav на случай, если крошки решат вернуть.
     """
-    html = path.read_text(encoding="utf-8")
-    if 'class="breadcrumb"' in html:
-        return None, "уже есть"
-    crumbs = read_existing_crumbs(html)
-    if not crumbs:
-        return None, "не разобрал JSON-LD"
-    if len(crumbs) < 2 or crumbs[-1][1] == crumbs[0][1]:
-        return None, "корень языка"
-    m = re.search(r'<html lang="(\w+)"', html)
-    lang = m.group(1) if m else "sr"
-    patched = insert_nav(html, lang, crumbs)
-    if patched is None:
-        return None, "нет <main>"
-    if not DRY:
-        path.write_text(patched, encoding="utf-8")
-    return ["nav"], None
+    return None, "видимые крошки отключены"
 
 
 def main():
@@ -346,7 +344,7 @@ def main():
             continue
         changed, err = patch_existing(path)
         if err:
-            if err in ("уже есть", "корень языка"):
+            if err in ("уже есть", "корень языка", "видимые крошки отключены"):
                 skipped += 1
             else:
                 print(f"  ✗ {err:20} {rel}")
