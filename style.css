@@ -3456,3 +3456,110 @@ body.modal-open {
         font-size: 0.75rem;
     }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   График работы в футере
+   Дублирует openingHours из JSON-LD текстом: разметку Google сверяет
+   с тем, что реально видно на странице. Значение совпадает со схемой
+   и с quiet_hours бота — 08:00–23:00 без выходных.
+   ══════════════════════════════════════════════════════════════════ */
+.footer-hours {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+}
+
+/* Контекстная ссылка на прайс под блоком услуг (главные страницы городов).
+   На сервисных лендингах такая ссылка уже есть — .cen-inline-link. */
+.price-note {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    margin: 1.5rem auto 0;
+    max-width: 640px;
+}
+
+.price-note .inline-link {
+    color: var(--construction-yellow);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.15s ease;
+}
+
+.price-note .inline-link:hover,
+.price-note .inline-link:focus-visible {
+    opacity: 0.8;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   Юридические страницы (о нас, политика, условия)
+   Длинный текст без карточек: ограничиваем ширину строки, иначе
+   на широком экране строка уезжает за комфортные ~75 символов.
+   ══════════════════════════════════════════════════════════════════ */
+.legal-content {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 5% 4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.legal-content h2 {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 2.25rem 0 0.75rem;
+}
+
+.legal-content p {
+    margin: 0 0 1rem;
+}
+
+.legal-content strong {
+    color: var(--white);
+}
+
+.legal-content .inline-link {
+    color: var(--construction-yellow);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Дата последней правки — служебная строка, поэтому приглушена */
+.legal-updated {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .legal-content h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ссылки на юридические страницы в футере.
+   Текущая страница не ссылается сама на себя — остаётся обычным текстом. */
+.footer-legal {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    line-height: 1.8;
+}
+
+.footer-legal-current {
+    color: rgba(255, 255, 255, 0.75);
+}
