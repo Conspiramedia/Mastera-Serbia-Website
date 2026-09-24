@@ -120,6 +120,14 @@
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every provider goes through document checks. Before choosing you can see ratings, client reviews and work experience." }
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pravimajstor.rs/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Apartment Cleaning", "item": "https://pravimajstor.rs/klining-beograd-en/" }
+      ]
     }
   ]
   </script>
@@ -179,6 +187,13 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <div class="breadcrumb-inner">
+        <a href="/en/">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Apartment Cleaning</span>
+      </div>
+    </nav>
     <div class="service-hero">
       <h1 class="service-title">Apartment Cleaning in Belgrade<br>Full-service cleaning</h1>
       <p class="lead">Deep cleaning, post-renovation, window washing, upholstery dry cleaning.<br>Leave a request and a cleaner responds within 60 minutes.<br>We work across the city.</p>

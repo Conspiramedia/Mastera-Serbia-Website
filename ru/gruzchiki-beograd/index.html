@@ -123,6 +123,14 @@
           "acceptedAnswer": { "@type": "Answer", "text": "Да, многие бригады работают без выходных и в вечернее время. Для офисных переездов это обычная практика — чтобы не останавливать работу." }
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://pravimajstor.rs/ru/" },
+        { "@type": "ListItem", "position": 2, "name": "Грузчики", "item": "https://pravimajstor.rs/ru/gruzchiki-beograd/" }
+      ]
     }
   ]
   </script>
@@ -182,6 +190,13 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <div class="breadcrumb-inner">
+        <a href="/ru/">Главная</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Грузчики</span>
+      </div>
+    </nav>
     <!-- Hero -->
     <div class="service-hero">
       <h1 class="service-title">Грузчики в Белграде<br>Переезды и подъём мебели</h1>

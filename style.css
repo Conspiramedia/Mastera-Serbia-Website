@@ -3398,3 +3398,61 @@ body.modal-open {
         height: 26px;
     }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   Хлебные крошки
+   Видимая пара к JSON-LD BreadcrumbList: Google сверяет разметку с тем,
+   что реально видно на странице, поэтому подписи и ссылки здесь совпадают
+   со схемой один в один.
+
+   Блок лежит первым внутри <main>, над тёмным hero-экраном, поэтому
+   цвета берутся светлые. Высота фиксирована отступами, без анимаций —
+   чтобы не портить CLS = 0.
+   ══════════════════════════════════════════════════════════════════ */
+.breadcrumb {
+    background-color: var(--dark-concrete);
+    padding: 0.85rem 5% 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.breadcrumb-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Длинные названия районов на узком экране переносятся, а не рвут вёрстку */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.breadcrumb a {
+    color: rgba(250, 250, 250, 0.65);
+    text-decoration: none;
+    /* Увеличенная зона нажатия: сама строка мелкая, палец в неё не попадает */
+    padding: 0.25rem 0;
+    transition: color 0.15s ease;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+    color: var(--construction-yellow);
+    text-decoration: underline;
+}
+
+.breadcrumb-sep {
+    color: rgba(250, 250, 250, 0.3);
+    user-select: none;
+}
+
+/* Текущая страница — без ссылки, приглушённым цветом */
+.breadcrumb [aria-current="page"] {
+    color: rgba(250, 250, 250, 0.85);
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 0.7rem 5% 0;
+        font-size: 0.75rem;
+    }
+}

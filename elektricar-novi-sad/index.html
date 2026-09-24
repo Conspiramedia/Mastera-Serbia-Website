@@ -81,6 +81,15 @@
         { "@type": "Question", "name": "Šta da radim ako utičnica varniči?", "acceptedAnswer": { "@type": "Answer", "text": "1. Izvucite utikač uređaja. 2. Ako je varničenje jako — isključite osigurač u elektro tabli. 3. Označite prijavu kao hitnu — električar se javlja za 15–30 minuta." } },
         { "@type": "Question", "name": "Za koliko vremena dolazi električar?", "acceptedAnswer": { "@type": "Answer", "text": "U proseku prvi električar se javlja za 15–60 minuta. U slučaju havarije (kratak spoj, nema struje) majstori reaguju brže." } }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://pravimajstor.rs/sr/" },
+        { "@type": "ListItem", "position": 2, "name": "Novi Sad", "item": "https://pravimajstor.rs/sr/novi-sad/" },
+        { "@type": "ListItem", "position": 3, "name": "Električar", "item": "https://pravimajstor.rs/elektricar-novi-sad/" }
+      ]
     }
   ]
   </script>
@@ -142,10 +151,19 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Putanja">
+      <div class="breadcrumb-inner">
+        <a href="/sr/">Početna</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <a href="/sr/novi-sad/">Novi Sad</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Električar</span>
+      </div>
+    </nav>
     <div class="service-hero">
       <h1 class="service-title">Električar u Novom Sadu<br>hitan poziv majstora</h1>
       <p class="lead">
-        Utičnica varniči, nema struje, treba postaviti novu liniju.<br>Ostavite prijavu i najbolji električar vam se javlja za 60 minuta.<br>Radimo u celom gradu.
+        Utičnica varniči, nestala je struja ili treba nova linija?<br>Dežurni električar u Novom Sadu izlazi non-stop — prijava se obrađuje za 60 minuta.<br>Pokrivamo Liman, Grbavicu, Novo Naselje i Petrovaradin, 24h.
       </p>
       <div class="service-cta-top">
         <button class="cta-button cta-clients" onclick="openClientLeadForm()">
@@ -183,7 +201,7 @@
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
             </svg>
           </div>
-          <h2 class="section-title">Elektro montažni radovi u Novom Sadu</h2>
+          <h2 class="section-title">Hitna intervencija električara u Novom Sadu — dežurni majstor 24h</h2>
           <ul class="benefits-list">
             <li><strong>Zamena utičnica i prekidača</strong> — montaža i zamena utičnica, prekidača i dimera. Radimo sa uzidnom i vidnom instalacijom</li>
             <li><strong>Montaža rasvete</strong> — montaža lustera, zidnih lampi, spotova i LED traka. Priključenje uz poštovanje normi elektro bezbednosti</li>

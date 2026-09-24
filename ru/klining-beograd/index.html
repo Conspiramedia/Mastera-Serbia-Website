@@ -123,6 +123,14 @@
           "acceptedAnswer": { "@type": "Answer", "text": "Да. Все исполнители проходят проверку документов. Перед выбором вы видите рейтинг, отзывы других клиентов и опыт работы." }
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://pravimajstor.rs/ru/" },
+        { "@type": "ListItem", "position": 2, "name": "Уборка квартир", "item": "https://pravimajstor.rs/ru/klining-beograd/" }
+      ]
     }
   ]
   </script>
@@ -182,6 +190,13 @@
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Хлебные крошки">
+      <div class="breadcrumb-inner">
+        <a href="/ru/">Главная</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span aria-current="page">Уборка квартир</span>
+      </div>
+    </nav>
     <!-- Hero -->
     <div class="service-hero">
       <h1 class="service-title">Уборка квартир в Белграде<br>Клининг под ключ</h1>
