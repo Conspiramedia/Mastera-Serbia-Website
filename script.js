@@ -1518,7 +1518,7 @@ function initWhatsAppButtonTracking() {
     // Он же ещё в 450 местах на 118 страницах. Замена одной командой:
     //   bash scripts/set-phone.sh +381XXXXXXXXX
     // Подробности — docs/phone-migration.md
-    const waHref = 'https://wa.me/995557645196?text=' + (waTexts[lang] || waTexts.ru);
+    const waHref = 'https://wa.me/381612019769?text=' + (waTexts[lang] || waTexts.ru);
 
     // Telegram-бот: на странице мастеров — бот мастеров, иначе клиентский бот по языку
     // страницы (RU/SR/EN). start=site_<lang> — для атрибуции.
