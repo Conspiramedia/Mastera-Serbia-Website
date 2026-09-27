@@ -3432,26 +3432,72 @@ body.modal-open {
 }
 
 /* Контекстная ссылка на прайс под блоком услуг (главные страницы городов).
-   На сервисных лендингах такая ссылка уже есть — .cen-inline-link. */
+   На сервисных лендингах такая ссылка уже есть — .cen-inline-link.
+
+   Это не сноска, а шаг к конверсии: человек только что просмотрел карточки
+   услуг и хочет узнать цену. Раньше строка была 0.95rem (15.2px) при альфе
+   0.6 — мельче описаний в карточках и почти неразличима на тёмном фоне,
+   где светлый текст с низкой альфой читается заметно хуже тёмного на светлом.
+
+   Размер задан через clamp(), а не фиксированным rem: 16px на телефоне,
+   18.4px на десктопе 1280px, потолок 1.15rem. Медиазапроса для мобильных
+   не было вовсе — строка оставалась 15.2px на любом экране. */
 .price-note {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.95rem;
-    margin: 1.5rem auto 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(1rem, 0.94rem + 0.3vw, 1.15rem);
+    line-height: 1.6;
+    margin: 2rem auto 0;
     max-width: 640px;
+    /* Боковой отступ, чтобы на узком экране строка не липла к краям */
+    padding: 0 1rem;
 }
 
+/* inline-flex + min-height: у строчной ссылки высота равна высоте текста
+   (~19px), а это меньше минимума 24px из аудита «Tap targets are not sized
+   appropriately» (WCAG 2.5.8). Вертикальные паддинги растят область нажатия,
+   не разрывая строку. */
 .price-note .inline-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    /* Только вертикальный паддинг: горизонтальный отодвинул бы точку
+       в конце предложения от последнего слова. */
+    padding: 0.2em 0;
     color: var(--construction-yellow);
+    font-weight: 600;
     text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: opacity 0.15s ease;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    border-radius: 4px;
+    transition: color 0.15s ease, background-color 0.15s ease;
 }
 
+/* Наведение подсвечиваем фоном, а не прозрачностью: жёлтый на тёмном при
+   opacity 0.8 выцветает и выглядит неактивным — обратная подсказка тому,
+   что нужно при наведении. */
 .price-note .inline-link:hover,
 .price-note .inline-link:focus-visible {
-    opacity: 0.8;
+    color: #FFF;
+    background-color: rgba(253, 185, 19, 0.18);
+}
+
+/* На телефоне область нажатия растим по вертикали до рекомендованных 44px
+   (WCAG 2.5.5), но ссылка остаётся строчной. Выносить её в отдельную строку
+   через display:flex нельзя: точка в конце предложения осталась бы висеть
+   на следующей строке отдельным символом. */
+@media (max-width: 480px) {
+    .price-note {
+        margin-top: 1.75rem;
+    }
+
+    .price-note .inline-link {
+        min-height: 44px;
+        /* Горизонтальный паддинг оставляем нулевым: он визуально отрывает
+           точку от последнего слова. Высоту даёт вертикальный. */
+        padding: 0.45em 0;
+    }
 }
 
 /* ══════════════════════════════════════════════════════════════════
