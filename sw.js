@@ -5,14 +5,19 @@
 // Пока имя кэша не меняется, у посетителей, заходивших раньше, остаются старые
 // файлы: activate удаляет только кэши с ДРУГИМ именем (см. ниже). Из-за этого
 // правки CSS доезжали до пользователя лишь после ручного Ctrl+Shift+R.
-// v13 — клик по логотипу (.logo-link) + раскладка анкеты мастера.
-const CACHE_NAME = 'mastera-landing-v13';
+// v14 — рерайт Нови-Сада, .price-note, фолбэк офлайна по городу.
+const CACHE_NAME = 'mastera-landing-v14';
 
 const PRECACHE_URLS = [
   '/',
   '/ru/',
   '/sr/',
   '/en/',
+  // Хабы Нови-Сада: без них офлайн-фолбэк уводил на '/' — то есть на
+  // Белград, и переключение города выглядело как «не работает».
+  '/ru/novi-sad/',
+  '/sr/novi-sad/',
+  '/en/novi-sad/',
   '/site.webmanifest',
   '/style.css',
   '/service.css',
@@ -45,6 +50,40 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// ── Офлайн-фолбэк: подбираем замену по ГОРОДУ и ЯЗЫКУ адреса ────────────────
+//
+// Раньше любая незакэшированная страница подменялась на '/' — корень, который
+// редиректит на языковой раздел Белграда. Из-за этого при плохой сети клик по
+// «Нови-Сад» возвращал белградскую страницу, и переключение города выглядело
+// сломанным, хотя ссылка вела правильно.
+//
+// Теперь фолбэк сохраняет и город, и язык: /ru/novi-sad/ → хаб Нови-Сада на
+// русском, /elektricar-novi-sad/ → сербский хаб Нови-Сада. Точное совпадение
+// ищется раньше, так что подмена срабатывает только когда самой страницы в
+// кэше нет.
+function offlineFallback(url) {
+  const path = url.pathname;
+
+  // Язык: /ru/… и /sr/… — по префиксу, *-en — по суффиксу лендинга,
+  // остальное считаем сербским (это язык по умолчанию, лендинги лежат в корне).
+  let lang = 'sr';
+  if (path.startsWith('/ru/')) lang = 'ru';
+  else if (path.startsWith('/en/') || /-en\/?$/.test(path)) lang = 'en';
+
+  // Город: по вхождению novi-sad в адрес — так помечены и хабы (/ru/novi-sad/),
+  // и лендинги (/elektricar-novi-sad/, /master-na-chas-liman-novi-sad-en/).
+  const isNoviSad = path.includes('novi-sad');
+
+  const hub = {
+    ru: isNoviSad ? '/ru/novi-sad/' : '/ru/',
+    sr: isNoviSad ? '/sr/novi-sad/' : '/sr/',
+    en: isNoviSad ? '/en/novi-sad/' : '/en/',
+  }[lang];
+
+  // Если подходящего хаба в кэше не оказалось — отдаём корень, как раньше.
+  return caches.match(hub).then((r) => r || caches.match('/'));
+}
+
 // ── Fetch: стратегия Network First для HTML, Cache First для статики ─────────
 self.addEventListener('fetch', (event) => {
   const { request } = event;
@@ -66,7 +105,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match(request).then((r) => r || (isHtml ? caches.match('/') : undefined)))
+        .catch(() => caches.match(request).then((r) => r || (isHtml ? offlineFallback(url) : undefined)))
     );
     return;
   }
