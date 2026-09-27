@@ -3470,17 +3470,18 @@ body.modal-open {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-    border-radius: 4px;
-    transition: color 0.15s ease, background-color 0.15s ease;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
-/* Наведение подсвечиваем фоном, а не прозрачностью: жёлтый на тёмном при
-   opacity 0.8 выцветает и выглядит неактивным — обратная подсказка тому,
-   что нужно при наведении. */
+/* Наведение — осветление текста и подчёркивания до белого, а не прозрачность:
+   жёлтый на тёмном при opacity 0.8 выцветает и выглядит неактивным, то есть
+   подсказка обратная нужной. Подложку тоже не используем: жёлтый
+   прямоугольник на тёмном фоне читался как выделение текста, а не как
+   наведение на ссылку. */
 .price-note .inline-link:hover,
 .price-note .inline-link:focus-visible {
     color: #FFF;
-    background-color: rgba(253, 185, 19, 0.18);
+    text-decoration-color: #FFF;
 }
 
 /* На телефоне область нажатия растим по вертикали до рекомендованных 44px
