@@ -1,9 +1,4 @@
-# Pre-launch: indexing is blocked by <meta name="robots" content="noindex">
-# on every page. Crawling stays allowed on purpose — a blocked crawler
-# would never read that meta tag. Sitemap is enabled at launch by
-# scripts/go-live.sh.
-
 User-agent: *
 Allow: /
 
-# Sitemap: https://pravimajstor.rs/sitemap.xml
+Sitemap: https://pravimajstor.rs/sitemap.xml
