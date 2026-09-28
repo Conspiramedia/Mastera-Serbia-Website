@@ -9,7 +9,8 @@
 
 const i18n = {
     ru: {
-        phoneInvalid:        'Пожалуйста, введите корректный сербский номер телефона в формате: +381XXXXXXXX (8–10 цифр после +381)',
+        phoneInvalid:        'Пожалуйста, введите корректный сербский номер телефона: +381 и 8–9 цифр',
+        nameInvalid:         'Пожалуйста, введите имя буквами — без цифр и символов (минимум 2 буквы)',
         telegramInvalid:     'Пожалуйста, введите корректный Telegram username (например: @username) или номер телефона',
         contactRequired:     'Пожалуйста, заполните хотя бы один из контактов: Telegram или WhatsApp',
         telegramRequiredMaster: 'Пожалуйста, укажите Telegram — верификация мастера проходит в Telegram-боте',
@@ -26,7 +27,8 @@ const i18n = {
         urgentLabel:         '🚨 Срочный заказ',
     },
     sr: {
-        phoneInvalid:        'Molimo unesite ispravan srpski broj telefona u formatu: +381XXXXXXXX (8–10 cifara posle +381)',
+        phoneInvalid:        'Molimo unesite ispravan srpski broj telefona: +381 i 8–9 cifara',
+        nameInvalid:         'Molimo unesite ime slovima — bez cifara i simbola (najmanje 2 slova)',
         telegramInvalid:     'Molimo unesite ispravno Telegram korisničko ime (npr: @username) ili broj telefona',
         contactRequired:     'Molimo popunite bar jedno polje za kontakt: Telegram ili WhatsApp',
         telegramRequiredMaster: 'Molimo unesite Telegram — verifikacija majstora se obavlja u Telegram botu',
@@ -43,7 +45,8 @@ const i18n = {
         urgentLabel:         '🚨 Hitna porudžbina',
     },
     en: {
-        phoneInvalid:        'Please enter a valid Serbian phone number in the format: +381XXXXXXXX (8–10 digits after +381)',
+        phoneInvalid:        'Please enter a valid Serbian phone number: +381 followed by 8–9 digits',
+        nameInvalid:         'Please enter your name using letters only — no digits or symbols (at least 2 letters)',
         telegramInvalid:     'Please enter a valid Telegram username (e.g. @username) or phone number',
         contactRequired:     'Please fill in at least one contact field: Telegram or WhatsApp',
         telegramRequiredMaster: 'Please provide your Telegram — master verification happens in the Telegram bot',
@@ -428,6 +431,7 @@ function initModalForms() {
     });
 
     initPhoneFormatting();
+    initNamePatternAttr();
 }
 
 /**
@@ -439,17 +443,51 @@ function initModalForms() {
  * Слитная строка из 12 цифр читается плохо и в ней легко ошибиться,
  * а мастеру потом по этому номеру звонить.
  */
+// Сколько цифр может стоять после +381.
+// Ровно как в боте (validators.is_valid_phone: 381 + 8..9 цифр) — иначе номер
+// из 10 цифр прошёл бы проверку на сайте, а бот отклонил бы заявку с 400.
+// Ввод обрезается по максимуму: лишние цифры просто не набрать.
+const PHONE_MIN_SUBSCRIBER_DIGITS = 8;
+const PHONE_MAX_SUBSCRIBER_DIGITS = 9;
+
 function formatSerbianPhone(raw) {
     let digits = (raw || '').replace(/\D/g, '');
     if (!digits) return '';
 
-    // Номер всегда хранится с кодом страны. Локальный ввод «06012…»
-    // приводим к международному виду, отбрасывая ведущий ноль.
-    if (digits.startsWith('0')) digits = '381' + digits.replace(/^0+/, '');
-    else if (!digits.startsWith('381')) digits = '381' + digits;
+    // Номер всегда хранится с кодом страны. Разбираем, что именно ввёл человек:
+    //
+    //   «381…»  — уже международный, код страны на месте;
+    //   «0…»    — локальный (060…), ноль отбрасываем и подставляем код;
+    //   прочее  — абонентская часть без кода, подставляем код.
+    //
+    // ⚠️ Отдельный случай — НЕПОЛНЫЙ код страны («+38», «+3»). Он появляется,
+    // когда человек стирает номер и доходит до префикса. Раньше такая строка
+    // считалась абонентской частью, и к ней спереди дописывался «381»:
+    // «+38 81 313 8» превращалось в «+381 38 813 138» — цифры префикса
+    // засасывало в номер и размножало. Теперь неполный код распознаём и
+    // достраиваем, ничего не сдвигая.
+    if (digits === '3' || digits === '38') {
+        digits = '381';
+    } else if (digits.startsWith('381')) {
+        // уже с кодом страны — оставляем как есть
+    } else if (digits.startsWith('38') && digits.length > 2) {
+        // «38» + абонентская часть: человек стёр «1» из префикса.
+        // Восстанавливаем код, остальное считаем номером.
+        digits = '381' + digits.substring(2);
+    } else if (digits.startsWith('0')) {
+        digits = '381' + digits.replace(/^0+/, '');
+    } else {
+        digits = '381' + digits;
+    }
 
-    // +381 и максимум 10 цифр после — как в PHONE_PATTERN
-    digits = digits.substring(0, 13);
+    // Ноль сразу после кода страны всегда лишний: в международном формате
+    // национальный номер пишется без него (+381 60…, а не +381 060…).
+    // Так бывает, когда поле уже содержит автоподставленный «+381 », а человек
+    // по привычке набирает локальный номер с ведущего нуля.
+    digits = digits.replace(/^3810+/, '381');
+
+    // +381 и максимум PHONE_MAX_SUBSCRIBER_DIGITS цифр после
+    digits = digits.substring(0, 3 + PHONE_MAX_SUBSCRIBER_DIGITS);
 
     const rest = digits.substring(3);           // всё после кода страны
     const parts = ['+381'];
@@ -465,15 +503,59 @@ function unformatPhone(value) {
     return (value || '').replace(/\s+/g, '');
 }
 
+// Проставляет полям имени нативную проверку «только буквы» на всех страницах —
+// через JS, без правки HTML 117 лендингов (как фото/районы/галочка «срочно»).
+//
+// В разметке у поля стоит только minlength="2", поэтому «45345324» проходило
+// проверку браузера и улетало в бота. Бот проверяет имя строго (is_valid_fio),
+// и в анкете мастера это приводило к откату автоподстановки: человек вводил
+// заново всё, что уже заполнил на сайте.
+//
+// pattern работает до отправки формы, validateName() — подстраховка на submit
+// (в т.ч. для страниц из старого кэша, где этот скрипт ещё не отработал).
+// Тот же смысл, что у NAME_PATTERN, но перечислением диапазонов вместо \p{L}:
+// атрибут pattern браузер компилирует БЕЗ флага 'u', а без него \p{L} не
+// работает как класс букв — проверка пропускала бы вообще всё, включая цифры.
+// Диапазоны: латиница, сербская латиница (čćđšž и пр.), кириллица.
+const NAME_PATTERN_ATTR =
+    '[A-Za-zÀ-ÖØ-öø-ÿĀ-žА-Яа-яЁё]{2,}' +
+    '(?:[ \\-][A-Za-zÀ-ÖØ-öø-ÿĀ-žА-Яа-яЁё]{2,})*';
+
+function initNamePatternAttr() {
+    document.querySelectorAll('#clientLeadForm input[name="name"], #masterLeadForm input[name="name"]')
+        .forEach(function (input) {
+            if (input.getAttribute('pattern')) return;   // уже задано в разметке
+            input.setAttribute('pattern', NAME_PATTERN_ATTR);
+            // Подсказка браузера при нативной блокировке отправки
+            input.setAttribute('title', t('nameInvalid'));
+        });
+}
+
 // Форматирование телефонных номеров
 function initPhoneFormatting() {
     const phoneInputs = document.querySelectorAll('#leadPhone, #masterLeadPhone');
+
+    // Длина неизменяемого префикса в отформатированной строке: «+381 ».
+    const PREFIX_LEN = '+381 '.length;
 
     phoneInputs.forEach(input => {
         // Атрибут pattern в разметке не допускает пробелов и блокировал бы
         // отправку отформатированного номера. Валидацию делает validatePhone
         // (по значению без пробелов), поэтому нативную проверку снимаем.
         input.removeAttribute('pattern');
+
+        // Не даём курсору заходить внутрь «+381 »: код страны подставляется
+        // автоматически и правке не подлежит. Без этого человек, стирающий
+        // номер до конца, оказывался внутри префикса и ломал его.
+        function clampCaret() {
+            if (!input.value.startsWith('+381')) return;
+            const start = input.selectionStart, end = input.selectionEnd;
+            // Выделение всей строки (Ctrl+A) не трогаем — его смысл «стереть всё».
+            if (start === 0 && end === input.value.length) return;
+            if (start < PREFIX_LEN || end < PREFIX_LEN) {
+                input.setSelectionRange(Math.max(start, PREFIX_LEN), Math.max(end, PREFIX_LEN));
+            }
+        }
 
         input.addEventListener('input', (e) => {
             const el = e.target;
@@ -495,11 +577,40 @@ function initPhoneFormatting() {
             }
             // Если курсор упёрся в пробел — перешагиваем его
             if (el.value[pos] === ' ') pos++;
+            // Никогда не оставляем курсор внутри «+381 »
+            if (el.value.startsWith('+381')) pos = Math.max(pos, PREFIX_LEN);
             el.setSelectionRange(pos, pos);
         });
 
+        // Backspace/Delete на границе префикса: гасим нажатие, иначе браузер
+        // съест цифру кода страны ДО того, как сработает input-обработчик.
+        input.addEventListener('keydown', (e) => {
+            if (e.key !== 'Backspace' && e.key !== 'Delete') return;
+            const el = e.target;
+            if (!el.value.startsWith('+381')) return;
+            const start = el.selectionStart, end = el.selectionEnd;
+            if (start === 0 && end === el.value.length) return;   // Ctrl+A — разрешаем
+            if (start !== end) return;                            // есть выделение — обычное поведение
+            // Backspace слева от префикса или Delete внутри него
+            if ((e.key === 'Backspace' && start <= PREFIX_LEN) ||
+                (e.key === 'Delete' && start < PREFIX_LEN)) {
+                e.preventDefault();
+                el.setSelectionRange(PREFIX_LEN, PREFIX_LEN);
+            }
+        });
+
+        // Клик/стрелки/Home не должны оставлять курсор в префиксе
+        input.addEventListener('click', clampCaret);
+        input.addEventListener('keyup', clampCaret);
+
         input.addEventListener('focus', (e) => {
             if (e.target.value === '') e.target.value = '+381 ';
+            // Курсор — сразу после префикса, а не в его начале
+            requestAnimationFrame(() => {
+                if (e.target.value.startsWith('+381') && e.target.selectionStart < PREFIX_LEN) {
+                    e.target.setSelectionRange(e.target.value.length, e.target.value.length);
+                }
+            });
         });
 
         input.addEventListener('blur', (e) => {
@@ -512,8 +623,12 @@ function initPhoneFormatting() {
 // 9. ВАЛИДАЦИЯ — ОБЩИЕ ФУНКЦИИ
 // ============================================
 
-// Сербские номера: +381 и 8–10 цифр (моб. и городские). Без белого списка кодов оператора.
-const PHONE_PATTERN    = /^\+381[0-9]{8,10}$/;
+// Сербские номера: +381 и 8–9 цифр после кода страны — ровно как в боте
+// (validators.is_valid_phone). Без белого списка кодов оператора: цель —
+// отсечь явный мусор, а не выверять всех операторов.
+const PHONE_PATTERN    = new RegExp(
+    '^\\+381[0-9]{' + PHONE_MIN_SUBSCRIBER_DIGITS + ',' + PHONE_MAX_SUBSCRIBER_DIGITS + '}$'
+);
 const TELEGRAM_PATTERN = /^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})$/;
 
 function validatePhone(phoneInput) {
@@ -528,6 +643,29 @@ function validatePhone(phoneInput) {
         return false;
     }
 
+    return true;
+}
+
+// Имя: только буквы (любой алфавит — кириллица, латиница, сербские č/ž/š),
+// пробелы и дефис для составных имён («Анна-Мария», «Marko Petrović»).
+// Каждое слово — минимум 2 буквы.
+//
+// Зеркало is_valid_fio в боте (validators.py): там имя проверяется isalpha(),
+// и цифры отклоняются. Без проверки здесь «45345324» уходило в анкете мастера
+// в бота, тот браковал имя и откатывал автоподстановку — мастер вводил все
+// данные заново, не понимая причины.
+const NAME_PATTERN = /^[\p{L}]{2,}(?:[\s-][\p{L}]{2,})*$/u;
+
+function validateName(nameInput) {
+    if (!nameInput) return true;
+    const val = nameInput.value.trim();
+    if (!val) return true;   // пустое поле ловит required самого браузера
+
+    if (!NAME_PATTERN.test(val)) {
+        alert(t('nameInvalid'));
+        nameInput.focus();
+        return false;
+    }
     return true;
 }
 
@@ -1370,10 +1508,14 @@ function initClientLeadFormTracking() {
 
 function validateLeadForm(e) {
     const form          = e.target;
+    const nameInput     = form.querySelector('input[name="name"]');
     const phoneInput    = document.getElementById('leadPhone');
     const telegramInput = form.querySelector('input[name="telegram"]');
 
     const telegramValue = telegramInput ? telegramInput.value.trim() : '';
+
+    // Имя буквами: цифры в этом поле — либо опечатка, либо спам-бот.
+    if (!validateName(nameInput)) return false;
 
     // Обязателен только телефон. Раньше форма требовала ещё Telegram или
     // WhatsApp и показывала alert, если их не заполнили, — но сербская
@@ -1463,10 +1605,15 @@ function initMasterLeadFormTracking() {
 
 function validateMasterLeadForm(e) {
     const form          = e.target;
+    const nameInput     = form.querySelector('input[name="name"]');
     const phoneInput    = document.getElementById('masterLeadPhone');
     const telegramInput = form.querySelector('input[name="telegram"]');
 
     const telegramValue = telegramInput ? telegramInput.value.trim() : '';
+
+    // Имя буквами — зеркало is_valid_fio в боте. Если не проверить здесь, бот
+    // забракует анкету и мастер будет вводить все данные заново.
+    if (!validateName(nameInput)) return false;
 
     // Для мастера Telegram обязателен: верификация (селфи+код) и приём заявок идут
     // в Telegram-боте, туда же ведёт диплинк ?start=m_<code> с кодом связки.
