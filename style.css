@@ -2334,9 +2334,24 @@ body.modal-open {
     box-shadow: 0 0 20px rgba(253, 185, 19, 0.3);
 }
 
+/* Зелёная рамка «поле заполнено верно» — только для полей ВВОДА.
+   У <select> плейсхолдера нет, поэтому :placeholder-shown к нему неприменим,
+   и парное правило :invalid:not(:placeholder-shown) ниже срабатывало бы всегда.
+   Состояние селекта показываем отдельным правилом — после выбора значения. */
 .contact-form input:valid,
-.contact-form textarea:valid,
-.contact-form select:valid {
+.contact-form textarea:valid {
+    border-color: rgba(6, 255, 165, 0.5);
+}
+
+/* Селект считается заполненным, когда выбран непустой вариант.
+   :has() поддерживают все актуальные браузеры; там, где его нет, рамка просто
+   останется нейтральной — поведение формы от этого не зависит. */
+.contact-form select:has(option[value=""]:checked) {
+    /* placeholder ещё выбран — нейтральная рамка, без «ошибки» и без «успеха» */
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-form select:not(:has(option[value=""]:checked)):valid {
     border-color: rgba(6, 255, 165, 0.5);
 }
 
@@ -2528,9 +2543,15 @@ body.modal-open {
     box-shadow: 0 15px 40px rgba(253, 185, 19, 0.5);
 }
 
+/* Красная рамка «заполнено неверно» — только для полей ВВОДА.
+   :not(:placeholder-shown) означает «человек уже что-то напечатал»: пустое поле
+   не должно выглядеть ошибочным до первого ввода.
+   <select> из правила ИСКЛЮЧЁН намеренно: плейсхолдера у него нет, псевдокласс
+   :placeholder-shown неприменим, поэтому условие было истинным всегда — и все
+   обязательные селекты («Город», «Ваша специальность») краснели сразу при
+   открытии формы, до того как человек к ним притронулся. */
 .contact-form input:invalid:not(:placeholder-shown),
-.contact-form textarea:invalid:not(:placeholder-shown),
-.contact-form select:invalid:not(:placeholder-shown) {
+.contact-form textarea:invalid:not(:placeholder-shown) {
     border-color: rgba(255, 100, 100, 0.5);
 }
 
@@ -2550,8 +2571,27 @@ body.modal-open {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Своя стрелка вместо системной.
+   Системную стрелку браузер рисует вплотную к правой границе поля, и padding
+   на неё не действует — она выглядела прижатой к краю и по-разному в Chrome,
+   Firefox и Safari. Рисуем свою фоном: позицию и отступ задаём сами.
+   SVG инлайном (data:) — отдельный файл ради одной иконки не нужен. */
 .contact-form select {
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23ffffff' stroke-opacity='0.55' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    /* Справа оставляем место под стрелку, чтобы длинный текст её не задевал */
+    padding-right: 2.75rem;
+}
+
+/* Заблокированный селект (район, пока не выбран город): стрелка приглушена
+   вместе с полем — opacity на самом элементе гасит и фоновую картинку. */
+.contact-form select:disabled {
+    cursor: not-allowed;
 }
 
 .contact-form select option {
@@ -2973,6 +3013,12 @@ body.modal-open {
         font-size: 0.95rem;
     }
 
+    /* Селекту оставляем место под свою стрелку: сокращённая запись padding
+       выше обнуляет правый отступ, и длинный текст наезжал бы на стрелку. */
+    .contact-form select {
+        padding-right: 2.75rem;
+    }
+
     .consent-label {
         font-size: 0.8rem;
     }
@@ -3337,6 +3383,13 @@ body.modal-open {
     #masterLeadFormModal .contact-form select {
         padding: 0.8rem 1rem;
     }
+
+    /* Место под свою стрелку (правило выше обнуляет правый отступ).
+       Селектор с ID — иначе его перебьёт эта же сокращённая запись. */
+    #clientLeadFormModal .contact-form select,
+    #masterLeadFormModal .contact-form select {
+        padding-right: 2.75rem;
+    }
 }
 
 /* ── Низкие десктопные экраны (ноутбуки 1366×768 и подобные) ──────
@@ -3373,6 +3426,12 @@ body.modal-open {
     #masterLeadFormModal .contact-form input,
     #masterLeadFormModal .contact-form select {
         padding: 0.65rem 1rem;
+    }
+
+    /* Место под свою стрелку (см. комментарий в медиазапросе выше) */
+    #clientLeadFormModal .contact-form select,
+    #masterLeadFormModal .contact-form select {
+        padding-right: 2.75rem;
     }
 
     #clientLeadFormModal .contact-form textarea,
