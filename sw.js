@@ -10,7 +10,7 @@
 // длина номера как в боте). Версию ОБЯЗАТЕЛЬНО поднимать при изменении
 // script.js/style.css — иначе у вернувшихся посетителей останется старая
 // копия из кэша, и исправления до них не доедут.
-const CACHE_NAME = 'mastera-landing-v15';
+const CACHE_NAME = 'mastera-landing-v16';
 
 const PRECACHE_URLS = [
   '/',
