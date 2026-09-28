@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initClientDistrictOptions();
     initClientUrgentOption();
     initMasterSpecialtyOther();
+    initMasterCityDistrict();
     initMasterLeadFormTracking();
     initWhatsAppButtonTracking();
     initBannerShift();
@@ -924,6 +925,96 @@ function initMasterSpecialtyOther() {
     sync();
 }
 
+// Подписи «все районы города» по языкам — для пункта AllBG/AllNS в анкете мастера.
+// Мастер, работающий по всему городу, не должен выбирать один район наугад.
+const MASTER_ALL_DISTRICTS_LABEL = {
+    ru: 'Все районы', sr: 'Sve opštine', en: 'All districts'
+};
+
+// Заголовок-заглушка в select района, пока город не выбран.
+const MASTER_DISTRICT_PLACEHOLDER = {
+    ru: 'Сначала выберите город', sr: 'Prvo izaberite grad', en: 'Choose a city first'
+};
+
+// Подпись select района после выбора города.
+const MASTER_DISTRICT_LABEL = {
+    ru: 'Район работы', sr: 'Radna opština', en: 'Work district'
+};
+
+// Связка «город → районы» в анкете мастера.
+//
+// Зачем: бот рассылает заявки мастерам ОДНОГО города (фильтр city в
+// get_masters_by_rating), поэтому город обязан быть известен точно. Раньше его
+// выводили из района через <optgroup>, и мастер мог выбрать район, не думая о
+// городе. Теперь город выбирается явно, а список районов перестраивается под
+// него — рассогласование «Белград + Лиман» стало невозможным в принципе.
+//
+// Районы живут в JS (BELGRADE_DISTRICTS / NOVI_SAD_DISTRICTS), а не в разметке:
+// справочник один на все три языковые анкеты и не разъезжается с config.yaml бота.
+function initMasterCityDistrict() {
+    const form = document.getElementById('masterLeadForm');
+    if (!form) return;
+    const citySel     = form.querySelector('select[name="city"]');
+    const districtSel = form.querySelector('select[name="district"]');
+    // Старая разметка из кэша (город не завезли) — оставляем <optgroup> как есть:
+    // город там выведет masterCityFromDistrict по выбранному району.
+    if (!citySel || !districtSel) return;
+
+    const lang = ['ru', 'en', 'sr'].includes(currentLang) ? currentLang : 'ru';
+
+    function fillDistricts() {
+        const city = citySel.value;
+        // Город не выбран — район недоступен: выбирать не из чего.
+        if (!city) {
+            districtSel.innerHTML = '';
+            const ph = document.createElement('option');
+            ph.value = '';
+            ph.disabled = true;
+            ph.selected = true;
+            ph.textContent = MASTER_DISTRICT_PLACEHOLDER[lang] || MASTER_DISTRICT_PLACEHOLDER.ru;
+            districtSel.appendChild(ph);
+            districtSel.disabled = true;
+            return;
+        }
+
+        const isNS   = city === 'Нови-Сад';
+        const labels = isNS ? NOVI_SAD_DISTRICTS : BELGRADE_DISTRICTS;
+
+        districtSel.innerHTML = '';
+        const ph = document.createElement('option');
+        ph.value = '';
+        ph.disabled = true;
+        ph.selected = true;
+        ph.textContent = MASTER_DISTRICT_LABEL[lang] || MASTER_DISTRICT_LABEL.ru;
+        districtSel.appendChild(ph);
+
+        Object.keys(labels).forEach(function (slug) {
+            const opt = document.createElement('option');
+            // «Стари-Град» есть в обоих городах, а боту нужно различать их по
+            // значению (masterDistrictForBot сводит оба к «Стари-Град»), поэтому
+            // в Нови-Саде слуг получает суффикс NS.
+            opt.value = (isNS && slug === 'StariGrad') ? 'StariGradNS' : slug;
+            opt.textContent = labels[slug][lang] || labels[slug].ru;
+            districtSel.appendChild(opt);
+        });
+
+        // «Все районы» — последним пунктом, со значением своего города.
+        const all = document.createElement('option');
+        all.value = isNS ? 'AllNS' : 'AllBG';
+        all.textContent = MASTER_ALL_DISTRICTS_LABEL[lang] || MASTER_ALL_DISTRICTS_LABEL.ru;
+        districtSel.appendChild(all);
+
+        districtSel.disabled = false;
+    }
+
+    citySel.addEventListener('change', fillDistricts);
+    fillDistricts();   // стартовое состояние: район заблокирован
+
+    // Доступно снаружи: после form.reset() город сбрасывается в «не выбран», а
+    // список районов остался бы от прежнего города — перестраиваем его заново.
+    initMasterCityDistrict._reset = fillDistricts;
+}
+
 // Одноразовый код связки «анкета на сайте ↔ мастер в боте». Генерируется при
 // отправке формы, уходит в бота полем code и подставляется в диплинк кнопки
 // «Завершить регистрацию» (?start=m_<code>). По нему бот подтянет анкету, и
@@ -946,9 +1037,12 @@ function generateMasterLeadCode() {
     }
 }
 
-// Город мастера по выбранному району: бот рассылает заявки мастерам ОДНОГО
-// города (фильтр city в get_masters_by_rating), а отдельного поля города в
-// анкете нет — <select name="district"> сгруппирован по городам через <optgroup>.
+// Город мастера по выбранному району — ФОЛБЭК.
+//
+// В анкете теперь есть явный <select name="city">, и город берётся из него
+// (см. initMasterCityDistrict и sendMasterLeadToBot). Эта функция остаётся для
+// страниц из старого кэша, где селекта города ещё нет, а район сгруппирован по
+// городам через <optgroup>: тогда город по-прежнему выводится из района.
 //
 // Значения, специфичные для анкеты мастера (в клиентской заявке их нет):
 //   StariGrad   — Стари-Град в Белграде;
@@ -1027,9 +1121,11 @@ function sendMasterLeadToBot(formData) {
             // Район работы: в форме это слуг (Vracar), боту нужен канон-RU (Врачар).
             // AllBG/AllNS/All → «Все районы», StariGradNS → «Стари-Град».
             district:  masterDistrictForBot(get('district')),
-            // Город выводим из района: рассылка заявок фильтрует мастеров по городу,
-            // а поля города в анкете нет. Пусто — бот спросит сам.
-            city:      masterCityFromDistrict(get('district')),
+            // Город берём из явного select'а — его value уже канонический русский
+            // («Белград»/«Нови-Сад»), как в config.yaml бота. Фолбэк на вывод из
+            // района нужен для страниц из старого кэша, где селекта города ещё
+            // нет. Пусто — бот спросит город сам при регистрации.
+            city:      get('city') || masterCityFromDistrict(get('district')),
             // Код связки с диплинком ?start=m_<code>.
             code:      masterLeadCode,
             // Рассказ мастера о себе лежит в <textarea name="about"> (во всех трёх
@@ -1343,6 +1439,9 @@ function initMasterLeadFormTracking() {
             ensureMasterTelegramButton();
             openMasterThankYou();
             masterLeadForm.reset();
+            // reset() вернул город в «не выбран» — возвращаем и район в исходное
+            // заблокированное состояние, иначе в нём остались бы районы прежнего города.
+            if (initMasterCityDistrict._reset) initMasterCityDistrict._reset();
 
         } catch (error) {
             console.error('Master form error:', error);

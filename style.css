@@ -2302,6 +2302,13 @@ body.modal-open {
     gap: 1rem;
 }
 
+/* Заблокированный select района (пока не выбран город) — видимо неактивен,
+   чтобы мастер понимал: сначала нужно выбрать город. */
+.contact-form select:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
@@ -3235,9 +3242,10 @@ body.modal-open {
     }
 
     /* Район и категория — вторая пара, ставим их в правую колонку
-       напротив блока контактов, чтобы не оставалось пустых ячеек */
-    #clientLeadFormModal .contact-form select[name="district"],
-    #masterLeadFormModal .contact-form select[name="district"] {
+       напротив блока контактов, чтобы не оставалось пустых ячеек.
+       Касается только клиентской формы: в анкете мастера район стоит
+       в паре с городом (ниже). */
+    #clientLeadFormModal .contact-form select[name="district"] {
         grid-column: 2;
         grid-row: 2;
     }
@@ -3248,30 +3256,49 @@ body.modal-open {
         grid-row: 4;
     }
 
-    /* ── Анкета мастера: специальность → уточнение → опыт ──────────
+    /* ── Анкета мастера: раскладка по парам ────────────────────────
        В анкете мастера разделителя «или» нет (Telegram обязателен,
-       WhatsApp — по желанию), поэтому строки сдвинуты относительно
-       клиентской формы:
+       WhatsApp — по желанию), поэтому пары идут ровными строками:
          row 1 — имя / телефон,
-         row 2 — Telegram / район,
-         row 3 — WhatsApp / специальность,
-         row 4 — опыт / уточнение «Другое».
+         row 2 — Telegram / WhatsApp,
+         row 3 — город / район,
+         row 4 — специальность / опыт,
+         row 5 — уточнение «Другое» (во всю ширину).
+
+       Город и район стоят рядом намеренно: район зависит от города
+       (см. initMasterCityDistrict в script.js), и связь двух полей
+       должна быть видна глазом.
 
        Позиции задаём явно: иначе поле specialty_other, появляющееся
-       по выбору «Другое», встаёт в ближайшую свободную ячейку (левую)
-       и выталкивает «Опыт работы» в правую колонку — поля меняются
-       местами прямо на глазах у мастера. */
-    #masterLeadFormModal .contact-form select[name="specialty"] {
+       по выбору «Другое», встаёт в ближайшую свободную ячейку и
+       двигает соседние поля прямо на глазах у мастера. */
+    #masterLeadFormModal .contact-form input[name="whatsapp"] {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #masterLeadFormModal .contact-form select[name="city"] {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #masterLeadFormModal .contact-form select[name="district"] {
         grid-column: 2;
         grid-row: 3;
     }
-    #masterLeadFormModal .contact-form input[name="experience"] {
+    #masterLeadFormModal .contact-form select[name="specialty"] {
         grid-column: 1;
         grid-row: 4;
     }
-    #masterLeadFormModal .contact-form input[name="specialty_other"] {
+    #masterLeadFormModal .contact-form input[name="experience"] {
         grid-column: 2;
         grid-row: 4;
+    }
+    /* Уточнение специальности — отдельной строкой, но в одну колонку:
+       поле появляется по выбору «Другое» и относится к селекту специальности
+       над ним, поэтому встаёт под ним слева. Растянутое на обе колонки оно
+       выглядело как самостоятельный блок формы, а не как уточнение. */
+    #masterLeadFormModal .contact-form input[name="specialty_other"] {
+        grid-column: 1;
+        grid-row: 5;
     }
 
     /* Описание задачи ниже, чем на мобильном: место есть, а текст

@@ -415,12 +415,31 @@
       <h2 class="modal-title">Оставить заявку</h2>
       <p class="modal-subtitle">Начните получать заказы уже сегодня</p>
       <form action="https://formspree.io/f/xeajjwlo" method="POST" class="contact-form" id="masterLeadForm">
+        <!-- Порядок полей в разметке = порядок на мобильном (одна колонка).
+             На десктопе их раскладывает в две колонки сетка в style.css
+             (медиазапрос min-width: 992px), позиции заданы там явно. -->
         <input type="text" name="name" placeholder="Ваше имя" required minlength="2">
         <input type="tel" name="phone" id="masterLeadPhone" placeholder="+381 6_ ___ ____" required pattern="^\+381[0-9]{8,10}$">
         <!-- Telegram обязателен: через него мастер завершает регистрацию в боте
              (диплинк ?start=m_<code>) и получает заявки. WhatsApp — доп. контакт. -->
         <input type="text" name="telegram" placeholder="Telegram: @username" required pattern="^(@[a-zA-Z0-9_]{5,32}|[0-9]{9,15})$">
         <input type="text" name="whatsapp" placeholder="WhatsApp: номер (по желанию)">
+        <!-- Город выбирается явно и определяет список районов: бот рассылает
+             заявки мастерам ОДНОГО города (фильтр city в get_masters_by_rating).
+             Значения — канонические русские, как в config.yaml бота, независимо
+             от языка подписи.
+             Районы заполняет initMasterCityDistrict() в script.js — в разметке их
+             нет, чтобы список не разъезжался со справочниками бота. «Стари-Град»
+             есть в обоих городах, поэтому значения разведены: StariGrad (Белград)
+             и StariGradNS (Нови-Сад). -->
+        <select name="city" required>
+          <option value="" disabled selected>Город</option>
+          <option value="Белград">Белград</option>
+          <option value="Нови-Сад">Нови-Сад</option>
+        </select>
+        <select name="district" required disabled>
+          <option value="" disabled selected>Сначала выберите город</option>
+        </select>
         <!-- Категории те же, что у бота (config.yaml → master_registration.specialties):
              по ним бот подбирает мастеру заявки. При выборе «Другое» скрипт
              показывает дополнительное поле specialty_other. -->
@@ -436,38 +455,6 @@
           <option value="Другое">Другое</option>
         </select>
         <input type="number" name="experience" placeholder="Опыт работы (лет)" required min="0" max="50">
-        <!-- Районы сгруппированы по городу: бот рассылает заявки мастерам ОДНОГО
-             города, а отдельного поля города в анкете нет — он выводится из
-             выбранного района (см. masterCityFromDistrict в script.js). Поэтому
-             «Стари-Град» есть в обоих городах с разными значениями:
-             StariGrad (Белград) и StariGradNS (Нови-Сад). -->
-        <select name="district" required>
-          <option value="" disabled selected>Район работы</option>
-          <optgroup label="Белград">
-            <option value="Vracar">Врачар</option>
-            <option value="NoviBeograd">Нови-Београд</option>
-            <option value="StariGrad">Стари-Град</option>
-            <option value="SavskiVenac">Савски-Венац</option>
-            <option value="Vozdovac">Вождовац</option>
-            <option value="Zemun">Земун</option>
-            <option value="Zvezdara">Звездара</option>
-            <option value="Palilula">Палилула</option>
-            <option value="Cukarica">Чукарица</option>
-            <option value="Rakovica">Раковица</option>
-            <option value="AllBG">Все районы (Белград)</option>
-          </optgroup>
-          <optgroup label="Нови-Сад">
-            <option value="Liman">Лиман</option>
-            <option value="Detelinara">Детелинара</option>
-            <option value="Grbavica">Грбавица</option>
-            <option value="Telep">Телеп</option>
-            <option value="Podbara">Подбара</option>
-            <option value="Petrovaradin">Петроварадин</option>
-            <option value="NovoNaselje">Ново-Населье</option>
-            <option value="StariGradNS">Стари-Град</option>
-            <option value="AllNS">Все районы (Нови-Сад)</option>
-          </optgroup>
-        </select>
         <textarea name="about" rows="3" placeholder="Расскажите о себе и опыте работы" required minlength="20"></textarea>
         <input type="hidden" name="_subject" value="Новая заявка мастера - Регистрация">
         <input type="hidden" name="_language" value="ru">
