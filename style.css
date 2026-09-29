@@ -2991,9 +2991,11 @@ body.modal-open {
    АДАПТИВ ДЛЯ НОВЫХ ЭЛЕМЕНТОВ
    ============================================ */
 @media (max-width: 768px) {
-    /* Порядок плашек на мобильном: язык → город → «Для мастеров» → счётчик */
-    .language-switcher { order: 1; width: 100%; justify-content: center; }
-    .city-switcher { order: 2; }
+    /* Порядок плашек на мобильном: город → язык → «Для мастеров» → счётчик.
+       Город идёт первым: он задаёт контекст всей страницы (в каком городе ищем
+       мастера), а язык — вторичная настройка интерфейса. Так же в Грузии. */
+    .city-switcher { order: 1; }
+    .language-switcher { order: 2; width: 100%; justify-content: center; }
     .audience-link { order: 3; }
     .online-counter { order: 4; }
 
